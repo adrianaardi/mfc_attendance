@@ -26,8 +26,8 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/setup-admin', function () {
     \App\Models\User::create([
         'name' => 'Admin',
-        'email' => 'admin@example.com',
-        'password' => Hash::make('your-password'),
+        'email' => 'admin.forest@sarawak.gov.my',
+        'password' => Hash::make('123456789'),
     ]);
     return 'Admin created!';
 });
