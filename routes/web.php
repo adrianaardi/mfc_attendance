@@ -20,6 +20,8 @@ Route::post('/attendance', [AttendanceController::class, 'store']);
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/export/{day}', [AdminController::class, 'export']);
+    Route::delete('/admin/registrations', [AdminController::class, 'deleteRegistrations']);
+Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
 });
 
 require __DIR__.'/auth.php';

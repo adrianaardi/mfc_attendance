@@ -134,9 +134,12 @@
 
         .login-forgot {
             font-size: 13px;
-            color: var(--moss);
             text-decoration: none;
             transition: color .18s;
+        }
+
+        .login-forgot a{
+            color: var(--moss);
         }
 
         .login-forgot:hover {
@@ -181,7 +184,9 @@
 <body>
 
 <div class="login-wrapper">
+    
     <div class="login-card">
+        
 
         <div class="login-logo">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
@@ -220,13 +225,14 @@
             </div>
 
             <div class="login-actions">
-                @if (Route::has('password.request'))
-                    <a class="login-forgot" href="{{ route('password.request') }}">Forgot password?</a>
-                @endif
+                <div class="login-forgot">
+                    <a href="/">← Back</a>
+                </div>
                 <button type="submit" class="login-btn">Log In</button>
             </div>
 
         </form>
+        
 
     </div>
 </div>

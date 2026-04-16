@@ -28,6 +28,6 @@ class RegistrationController extends Controller
 
         Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
 
-        return back()->with('success', 'Registration successful! A confirmation email has been sent.');
+        return redirect('/')->with('success', 'Registration successful! A confirmation email has been sent.');
     }
 }

@@ -27,9 +27,6 @@
         <span class="section-label">Join Us</span>
         <h2>Event Registration</h2>
 
-        @if(session('success'))
-            <div class="alert-success">{{ session('success') }}</div>
-        @endif
 
         @if($errors->any())
             <div class="alert-error">
@@ -40,7 +37,9 @@
                 </ul>
             </div>
         @endif
-
+        <div class="back-btn">
+            <a href="/">← Back</a>
+        </div>
         <form method="POST" action="/event-register" class="register-form">
             @csrf
 

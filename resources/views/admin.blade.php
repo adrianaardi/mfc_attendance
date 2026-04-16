@@ -27,6 +27,12 @@
         <span class="section-label">Admin Panel</span>
         <h2>Conference Dashboard</h2>
 
+        @if(session('admin_success'))
+            <div class="flash-success">{{ session('admin_success') }}</div>
+        @endif
+        @if(session('admin_error'))
+            <div class="flash-error">{{ session('admin_error') }}</div>
+        @endif
         <!-- Summary Cards -->
         <div class="admin-cards">
             <div class="admin-card">
@@ -59,156 +65,194 @@
         <div id="table-registrations" class="admin-table-section">
             <div class="table-header">
                 <h3>All Registrations</h3>
-                <a href="/admin/export/registrations" class="export-btn">Export CSV</a>            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Designation</th>
-                            <th>Agency</th>
-                            <th>Registered At</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @forelse($registrations as $i => $reg)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>{{ $reg->name }}</td>
-                            <td>{{ $reg->email }}</td>
-                            <td>{{ $reg->phone }}</td>
-                            <td>{{ $reg->designation }}</td>
-                            <td>{{ $reg->agency }}</td>
-                            <td>{{ $reg->created_at->format('d M Y, h:i A') }}</td>
-                        </tr>
-                        @empty
-                        <tr>
-                            <td colspan="7" style="text-align:center; color:var(--text-soft);">No registrations yet.</td>
-                        </tr>
-                        @endforelse
-                    </tbody>
-                </table>
+                <div style="display:flex; gap:10px;">
+                    <a href="/admin/export/registrations" class="export-btn">Export CSV</a>
+                    <button type="button" onclick="submitDelete('form-delete-registrations')" class="delete-btn">Delete Selected</button>
+                </div>
             </div>
+            <form id="form-delete-registrations" method="POST" action="/admin/registrations">
+                @csrf
+                @method('DELETE')
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="toggleAll(this, 'reg-check')"></th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Designation</th>
+                                <th>Agency</th>
+                                <th>Registered At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($registrations as $i => $reg)
+                            <tr>
+                                <td><input type="checkbox" class="reg-check" name="ids[]" value="{{ $reg->id }}"></td>
+                                <td>{{ $reg->name }}</td>
+                                <td>{{ $reg->email }}</td>
+                                <td>{{ $reg->phone }}</td>
+                                <td>{{ $reg->designation }}</td>
+                                <td>{{ $reg->agency }}</td>
+                                <td>{{ $reg->created_at->format('d M Y, h:i A') }}</td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="8" style="text-align:center; color:var(--text-soft);">No registrations yet.</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </form>
         </div>
 
         <!-- Day 1 Table -->
         <div id="table-day1" class="admin-table-section" style="display:none;">
             <div class="table-header">
                 <h3>Day 1 Attendance</h3>
-<a href="/admin/export/1" class="export-btn">Export CSV</a>            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Designation</th>
-                            <th>Agency</th>
-                            <th>Check-in Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @forelse($day1 as $i => $att)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>{{ $att->registration->name }}</td>
-                            <td>{{ $att->registration->email }}</td>
-                            <td>{{ $att->registration->phone }}</td>
-                            <td>{{ $att->registration->designation }}</td>
-                            <td>{{ $att->registration->agency }}</td>
-                            <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
-                        </tr>
-                        @empty
-                        <tr>
-                            <td colspan="7" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
-                        </tr>
-                        @endforelse
-                    </tbody>
-                </table>
+                <div style="display:flex; gap:10px;">
+                    <a href="/admin/export/1" class="export-btn">Export CSV</a>
+                    <button type="button" onclick="submitDelete('form-delete-day1')" class="delete-btn">Delete Selected</button>
+                </div>
             </div>
+            <form id="form-delete-day1" method="POST" action="/admin/attendances">
+                @csrf
+                @method('DELETE')
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="toggleAll(this, 'day1-check')"></th>
+                                <th>No.</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Designation</th>
+                                <th>Agency</th>
+                                <th>Check-in Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($day1 as $i => $att)
+                            <tr>
+                                <td><input type="checkbox" class="day1-check" name="ids[]" value="{{ $att->id }}"></td>
+                                <td>{{ $i + 1 }}</td>
+                                <td>{{ $att->registration->name }}</td>
+                                <td>{{ $att->registration->email }}</td>
+                                <td>{{ $att->registration->phone }}</td>
+                                <td>{{ $att->registration->designation }}</td>
+                                <td>{{ $att->registration->agency }}</td>
+                                <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="8" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </form>
         </div>
 
         <!-- Day 2 Table -->
         <div id="table-day2" class="admin-table-section" style="display:none;">
             <div class="table-header">
-                <h3>Day 2 Attendance</h3>
-<a href="/admin/export/2" class="export-btn">Export CSV</a>            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Designation</th>
-                            <th>Agency</th>
-                            <th>Check-in Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @forelse($day2 as $i => $att)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>{{ $att->registration->name }}</td>
-                            <td>{{ $att->registration->email }}</td>
-                            <td>{{ $att->registration->phone }}</td>
-                            <td>{{ $att->registration->designation }}</td>
-                            <td>{{ $att->registration->agency }}</td>
-                            <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
-                        </tr>
-                        @empty
-                        <tr>
-                            <td colspan="7" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
-                        </tr>
-                        @endforelse
-                    </tbody>
-                </table>
+                <h3>Day 1 Attendance</h3>
+                <div style="display:flex; gap:10px;">
+                    <a href="/admin/export/1" class="export-btn">Export CSV</a>
+                    <button type="button" onclick="submitDelete('form-delete-day2')" class="delete-btn">Delete Selected</button>
+                </div>
             </div>
+            <form id="form-delete-day2" method="POST" action="/admin/attendances">
+                @csrf
+                @method('DELETE')
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="toggleAll(this, 'day2-check')"></th>
+                                <th>No.</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Designation</th>
+                                <th>Agency</th>
+                                <th>Check-in Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($day2 as $i => $att)
+                            <tr>
+                                <td><input type="checkbox" class="day2-check" name="ids[]" value="{{ $att->id }}"></td>
+                                <td>{{ $i + 1 }}</td>
+                                <td>{{ $att->registration->name }}</td>
+                                <td>{{ $att->registration->email }}</td>
+                                <td>{{ $att->registration->phone }}</td>
+                                <td>{{ $att->registration->designation }}</td>
+                                <td>{{ $att->registration->agency }}</td>
+                                <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="8" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </form>
         </div>
 
         <!-- Day 3 Table -->
         <div id="table-day3" class="admin-table-section" style="display:none;">
             <div class="table-header">
-                <h3>Day 3 Attendance</h3>
-<a href="/admin/export/3" class="export-btn">Export CSV</a>            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Designation</th>
-                            <th>Agency</th>
-                            <th>Check-in Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @forelse($day3 as $i => $att)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>{{ $att->registration->name }}</td>
-                            <td>{{ $att->registration->email }}</td>
-                            <td>{{ $att->registration->phone }}</td>
-                            <td>{{ $att->registration->designation }}</td>
-                            <td>{{ $att->registration->agency }}</td>
-                            <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
-                        </tr>
-                        @empty
-                        <tr>
-                            <td colspan="7" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
-                        </tr>
-                        @endforelse
-                    </tbody>
-                </table>
+                <h3>Day 1 Attendance</h3>
+                <div style="display:flex; gap:10px;">
+                    <a href="/admin/export/1" class="export-btn">Export CSV</a>
+                    <button type="button" onclick="submitDelete('form-delete-day3')" class="delete-btn">Delete Selected</button>
+                </div>
             </div>
+            <form id="form-delete-day3" method="POST" action="/admin/attendances">
+                @csrf
+                @method('DELETE')
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="toggleAll(this, 'day3-check')"></th>
+                                <th>No.</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Designation</th>
+                                <th>Agency</th>
+                                <th>Check-in Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($day3 as $i => $att)
+                            <tr>
+                                <td><input type="checkbox" class="day3-check" name="ids[]" value="{{ $att->id }}"></td>
+                                <td>{{ $i + 1 }}</td>
+                                <td>{{ $att->registration->name }}</td>
+                                <td>{{ $att->registration->email }}</td>
+                                <td>{{ $att->registration->phone }}</td>
+                                <td>{{ $att->registration->designation }}</td>
+                                <td>{{ $att->registration->agency }}</td>
+                                <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="8" style="text-align:center; color:var(--text-soft);">No attendance recorded yet.</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </form>
         </div>
 
     </section>
@@ -248,6 +292,22 @@
             document.querySelectorAll('.admin-tabs button').forEach(el => el.classList.remove('active'));
             document.getElementById('table-' + name).style.display = 'block';
             document.getElementById('tab-' + name).classList.add('active');
+        }
+
+        function toggleAll(source, className) {
+            document.querySelectorAll('.' + className).forEach(cb => cb.checked = source.checked);
+        }
+
+        function submitDelete(formId) {
+            const form = document.getElementById(formId);
+            const checked = form.querySelectorAll('input[type="checkbox"]:checked');
+            if (checked.length === 0) {
+                alert('Please select at least one record to delete.');
+                return;
+            }
+            if (confirm(`Delete ${checked.length} selected record(s)? This cannot be undone.`)) {
+                form.submit();
+            }
         }
     </script>
 

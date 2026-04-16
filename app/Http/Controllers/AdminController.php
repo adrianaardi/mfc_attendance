@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Attendance;
 use App\Models\Registration;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -103,5 +104,27 @@ class AdminController extends Controller
         };
 
         return response()->stream($callback, 200, $headers);
+    }
+
+    public function deleteRegistrations(Request $request)
+    {
+        $ids = $request->input('ids', []);
+        if (empty($ids)) return back()->with('admin_error', 'No records selected.');
+
+        // Deletes attendance too via cascade (or manually)
+        Attendance::whereIn('registration_id', $ids)->delete();
+        Registration::whereIn('id', $ids)->delete();
+
+        return back()->with('admin_success', count($ids) . ' registration(s) deleted.');
+    }
+
+    public function deleteAttendances(Request $request)
+    {
+        $ids = $request->input('ids', []);
+        if (empty($ids)) return back()->with('admin_error', 'No records selected.');
+
+        Attendance::whereIn('id', $ids)->delete();
+
+        return back()->with('admin_success', count($ids) . ' attendance record(s) deleted.');
     }
 }
