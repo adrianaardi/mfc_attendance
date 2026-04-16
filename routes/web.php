@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
-
+use Illuminate\Support\Facades\Hash;
 // Main event site
 Route::get('/', function () {
     return view('index');
@@ -21,6 +21,15 @@ Route::post('/attendance', [AttendanceController::class, 'store']);
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/export/{day}', [AdminController::class, 'export']);
+});
+
+Route::get('/setup-admin', function () {
+    \App\Models\User::create([
+        'name' => 'Admin',
+        'email' => 'admin@example.com',
+        'password' => Hash::make('your-password'),
+    ]);
+    return 'Admin created!';
 });
 
 require __DIR__.'/auth.php';
