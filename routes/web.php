@@ -24,4 +24,13 @@ Route::middleware(['auth'])->group(function () {
 Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
 });
 
+Route::get('/create-admin', function () {
+    \App\Models\User::create([
+        'name' => 'Admin',
+        'email' => 'admin@forest.sarawak.my',
+        'password' => bcrypt('password123'),
+    ]);
+    return 'User created!';
+});
+
 require __DIR__.'/auth.php';
