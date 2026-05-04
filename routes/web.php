@@ -27,7 +27,7 @@ Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances'
 Route::get('/create-admin', function () {
     \App\Models\User::create([
         'name' => 'Admin',
-        'email' => 'admin@forest.sarawak.my',
+        'email' => 'admin@sarawak.gov.my',
         'password' => bcrypt('password123'),
     ]);
     return 'User created!';
