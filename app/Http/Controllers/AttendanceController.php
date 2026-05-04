@@ -7,6 +7,7 @@ use App\Models\Registration;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AttendanceConfirmed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class AttendanceController extends Controller
 {
@@ -37,8 +38,11 @@ class AttendanceController extends Controller
             'checked_in_at'   => now(),
         ]);
 
-        Mail::to($registration->email)->send(new AttendanceConfirmed($registration, $attendance));
-
+        try {
+            Mail::to($registration->email)->send(new AttendanceConfirmed($registration, $attendance));
+        } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Mail failed: ' . $e->getMessage());
+        }
         return back()->with('attendance_success', "Attendance for Day {$request->day} verified! A confirmation email has been sent.");
     }
 }

@@ -6,6 +6,7 @@ use App\Models\Registration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RegistrationConfirmed;
+use Illuminate\Support\Facades\Log;
 
 class RegistrationController extends Controller
 {
@@ -26,8 +27,11 @@ class RegistrationController extends Controller
 
         $registration = Registration::create($validated);
 
-        Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
-
+        try {
+            Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
+        } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Mail failed: ' . $e->getMessage());
+        }
         return redirect('/')->with('success', 'Registration successful! A confirmation email has been sent.');
     }
 }
