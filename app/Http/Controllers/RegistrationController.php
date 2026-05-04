@@ -30,7 +30,6 @@ class RegistrationController extends Controller
         try {
             Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
         } catch (\Exception $e) {
-            \Illuminate\Support\Facades\Log::error('Mail failed: ' . $e->getMessage());
             dd('Mail error: ' . $e->getMessage());
         }
         return redirect('/')->with('success', 'Registration successful! A confirmation email has been sent.');
