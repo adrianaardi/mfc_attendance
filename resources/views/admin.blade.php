@@ -126,7 +126,6 @@
                         <thead>
                             <tr>
                                 <th><input type="checkbox" onclick="toggleAll(this, 'day1-check')"></th>
-                                <th>No.</th>
                                 <th>Full Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
@@ -139,7 +138,6 @@
                             @forelse($day1 as $i => $att)
                             <tr>
                                 <td><input type="checkbox" class="day1-check" name="ids[]" value="{{ $att->id }}"></td>
-                                <td>{{ $i + 1 }}</td>
                                 <td>{{ $att->registration->name }}</td>
                                 <td>{{ $att->registration->email }}</td>
                                 <td>{{ $att->registration->phone }}</td>
@@ -175,7 +173,6 @@
                         <thead>
                             <tr>
                                 <th><input type="checkbox" onclick="toggleAll(this, 'day2-check')"></th>
-                                <th>No.</th>
                                 <th>Full Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
@@ -188,7 +185,6 @@
                             @forelse($day2 as $i => $att)
                             <tr>
                                 <td><input type="checkbox" class="day2-check" name="ids[]" value="{{ $att->id }}"></td>
-                                <td>{{ $i + 1 }}</td>
                                 <td>{{ $att->registration->name }}</td>
                                 <td>{{ $att->registration->email }}</td>
                                 <td>{{ $att->registration->phone }}</td>
@@ -224,7 +220,6 @@
                         <thead>
                             <tr>
                                 <th><input type="checkbox" onclick="toggleAll(this, 'day3-check')"></th>
-                                <th>No.</th>
                                 <th>Full Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
@@ -237,7 +232,6 @@
                             @forelse($day3 as $i => $att)
                             <tr>
                                 <td><input type="checkbox" class="day3-check" name="ids[]" value="{{ $att->id }}"></td>
-                                <td>{{ $i + 1 }}</td>
                                 <td>{{ $att->registration->name }}</td>
                                 <td>{{ $att->registration->email }}</td>
                                 <td>{{ $att->registration->phone }}</td>
