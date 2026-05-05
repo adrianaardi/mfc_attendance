@@ -39,7 +39,7 @@ class AttendanceController extends Controller
         ]);
 
         try {
-            Mail::to($registration->email)->queue(new AttendanceConfirmed($registration, $attendance));
+            Mail::to($registration->email)->send(new AttendanceConfirmed($registration, $attendance));
         } catch (\Exception $e) {
             dd('Mail error: ' . $e->getMessage());
         }
