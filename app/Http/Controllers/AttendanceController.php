@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Attendance;
 use App\Models\Registration;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\AttendanceConfirmed;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
 
 class AttendanceController extends Controller
 {
@@ -39,10 +37,25 @@ class AttendanceController extends Controller
         ]);
 
         try {
-            Mail::to($registration->email)->send(new AttendanceConfirmed($registration, $attendance));
+            Http::withHeaders([
+                'api-key'      => config('services.brevo.key'),
+                'Content-Type' => 'application/json',
+            ])->post('https://api.brevo.com/v3/smtp/email', [
+                'sender' => [
+                    'name'  => 'MFC 2026',
+                    'email' => 'noreply@mfc2026.com',
+                ],
+                'to' => [[
+                    'email' => $registration->email,
+                    'name'  => $registration->name,
+                ]],
+                'subject'     => 'Attendance Confirmed — MFC 2026',
+                'htmlContent' => view('emails.attendance-confirmed', compact('registration', 'attendance'))->render(),
+            ]);
         } catch (\Exception $e) {
-            dd('Mail error: ' . $e->getMessage());
+            dd('Error: ' . $e->getMessage());
         }
+
         return back()->with('attendance_success', "Attendance for Day {$request->day} verified! A confirmation email has been sent.");
     }
 }

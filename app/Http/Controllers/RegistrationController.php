@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Registration;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\RegistrationConfirmed;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
 
 class RegistrationController extends Controller
 {
@@ -28,10 +26,24 @@ class RegistrationController extends Controller
         $registration = Registration::create($validated);
 
         try {
-            Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
+            Http::withHeaders([
+                'api-key'      => config('services.brevo.key'),
+                'Content-Type' => 'application/json',
+            ])->post('https://api.brevo.com/v3/smtp/email', [
+                'sender' => [
+                    'name'  => 'MFC 2026',
+                    'email' => 'noreply@mfc2026.com',
+                ],
+                'to' => [[
+                    'email' => $registration->email,
+                    'name'  => $registration->name,
+                ]],
+                'subject'     => 'Registration Confirmed — MFC 2026',
+'htmlContent' => view('emails.registration-confirmed', compact('registration'))->render(),            ]);
         } catch (\Exception $e) {
-            dd('Mail error: ' . $e->getMessage());
+            dd('Error: ' . $e->getMessage());
         }
+
         return redirect('/')->with('success', 'Registration successful! A confirmation email has been sent.');
     }
 }
