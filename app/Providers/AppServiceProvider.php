@@ -4,22 +4,24 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
-use App\Mail\BrevoTransport;
-use Illuminate\Support\Facades\Mail;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        Mail::extend('brevo', function () {
-            return new BrevoTransport(config('services.brevo.key'));
-        });
+        //
     }
 
     public function boot(): void
     {
         if (app()->environment('production')) {
-            \Illuminate\Support\Facades\URL::forceScheme('https');
+            URL::forceScheme('https');
         }
+
+        $this->app->resolving('mail.manager', function ($mailManager) {
+            $mailManager->extend('brevo', function () {
+                return new \App\Mail\BrevoTransport(config('services.brevo.key'));
+            });
+        });
     }
 }
