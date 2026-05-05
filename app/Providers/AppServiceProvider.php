@@ -9,29 +9,17 @@ use Illuminate\Support\Facades\Mail;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
-        //
+        Mail::extend('brevo', function () {
+            return new BrevoTransport(config('services.brevo.key'));
+        });
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
         if (app()->environment('production')) {
             \Illuminate\Support\Facades\URL::forceScheme('https');
         }
-
-        if (app()->environment('production')) {
-            \Illuminate\Support\Facades\URL::forceScheme('https');
-        }
-
-        Mail::extend('brevo', function () {
-            return new BrevoTransport(config('services.brevo.key'));
-        });
     }
 }
