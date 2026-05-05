@@ -39,9 +39,9 @@ class AttendanceController extends Controller
         ]);
 
         try {
-            Mail::to($registration->email)->send(new AttendanceConfirmed($registration, $attendance));
+            Mail::to($registration->email)->queue(new AttendanceConfirmed($registration, $attendance));
         } catch (\Exception $e) {
-            \Illuminate\Support\Facades\Log::error('Mail failed: ' . $e->getMessage());
+            dd('Mail error: ' . $e->getMessage());
         }
         return back()->with('attendance_success', "Attendance for Day {$request->day} verified! A confirmation email has been sent.");
     }

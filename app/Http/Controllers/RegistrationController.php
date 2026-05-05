@@ -28,7 +28,7 @@ class RegistrationController extends Controller
         $registration = Registration::create($validated);
 
         try {
-            Mail::to($registration->email)->send(new RegistrationConfirmed($registration));
+            Mail::to($registration->email)->queue(new RegistrationConfirmed($registration));
         } catch (\Exception $e) {
             dd('Mail error: ' . $e->getMessage());
         }
