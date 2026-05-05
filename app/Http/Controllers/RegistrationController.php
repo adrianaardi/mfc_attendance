@@ -32,7 +32,7 @@ class RegistrationController extends Controller
             ])->post('https://api.brevo.com/v3/smtp/email', [
                 'sender' => [
                     'name'  => 'MFC 2026',
-                    'email' => 'noreply@mfc2026.com',
+                    'email' => 'adrianaardi.aa@gmail.com',
                 ],
                 'to' => [[
                     'email' => $registration->email,
