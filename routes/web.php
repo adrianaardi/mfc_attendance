@@ -4,9 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
+
 // Main event site
 Route::get('/', function () {
-    return view('index');
+    $settings = [
+        'registration'    => \App\Models\Setting::isEnabled('registration'),
+        'attendance_day1' => \App\Models\Setting::isEnabled('attendance_day1'),
+        'attendance_day2' => \App\Models\Setting::isEnabled('attendance_day2'),
+        'attendance_day3' => \App\Models\Setting::isEnabled('attendance_day3'),
+    ];
+    return view('index', compact('settings'));
 });
 
 // Registration
@@ -24,13 +31,15 @@ Route::middleware(['auth'])->group(function () {
 Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
 });
 
-Route::get('/create-admin', function () {
-    \App\Models\User::create([
-        'name' => 'Admin',
-        'email' => 'admin@sarawak.gov.my',
-        'password' => bcrypt('password123'),
-    ]);
-    return 'User created!';
-});
+Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
+
+//Route::get('/create-admin', function () {
+  //  \App\Models\User::create([
+    //    'name' => 'Admin',
+      //  'email' => 'admin@sarawak.gov.my',
+        //'password' => bcrypt('password123'),
+   // ]);
+//    return 'User created!';
+//});
 
 require __DIR__.'/auth.php';

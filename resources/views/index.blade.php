@@ -45,7 +45,11 @@
       <div class="hero-tag">21st Edition · 2026</div>
       <h1>Malaysian <em>Forestry</em><br>Conference 2026</h1>
       <p>Welcome to our official event. Please register before verifying your attendance.</p>
-      <a href="/event-register" class="register_btn" >Register here</a>
+      @if($settings['registration'])
+          <a href="/event-register" class="register_btn">Register Now</a>
+      @else
+          <button class="register_btn" disabled style="opacity:0.5; cursor:not-allowed;">Registration Closed</button>
+      @endif    
     </div>
     <div class="scroll-hint">
       <p>Scroll</p>
@@ -118,7 +122,11 @@
         </tr>
       </table>
       <div class="punch-in-container">
-          <button onclick="openAttendanceModal(1)" class="punch-btn">Verify Attendance — Day 1</button>
+        @if($settings['attendance_day1'])
+            <button onclick="openAttendanceModal(1)" class="punch-btn">Verify Attendance — Day 1</button>
+        @else
+            <button class="punch-btn" disabled style="opacity:0.5; cursor:not-allowed;">Day 1 Closed</button>
+        @endif
       </div>
     </div>
 
@@ -132,7 +140,11 @@
         <tr><td>12:30 PM</td><td>🍽 Networking Lunch</td></tr>
       </table>
       <div class="punch-in-container">
-          <button onclick="openAttendanceModal(2)" class="punch-btn">Verify Attendance — Day 2</button>
+        @if($settings['attendance_day2'])
+            <button onclick="openAttendanceModal(2)" class="punch-btn">Verify Attendance — Day 2</button>
+        @else
+            <button class="punch-btn" disabled style="opacity:0.5; cursor:not-allowed;">Day 2 Closed</button>
+        @endif
       </div>
     </div>
 
@@ -146,7 +158,11 @@
         <tr><td>12:30 PM</td><td>🎓 Certificate Distribution</td></tr>
       </table>
       <div class="punch-in-container">
-          <button onclick="openAttendanceModal(3)" class="punch-btn">Verify Attendance — Day 3</button>
+        @if($settings['attendance_day3'])
+            <button onclick="openAttendanceModal(3)" class="punch-btn">Verify Attendance — Day 3</button>
+        @else
+            <button class="punch-btn" disabled style="opacity:0.5; cursor:not-allowed;">Day 3 Closed</button>
+        @endif
       </div>
     </div>
   </section>
@@ -179,13 +195,168 @@
     </div>
   </section>
 
-  <!-- ── SLIDES ───────────────────────────────────────────── -->
-  <section id="slides">
+<!-- ── SLIDES ───────────────────────────────────────────── -->
+<section id="slides">
     <span class="section-label">Resources</span>
     <h2>Presentation Slides</h2>
-    <p>Download the official presentation slides below:</p>
-    <button class="download-btn">↓ &nbsp;Download PDF</button>
-  </section>
+    <p>Download the official presentation slides from each session below.</p>
+
+    <nav class="agenda-tabs">
+        <button onclick="showSlideDay(1)" class="active" id="slide-tab-1">Day 1</button>
+        <button onclick="showSlideDay(2)" id="slide-tab-2">Day 2</button>
+        <button onclick="showSlideDay(3)" id="slide-tab-3">Day 3</button>
+    </nav>
+
+    <!-- DAY 1 SLIDES -->
+    <div id="slides-day1" class="slides-day">
+        <div class="slides-session-label">Plenary Session: Main Working Paper</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Slides</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Sabah Forestry Department — State of Forests Report 2026</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Forest Department Sarawak — Annual Overview & Strategic Outlook</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Forest Department of Peninsular Malaysia — National Forest Policy Update</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="slides-session-label">Concurrent Session 1: Policy & Governance Frameworks</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Slides</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Siti Zubaidah S. Abdullah</td>
+                        <td>Protection and Conservation of Biodiversity Outside PFE in Sabah</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>Semilan Anak Ripot</td>
+                        <td>Sustainable Forest Management: Sarawak's Perspectives</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>Abd Ramlizauyahhudin bin Mahli</td>
+                        <td>Pelaksanaan SMART Patrol di Jabatan Perhutanan Semenanjung Malaysia</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- DAY 2 SLIDES -->
+    <div id="slides-day2" class="slides-day" style="display:none;">
+        <div class="slides-session-label">Morning Workshop & Panel Discussion</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Slides</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Advanced Remote Sensing Applications in Forest Monitoring</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Moderator Name]</td>
+                        <td>Panel Discussion: Climate Change & Forest Resilience</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="slides-session-label">Session 3: Forest Management & Economy</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Slides</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Timber Certification and Market Access</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Carbon Credit Schemes and Forest Conservation Incentives</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- DAY 3 SLIDES -->
+    <div id="slides-day3" class="slides-day" style="display:none;">
+        <div class="slides-session-label">Hands-on Lab & Case Studies</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Slides</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>GIS Mapping for Forest Inventory — Practical Session</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Reforestation Success Stories: Lessons from the Field</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>[Speaker Name]</td>
+                        <td>Closing Remarks & Way Forward for Malaysian Forestry 2026–2030</td>
+                        <td><a href="[pdf-link]" target="_blank">↓ PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
 
   <!-- ── FOOTER ───────────────────────────────────────────── -->
   <footer id="footer">
@@ -328,6 +499,14 @@
 
     function closeAttendanceModal() {
         document.getElementById('attendanceModal').style.display = 'none';
+    }
+    
+//slides
+    function showSlideDay(n) {
+        document.querySelectorAll('.slides-day').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('[id^="slide-tab-"]').forEach(el => el.classList.remove('active'));
+        document.getElementById('slides-day' + n).style.display = 'block';
+        document.getElementById('slide-tab-' + n).classList.add('active');
     }
 
   </script>

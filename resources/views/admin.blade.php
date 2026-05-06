@@ -39,18 +39,42 @@
             <div class="admin-card">
                 <span>Total Registrations</span>
                 <strong>{{ $registrations->count() }}</strong>
+                <form method="POST" action="/admin/toggle/registration">
+                    @csrf
+                    <button type="submit" class="toggle-btn {{ $settings['registration'] ? 'toggle-on' : 'toggle-off' }}">
+                        {{ $settings['registration'] ? '✅ Registration Open' : '🔴 Registration Closed' }}
+                    </button>
+                </form>
             </div>
             <div class="admin-card">
                 <span>Day 1 Attendance</span>
                 <strong>{{ $day1->count() }}</strong>
+                <form method="POST" action="/admin/toggle/attendance_day1">
+                    @csrf
+                    <button type="submit" class="toggle-btn {{ $settings['attendance_day1'] ? 'toggle-on' : 'toggle-off' }}">
+                        {{ $settings['attendance_day1'] ? '✅ Day 1 Open' : '🔴 Day 1 Closed' }}
+                    </button>
+                </form>
             </div>
             <div class="admin-card">
                 <span>Day 2 Attendance</span>
                 <strong>{{ $day2->count() }}</strong>
+                <form method="POST" action="/admin/toggle/attendance_day2">
+                    @csrf
+                    <button type="submit" class="toggle-btn {{ $settings['attendance_day2'] ? 'toggle-on' : 'toggle-off' }}">
+                        {{ $settings['attendance_day2'] ? '✅ Day 2 Open' : '🔴 Day 2 Closed' }}
+                    </button>
+                </form>
             </div>
             <div class="admin-card">
                 <span>Day 3 Attendance</span>
                 <strong>{{ $day3->count() }}</strong>
+                <form method="POST" action="/admin/toggle/attendance_day3">
+                    @csrf
+                    <button type="submit" class="toggle-btn {{ $settings['attendance_day3'] ? 'toggle-on' : 'toggle-off' }}">
+                        {{ $settings['attendance_day3'] ? '✅ Day 3 Open' : '🔴 Day 3 Closed' }}
+                    </button>
+                </form>
             </div>
         </div>
 

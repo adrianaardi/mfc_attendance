@@ -11,12 +11,18 @@ class AdminController extends Controller
     public function index()
     {
         $registrations = Registration::latest()->get();
-
         $day1 = Attendance::with('registration')->where('day', 1)->latest()->get();
         $day2 = Attendance::with('registration')->where('day', 2)->latest()->get();
         $day3 = Attendance::with('registration')->where('day', 3)->latest()->get();
 
-        return view('admin', compact('registrations', 'day1', 'day2', 'day3'));
+        $settings = [
+            'registration'    => \App\Models\Setting::isEnabled('registration'),
+            'attendance_day1' => \App\Models\Setting::isEnabled('attendance_day1'),
+            'attendance_day2' => \App\Models\Setting::isEnabled('attendance_day2'),
+            'attendance_day3' => \App\Models\Setting::isEnabled('attendance_day3'),
+        ];
+
+        return view('admin', compact('registrations', 'day1', 'day2', 'day3', 'settings'));
     }
 
     public function export($day)
@@ -126,5 +132,21 @@ class AdminController extends Controller
         Attendance::whereIn('id', $ids)->delete();
 
         return back()->with('admin_success', count($ids) . ' attendance record(s) deleted.');
+    }
+
+    public function toggle(string $key)
+    {
+        $allowed = ['registration', 'attendance_day1', 'attendance_day2', 'attendance_day3'];
+
+        if (!in_array($key, $allowed)) abort(403);
+
+        $setting = \App\Models\Setting::firstOrCreate(
+            ['key' => $key],
+            ['value' => true]
+        );
+
+        $setting->update(['value' => !$setting->value]);
+
+        return back()->with('admin_success', 'Setting updated!');
     }
 }
