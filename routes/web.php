@@ -42,4 +42,38 @@ Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 //    return 'User created!';
 //});
 
+Route::get('/', function () {
+    $settings = [
+        'registration'    => \App\Models\Setting::isEnabled('registration'),
+        'attendance_day1' => \App\Models\Setting::isEnabled('attendance_day1'),
+        'attendance_day2' => \App\Models\Setting::isEnabled('attendance_day2'),
+        'attendance_day3' => \App\Models\Setting::isEnabled('attendance_day3'),
+    ];
+
+    // Find active day
+    $activeDay = null;
+    foreach ([1, 2, 3] as $day) {
+        if ($settings['attendance_day' . $day]) {
+            $activeDay = $day;
+            break;
+        }
+    }
+
+    // Find current activity
+    $currentActivity = null;
+    if ($activeDay) {
+        $now = \Carbon\Carbon::now('Asia/Kuala_Lumpur')->format('H:i');
+        $agenda = config('conference.agenda.' . $activeDay);
+
+        foreach ($agenda as $item) {
+            if ($now >= $item['time_start'] && $now < $item['time_end']) {
+                $currentActivity = $item;
+                break;
+            }
+        }
+    }
+
+    return view('index', compact('settings', 'activeDay', 'currentActivity'));
+});
+
 require __DIR__.'/auth.php';

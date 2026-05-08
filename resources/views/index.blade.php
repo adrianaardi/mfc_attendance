@@ -14,19 +14,27 @@
 <body>
 
   <!-- ── ANNOUNCEMENT MODAL ──────────────────────────────── -->
+  @if($activeDay && $currentActivity)
   <div id="announcementModal" class="announcement-overlay">
-    <div class="announcement-content">
-      <div class="announcement-header">
-        <span>📢 Announcement</span>
-        <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
+      <div class="announcement-content">
+          <div class="announcement-header">
+              <span>🟢 Live Now — Day {{ $activeDay }}</span>
+              <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
+          </div>
+          <div class="announcement-body">
+              <h3>{{ $currentActivity['activity'] }}</h3>
+              @if(isset($currentActivity['speaker']))
+                  <p>🎤 <strong>{{ $currentActivity['speaker'] }}</strong></p>
+              @endif
+              <p class="announcement-time">
+                  🕐 {{ \Carbon\Carbon::createFromFormat('H:i', $currentActivity['time_start'])->format('h:i A') }}
+                  — {{ \Carbon\Carbon::createFromFormat('H:i', $currentActivity['time_end'])->format('h:i A') }}
+              </p>
+              <button class="announcement-btn" onclick="closeAnnouncement()">Got it!</button>
+          </div>
       </div>
-      <div class="announcement-body">
-        <h3>Welcome to the Conference!</h3>
-        <p>Please remember to <strong>verify your attendance</strong> for Day 1 before the opening session at 9:00 AM.</p>
-        <button class="announcement-btn" onclick="closeAnnouncement()">Got it!</button>
-      </div>
-    </div>
   </div>
+  @endif
 
   <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>
@@ -433,13 +441,7 @@
   </div>
   <script>
 
-    // Hide announcement if already closed this session
-    if (sessionStorage.getItem('announcementClosed') === 'true') {
-        const modal = document.getElementById('announcementModal');
-        modal.style.display = 'none';
-    }
-
-    // Reopen attendance modal if there's a flash message
+     // Reopen attendance modal if there's a flash message
     @if(session('attendance_error') || session('attendance_success'))
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('attendanceModal').style.display = 'flex';
@@ -473,12 +475,12 @@
 
     // Announcement modal
     function closeAnnouncement() {
-        const modal = document.getElementById('announcementModal');
-        modal.style.opacity = '0';
-        modal.style.pointerEvents = 'none';
-        setTimeout(() => modal.style.display = 'none', 300);
-        sessionStorage.setItem('announcementClosed', 'true');
-    }
+      const modal = document.getElementById('announcementModal');
+      modal.style.opacity = '0';
+      modal.style.pointerEvents = 'none';
+      setTimeout(() => modal.style.display = 'none', 300);
+      // DELETE this line: sessionStorage.setItem('announcementClosed', 'true');
+  }
 
     // Nav active highlight on scroll
     const navLinks = document.querySelectorAll('nav > a[href^="#"]');

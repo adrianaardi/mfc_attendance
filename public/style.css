@@ -729,6 +729,12 @@ footer {
 
 .announcement-btn:hover { background: var(--canopy); }
 
+.announcement-time {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-top: 6px;
+}
+
 /* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 480px) {
   nav > a { font-size: 12px; padding: 6px 8px; }
