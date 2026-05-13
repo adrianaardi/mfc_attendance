@@ -370,30 +370,17 @@
   <footer id="footer">
     <div class="footer-container">
       <div class="footer-section">
-        <h3>Contact Us</h3>
-        <p>📧 <a href="mailto:forestdepartment@sarawak.gov.my">forestdepartment@sarawak.gov.my</a></p>
-        <p>📞 <a href="tel:+6082495111">+6082 495 111</a></p>
-        <p class="footer-address">
-          Forest Department Sarawak HQ<br>
-          Level 15, East Wing,<br>
-          Bangunan Baitul Makmur II,<br>
-          Medan Raya, Petra Jaya,<br>
-          93050 Kuching, Sarawak
-        </p>
+        <h1>Contact Us</h1>
+        <h3>Do you need help?</h3>
+        <p>Encik Ali (Transportation) - 012-3456789</p>
+        <p>Encik Abu (Accommodation) - 012-3456789</p>
+        <p>Encik Azam (Registration) - 012-3456789</p>
       </div>
       <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/32" target="_blank">Security Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/31" target="_blank">Privacy Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/33" target="_blank">Terms &amp; Conditions</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/faq_view/" target="_blank">FAQ</a></li>
-          <li><a href="/admin">Admin Login</a></li>
-        </ul>
-      </div>
+
     </div>
     <div class="footer-bottom">
-      <p>Copyright &copy; 2026 Forest Department Sarawak</p>
+      <a href="/admin" style="color: antiquewhite; text-decoration:none;"><p>Copyright &copy; 2026 Forest Department Sarawak</p></a>
     </div>
   </footer>
 
