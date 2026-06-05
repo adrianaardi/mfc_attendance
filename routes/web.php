@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SlideController;
+use App\Models\Slide;
 
 // Main event site
 Route::get('/', function () {
@@ -28,20 +30,26 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/export/{day}', [AdminController::class, 'export']);
     Route::delete('/admin/registrations', [AdminController::class, 'deleteRegistrations']);
-Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
+    Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
+    Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
+
+    // Slides management
+    Route::get('/admin/slides', [SlideController::class, 'index']);
+    Route::post('/admin/slides', [SlideController::class, 'store']);
+    Route::delete('/admin/slides/{slide}', [SlideController::class, 'destroy']);
+    Route::put('/admin/slides/{slide}', [SlideController::class, 'update']);
 });
 
 Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 
-//Route::get('/create-admin', function () {
-  //  \App\Models\User::create([
-    //    'name' => 'Admin',
-      //  'email' => 'admin@sarawak.gov.my',
-        //'password' => bcrypt('password123'),
-   // ]);
-//    return 'User created!';
-//});
-
+Route::get('/create-admin', function () {
+   \App\Models\User::create([
+      'name' => 'Admin',
+        'email' => 'admin@sarawak.gov.my',
+        'password' => bcrypt('password123'),
+    ]);
+    return 'User created!';
+});
 Route::get('/', function () {
     $settings = [
         'registration'    => \App\Models\Setting::isEnabled('registration'),
@@ -73,7 +81,9 @@ Route::get('/', function () {
         }
     }
 
-    return view('index', compact('settings', 'activeDay', 'currentActivity'));
+$slides = \App\Models\Slide::orderBy('day')->orderBy('order')->orderBy('id')->get()->groupBy('day');
+
+    return view('index', compact('settings', 'activeDay', 'currentActivity', 'slides'));
 });
 
 require __DIR__.'/auth.php';

@@ -18,6 +18,7 @@
         </a>
         <a href="/">Home</a>
         <a href="/admin" class="nav-active">Admin</a>
+        <a href="/admin/slides">Manage Slides</a>
         <form method="POST" action="/logout" style="display:inline;">
             @csrf
             <button type="submit" style="background:none; border:none; cursor:pointer; font-family:inherit; font-size:inherit; color:white;">Logout</button>
@@ -275,35 +276,6 @@
         </div>
 
     </section>
-    <footer id="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact Us</h3>
-        <p>📧 <a href="mailto:forestdepartment@sarawak.gov.my">forestdepartment@sarawak.gov.my</a></p>
-        <p>📞 <a href="tel:+6082495111">+6082 495 111</a></p>
-        <p class="footer-address">
-          Forest Department Sarawak HQ<br>
-          Level 15, East Wing,<br>
-          Bangunan Baitul Makmur II,<br>
-          Medan Raya, Petra Jaya,<br>
-          93050 Kuching, Sarawak
-        </p>
-      </div>
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/32" target="_blank">Security Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/31" target="_blank">Privacy Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/33" target="_blank">Terms &amp; Conditions</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/faq_view/" target="_blank">FAQ</a></li>
-          <li><a href="/admin">Admin Login</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Copyright &copy; 2026 Forest Department Sarawak</p>
-    </div>
-  </footer>
 
     <script>
         function showTab(name) {

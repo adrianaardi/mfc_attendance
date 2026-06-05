@@ -69,12 +69,13 @@
 <section id="agenda">
     <span class="section-label">Schedule</span>
     <h2>Conference Agenda</h2>
+    <p>Attendance button is at the end of agendas.</p>
 
-    <nav class="agenda-tabs">
-      <button onclick="showDay(1)" class="active">Day 1</button>
-      <button onclick="showDay(2)">Day 2</button>
-      <button onclick="showDay(3)">Day 3</button>
-    </nav>
+    <div class="agenda-tabs" id="agenda-day-tabs">
+        <button onclick="showDay(1)" class="active">Day 1</button>
+        <button onclick="showDay(2)">Day 2</button>
+        <button onclick="showDay(3)">Day 3</button>
+    </div>
 
     <!-- DAY 1 -->
     <div id="day1" class="agenda-day">
@@ -350,157 +351,81 @@
     <h2>Presentation Slides</h2>
     <p>Download the official presentation slides from each session below.</p>
 
-    <nav class="agenda-tabs">
+    <div class="slides-tabs">
         <button onclick="showSlideDay(1)" class="active" id="slide-tab-1">Day 1</button>
         <button onclick="showSlideDay(2)" id="slide-tab-2">Day 2</button>
         <button onclick="showSlideDay(3)" id="slide-tab-3">Day 3</button>
-    </nav>
-
-    <!-- DAY 1 SLIDES -->
-    <div id="slides-day1" class="slides-day">
-        <div class="slides-session-label">Plenary Session: Main Working Paper</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Sabah Forestry Department</td><td>Main Working Paper</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Forestry Department of Peninsular Malaysia</td><td>Main Working Paper</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Forest Department Sarawak</td><td>Main Working Paper</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="slides-session-label">Subtheme 1: Policy and Governance</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Semilan Ripot et al., Forest Department Sarawak</td><td>Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Indra P. H. Sunjoto et al., Sabah Forestry Department</td><td>Unlocking Natural Capital: Sabah's Policy Frameworks for a Forest-Based Green Economy</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Zarin R. et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Penetapan Pendengaran Awam Bagi Pewartaan Keluar Hutan Simpanan Kekal</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Vilma Bodos, Forest Department Sarawak</td><td>Science-Based Forest Policy: Integrating Dipterocarp Population Assessment into Sarawak's CITES Framework</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
     </div>
 
-    <!-- DAY 2 SLIDES -->
-    <div id="slides-day2" class="slides-day" style="display:none;">
-        <div class="slides-session-label">Subtheme 2: Nature-Based Adaptation and Resolution</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Azhar Ahmad et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Pengalaman dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut di Selangor</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Dr Malcom anak Demies, Forest Department Sarawak</td><td>Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Zainuddin Jamaluddin et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Ecological Dynamics of Tropical Highland Peat Ecosystems</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Rosilia Anthony et al., Sabah Forestry Department</td><td>Nature, Climate, and Economy: Sabah's Pathway Through Nature-Based Solutions</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
+@foreach([1,2,3] as $day)
+<div id="slides-day{{ $day }}" class="slides-day" style="{{ $day !== 1 ? 'display:none;' : '' }}">
+    @php 
+        $daySlides = $slides->get($day, collect());
+        $daySessions = $daySlides->groupBy('session_label'); 
+    @endphp
 
-        <div class="slides-session-label">Subtheme 3: Partnership and Collaboration</div>
+    @forelse($daySessions as $label => $items)
+        <div class="slides-session-label">{{ $label }}</div>
         <div class="table-wrapper">
             <table>
                 <thead>
                     <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Mijol R. M. et al., Sabah Forestry Department</td><td>Sabah Timber Legality Assurance System Plus (TLAS+)</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Gana R. K. et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Habibah binti Salleh, Forest Department Sarawak</td><td>Digitalizing Conservation Governance: HOBS Cross-Agency Project Management System</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Professor Ts. Dr. Faisal Ali bin Anwarali Khan, Unimas</td><td>Paper 4</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
+                    @foreach($items as $slide)
+                    <tr>
+                        <td>{{ $slide->speaker }}</td>
+                        <td>{{ $slide->title }}</td>
+                        <td>
+                            @if($slide->pdf_url)
+                                <a href="{{ $slide->pdf_url }}" target="_blank">↓ PDF</a>
+                            @else
+                                <span style="color:var(--text-soft);">—</span>
+                            @endif
+                        </td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
-
-        <div class="slides-session-label">Subtheme 4: Biodiversity Research and Conservation</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Siti Khatijah Othman et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Reuben Nilus et al., Sabah Forestry Department</td><td>Developing a Forest Reference Level Monitoring System in Sabah</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Bibian Anak Micheal Diway, Forest Department Sarawak</td><td>The Use of UAV-based LiDAR for Forest Volume Modeling in Sarawak</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Sarawak Forestry Corporation</td><td>Paper 4</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="slides-session-label">Subtheme 5: Forest Plantation and Restoration</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</td><td>Forest Restoration and Rehabilitation: Experience and Insights</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</td><td>Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Heidi Henry William et al., Sabah Forestry Department</td><td>Shifting Dependency on Natural Forests to Forest Plantations</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</td><td>Transforming Industrial Forest Plantations through R&amp;D and Certification</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- DAY 3 SLIDES -->
-    <div id="slides-day3" class="slides-day" style="display:none;">
-        <div class="slides-session-label">Subtheme 6: Social Forestry &amp; Ecotourism</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Suliman Bin Haji Jamahari, Forest Department Sarawak</td><td>Seridang Folia: A Community's Journey with Tongkat Ali in the Heart of Borneo</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>E. B. Johnlee et al., Sabah Forestry Department</td><td>Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Nor Zaidi Jusoh et al., Jabatan Perhutanan Semenanjung Malaysia</td><td>Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Madeline George Pau et al., Forest Department Sarawak</td><td>Community-based Tourism and its Contribution to Local Economies: Insights from Peros</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="slides-session-label">Conference Resolution &amp; Closing</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th>Speaker</th><th>Title</th><th>Slides</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>—</td><td>Conference Resolution Presentation and Adoption</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                    <tr><td>Datu Haji Abdullah Bin Julaihi, Permanent Secretary</td><td>Closing Ceremony</td><td><a href="[pdf-link]" target="_blank">↓ PDF</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    @empty
+        <p style="color:var(--text-soft); font-size:14px; margin-top:16px;">No slides uploaded yet.</p>
+    @endforelse
+</div>
+@endforeach
 
 </section>
 
-  <!-- ── FOOTER ───────────────────────────────────────────── -->
-  <footer id="footer">
+<footer id="footer">
     <div class="footer-container">
-      <div class="footer-section">
-        <h1>Contact Us</h1>
-        <h3>Do you need help?</h3>
-        <p>Encik Ali (Transportation) - 012-3456789</p>
-        <p>Encik Abu (Accommodation) - 012-3456789</p>
-        <p>Encik Azam (Registration) - 012-3456789</p>
-      </div>
-      <div class="footer-section">
-
+        <div class="footer-section">
+            <h2 class="footer-title">Contact Us</h2>
+            <p class="footer-subtitle">Do you need help?</p>
+            <div class="footer-contacts">
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Transportation</span>
+                    <span class="contact-name">Encik Ali</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Accommodation</span>
+                    <span class="contact-name">Encik Abu</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Registration</span>
+                    <span class="contact-name">Encik Azam</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="footer-bottom">
-      <a href="/admin" style="color: antiquewhite; text-decoration:none;"><p>Copyright &copy; 2026 Forest Department Sarawak</p></a>
+        <a href="/admin" style="color:inherit; text-decoration:none;">
+            <p>Copyright &copy; 2026 Forest Department Sarawak</p>
+        </a>
     </div>
-  </footer>
+</footer>
 
   <!-- ── SPEAKER MODAL ────────────────────────────────────── -->
   <div id="speakerModal" class="modal">
@@ -554,13 +479,12 @@
     @endif
     // Agenda tabs
     function showDay(day) {
-      document.querySelectorAll('.agenda-day').forEach(el => el.style.display = 'none');
-      document.getElementById('day' + day).style.display = 'block';
-      document.querySelectorAll('.agenda-tabs button').forEach((btn, i) => {
-        btn.classList.toggle('active', i + 1 === day);
-      });
+        document.querySelectorAll('.agenda-day').forEach(el => el.style.display = 'none');
+        document.getElementById('day' + day).style.display = 'block';
+        document.querySelectorAll('#agenda-day-tabs button').forEach((btn, i) => {
+            btn.classList.toggle('active', i + 1 === day);
+        });
     }
-
     // Speaker modal
     function showSpeakerModal(name, title, company, imgSrc) {
       document.getElementById('modalImg').src = imgSrc;
@@ -609,12 +533,12 @@
     }
     
 //slides
-    function showSlideDay(n) {
-        document.querySelectorAll('.slides-day').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('[id^="slide-tab-"]').forEach(el => el.classList.remove('active'));
-        document.getElementById('slides-day' + n).style.display = 'block';
-        document.getElementById('slide-tab-' + n).classList.add('active');
-    }
+function showSlideDay(n) {
+    document.querySelectorAll('.slides-day').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.slides-tabs button').forEach(el => el.classList.remove('active'));
+    document.getElementById('slides-day' + n).style.display = 'block';
+    document.getElementById('slide-tab-' + n).classList.add('active');
+}
 
   </script>
   @if(session('success'))

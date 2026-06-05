@@ -258,54 +258,49 @@ section h2 {
 #agenda > * {
   width: 100%;
   max-width: 740px;
+  text-align: center;
 }
 
 #agenda h2 {
-  text-align: left;
+  margin-bottom: 10px; 
+  text-align: center;
 }
 
-/* tab row */
-.agenda-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
-  position: static;
-  background: transparent;
-  border: none;
-  padding: 0;
-  width: 100%;
-  max-width: 740px;
+#agenda p {
+  color: var(--text-soft);
+  margin-bottom: 22px;
+}
+
+#agenda-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .agenda-tabs button {
-  flex: 1;
-  background: #fff;
-  border: 1.5px solid var(--mist);
-  color: var(--text-soft);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 11px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background .2s, color .2s, border-color .2s;
+    padding: 8px 20px;
+    border: 1.5px solid rgba(26,58,42,0.2);
+    border-radius: 20px;
+    background: #ffffffb0;
+    color: var(--text-soft);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s;
 }
 
-.agenda-tabs button:hover,
-.agenda-tabs button.active {
-  background: var(--forest);
-  color: #fff;
-  border-color: var(--forest);
+.agenda-tabs button.active,
+.agenda-tabs button:hover {
+    background: var(--forest);
+    color: #fff;
+    border-color: var(--forest);
 }
 
-/* fade-in when switching tabs */
 .agenda-day {
-  animation: fadeSlide .28s ease;
-}
-
-@keyframes fadeSlide {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: none; }
+    margin-top: 8px;
 }
 
 /* agenda table */
@@ -317,7 +312,6 @@ section h2 {
   overflow: hidden;
   box-shadow: var(--shadow);
   font-size: 14px;
-  margin-top: 0;
 }
 
 #agenda th {
@@ -326,7 +320,7 @@ section h2 {
   padding: 11px 14px;
   text-align: left;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
 }
 
@@ -335,23 +329,24 @@ section h2 {
   border: none;
   border-bottom: 1px solid var(--mist);
   vertical-align: top;
-  color: var(--text-soft);
+  color: var(--text);
+  background: #fff;
 }
 
-#agenda tr:last-child td { border-bottom: none; }
+#agenda tr:last-child td {
+  border-bottom: none;
+}
 
-/* every other data row */
-#agenda tr:nth-child(even) td { background: #fafcfa; }
-
-/* colspan session-header rows */
-#agenda td[colspan],
-#agenda th[colspan] {
-  background: var(--canopy);
-  color: #fff;
+/* session header rows (colspan) */
+#agenda td[colspan] {
+  background: var(--mist);
+  color: var(--forest);
   font-weight: 600;
   font-size: 13px;
   padding: 10px 14px;
   border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 #agenda td:first-child {
@@ -360,6 +355,13 @@ section h2 {
   color: var(--moss);
   font-weight: 500;
   width: 30%;
+}
+
+/* override first-child for colspan rows so it doesnt turn green */
+#agenda td[colspan]:first-child {
+  color: var(--forest);
+  white-space: normal;
+  width: auto;
 }
 
 #agenda table ul {
@@ -529,43 +531,66 @@ footer {
   margin: 0 auto 36px;
 }
 
-.footer-section h3 {
+.footer-section { display: flex; flex-direction: column; }
+
+.footer-title {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 22px;
   color: #fff;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(106,171,120,.35);
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
-.footer-section p {
+.footer-subtitle {
   font-size: 13px;
-  line-height: 1.75;
-  margin-bottom: 5px;
+  color: rgba(255,255,255,.4);
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 
-.footer-address {
-  margin-top: 10px !important;
-  line-height: 1.9 !important;
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.footer-section a {
-  color: var(--fern);
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  padding: 12px 16px;
   text-decoration: none;
+  transition: background .2s, border-color .2s;
 }
 
-.footer-section a:hover {
-  color: #fff;
+.footer-contact-item:hover {
+  background: rgba(106,171,120,.12);
+  border-color: rgba(106,171,120,.3);
+}
+.contact-role {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fern);
+  min-width: 90px;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 9px;
+.contact-name {
   font-size: 13px;
+  color: rgba(255,255,255,.8);
+  font-weight: 500;
+  flex: 1;
+}
+
+.contact-number {
+  font-size: 13px;
+  color: rgba(255,255,255,.5);
+  font-family: monospace;
+  letter-spacing: 0.04em;
 }
 
 .footer-bottom {
@@ -574,6 +599,15 @@ footer {
   border-top: 1px solid rgba(255,255,255,.08);
   font-size: 12px;
   color: rgba(255,255,255,.28);
+  max-width: 740px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .footer-contact-item { flex-wrap: wrap; gap: 4px; }
+  .contact-role { min-width: unset; width: 100%; }
+  .contact-number { width: 100%; }
 }
 
 /* ── Speaker Modal ───────────────────────────────────────────── */
@@ -1036,6 +1070,36 @@ footer {
 
 .slides-day table a:hover {
     text-decoration: underline;
+}
+
+.slides-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+justify-content: center;
+}
+
+.slides-tabs button {
+    padding: 8px 20px;
+    border: 1.5px solid rgba(26,58,42,0.2);
+    border-radius: 20px;
+    background: #ffffffb0;
+    color: var(--text-soft);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.slides-tabs button.active,
+.slides-tabs button:hover {
+    background: var(--forest);
+    color: #fff;
+    border-color: var(--forest);
 }
 
 .toggle-btn {
