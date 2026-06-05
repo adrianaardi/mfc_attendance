@@ -106,35 +106,35 @@
         </form>
     </section>
 
-    <footer id="footer">
+<footer id="footer">
     <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact Us</h3>
-        <p>📧 <a href="mailto:forestdepartment@sarawak.gov.my">forestdepartment@sarawak.gov.my</a></p>
-        <p>📞 <a href="tel:+6082495111">+6082 495 111</a></p>
-        <p class="footer-address">
-          Forest Department Sarawak HQ<br>
-          Level 15, East Wing,<br>
-          Bangunan Baitul Makmur II,<br>
-          Medan Raya, Petra Jaya,<br>
-          93050 Kuching, Sarawak
-        </p>
-      </div>
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/32" target="_blank">Security Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/31" target="_blank">Privacy Policy</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/webpage_view/33" target="_blank">Terms &amp; Conditions</a></li>
-          <li><a href="https://forestry.sarawak.gov.my/web/subpage/faq_view/" target="_blank">FAQ</a></li>
-          <li><a href="/admin">Admin Login</a></li>
-        </ul>
-      </div>
+        <div class="footer-section">
+            <h2 class="footer-title">Contact Us</h2>
+            <p class="footer-subtitle">Do you need help?</p>
+            <div class="footer-contacts">
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Transportation</span>
+                    <span class="contact-name">Encik Ali</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Accommodation</span>
+                    <span class="contact-name">Encik Abu</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+                <a href="tel:+60123456789" class="footer-contact-item">
+                    <span class="contact-role">Registration</span>
+                    <span class="contact-name">Encik Azam</span>
+                    <span class="contact-number">012-3456789</span>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright &copy; 2026 Forest Department Sarawak</p>
+        <a href="/admin" style="color:inherit; text-decoration:none;">
+            <p>Copyright &copy; 2026 Forest Department Sarawak</p>
+        </a>
     </div>
-  </footer>
-
+</footer>
 </body>
 </html>

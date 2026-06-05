@@ -312,6 +312,7 @@ section h2 {
   overflow: hidden;
   box-shadow: var(--shadow);
   font-size: 14px;
+  text-align: justify;
 }
 
 #agenda th {
@@ -734,6 +735,12 @@ footer {
 }
 
 .announcement-body h3 {
+  font-size: 15px;
+  color: var(--text-soft);
+    margin-bottom: 10px;
+}
+
+.announcement-body h1 {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   color: var(--forest);
@@ -1126,3 +1133,14 @@ justify-content: center;
 }
 
 .toggle-btn:hover { opacity: 0.75; }
+
+.swal-forest-popup {
+    border-radius: 20px !important;
+    font-family: 'DM Sans', sans-serif !important;
+    box-shadow: 0 8px 48px rgba(26,58,42,0.2) !important;
+}
+
+.swal-forest-title {
+    font-family: 'Playfair Display', serif !important;
+    color: var(--forest) !important;
+}

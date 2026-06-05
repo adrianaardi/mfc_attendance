@@ -13,23 +13,55 @@
 </head>
 <body>
 
+@if(session('success'))
+    <!-- Temporarily hide the announcement layout if it exists so SweetAlert shows first -->
+    @if($activeDay && $currentActivity)
+        <style>
+            #announcementModal { display: none !important; }
+        </style>
+    @endif
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Registration Confirmed!',
+                text: "{{ session('success') }}",
+                icon: 'success',
+                confirmButtonText: 'Got it!',
+                confirmButtonColor: '#1a3a2a',
+                background: '#f7f3ec',
+                color: '#1a2a1e',
+                iconColor: '#4a7c59',
+                borderRadius: '14px',
+                customClass: {
+                    popup: 'swal-forest-popup',
+                    title: 'swal-forest-title',
+                }
+            }).then((result) => {
+                // Once the user clicks "Got it!", show the announcement modal
+                const announcement = document.getElementById('announcementModal');
+                if (announcement) {
+                    announcement.style.setProperty('display', 'flex', 'important');
+                }
+            });
+        });
+    </script>
+@endif
+
   <!-- ── ANNOUNCEMENT MODAL ──────────────────────────────── -->
   @if($activeDay && $currentActivity)
   <div id="announcementModal" class="announcement-overlay">
       <div class="announcement-content">
           <div class="announcement-header">
-              <span>🟢 Live Now — Day {{ $activeDay }}</span>
+              <span>Live Now — Day {{ $activeDay }}</span>
               <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
           </div>
           <div class="announcement-body">
-              <h3>{{ $currentActivity['activity'] }}</h3>
+            <h3>Current Agenda:</h3>
+              <h1>{{ $currentActivity['activity'] }}</h1>
               @if(isset($currentActivity['speaker']))
                   <p>🎤 <strong>{{ $currentActivity['speaker'] }}</strong></p>
               @endif
-              <p class="announcement-time">
-                  🕐 {{ \Carbon\Carbon::createFromFormat('H:i', $currentActivity['time_start'])->format('h:i A') }}
-                  — {{ \Carbon\Carbon::createFromFormat('H:i', $currentActivity['time_end'])->format('h:i A') }}
-              </p>
               <button class="announcement-btn" onclick="closeAnnouncement()">Got it!</button>
           </div>
       </div>
@@ -80,23 +112,23 @@
     <!-- DAY 1 -->
     <div id="day1" class="agenda-day">
       <table>
-        <tr><th>Time</th><th>Activity</th></tr>
-        <tr><td>8:15 – 10:15 AM</td><td><strong>Closed Session (For Members Only)</strong></td></tr>
-        <tr><td>10:15 – 10:30 AM</td><td>☕ Refreshments</td></tr>
-        <tr><td>10:30 – 11:00 AM</td><td><strong>Keynote Address</strong><ul><li>Prof. Emeritus Dato Dr. Ibrahim Komoo</li></ul></td></tr>
+        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
+        <tr><td>8:15 AM – 10:15 AM</td><td><strong>Closed Session (For Members Only)</strong></td></tr>
+        <tr><td>10:15 AM – 10:30 AM</td><td>Refreshments</td></tr>
+        <tr><td>10:30 AM – 11:00 AM</td><td><strong>Keynote Address</strong><ul><li>Prof. Emeritus Dato Dr. Ibrahim Komoo</li></ul></td></tr>
         <tr><td colspan="2"><strong>Plenary Session: Main Working Paper</strong></td></tr>
-        <tr><td>11:00 – 11:30 AM</td><td>Sabah Forestry Department</td></tr>
+        <tr><td>11:00 AM – 11:30 AM</td><td>Sabah Forestry Department</td></tr>
         <tr><td>11:30 AM – 12:00 PM</td><td>Forestry Department of Peninsular Malaysia</td></tr>
-        <tr><td>12:00 – 12:30 PM</td><td>Forest Department Sarawak</td></tr>
-        <tr><td>12:30 – 1:45 PM</td><td>🍽 Lunch</td></tr>
+        <tr><td>12:00 AM – 12:30 PM</td><td>Forest Department Sarawak</td></tr>
+        <tr><td>12:30 PM – 1:45 PM</td><td>Lunch</td></tr>
         <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance</strong></td></tr>
-        <tr><td>1:45 – 2:00 PM</td><td>Session Commencement</td></tr>
-        <tr><td>2:00 – 2:20 PM</td><td><strong>Paper 1:</strong> Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency<ul><li>Semilan Ripot et al., Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>2:20 – 2:40 PM</td><td><strong>Paper 2:</strong> Unlocking Natural Capital: Sabah's Policy Frameworks for a Forest-Based Green Economy<ul><li>Indra P. H. Sunjoto et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>2:40 – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam Bagi Pewartaan Keluar Hutan Simpanan Kekal<ul><li>Zarin R. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>3:00 – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy: Integrating Dipterocarp Population Assessment into Sarawak's CITES Framework<ul><li>Vilma Bodos, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>3:20 – 3:30 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>3:30 PM</td><td>☕ Refreshments &amp; End of Day 1</td></tr>
+        <tr><td>1:45 PM – 2:00 PM</td><td>Session Commencement</td></tr>
+        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 1:</strong> Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency<ul><li>Semilan Ripot et al., Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 2:</strong> Unlocking Natural Capital: Sabah's Policy Frameworks for a Forest-Based Green Economy<ul><li>Indra P. H. Sunjoto et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam Bagi Pewartaan Keluar Hutan Simpanan Kekal<ul><li>Zarin R. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy: Integrating Dipterocarp Population Assessment into Sarawak's CITES Framework<ul><li>Vilma Bodos, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>3:20 PM – 3:30 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>3:30 PM</td><td>Refreshments &amp; End of Day 1</td></tr>
       </table>
       <div class="punch-in-container">
         @if($settings['attendance_day1'])
@@ -110,38 +142,38 @@
     <!-- DAY 2 -->
     <div id="day2" class="agenda-day" style="display:none;">
       <table>
-        <tr><th>Time</th><th>Activity</th></tr>
+        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
         <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Resolution</strong></td></tr>
-        <tr><td>8:30 – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 – 9:00 AM</td><td><strong>Paper 1:</strong> Pengalaman dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut di Selangor<ul><li>Azhar Ahmad et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:00 – 9:20 AM</td><td><strong>Paper 2:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>9:20 – 9:40 AM</td><td><strong>Paper 3:</strong> Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Zainuddin Jamaluddin et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:40 – 10:00 AM</td><td><strong>Paper 4:</strong> Nature, Climate, and Economy: Sabah's Pathway Through Nature-Based Solutions<ul><li>Rosilia Anthony et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>10:00 – 10:10 AM</td><td>Question and Answer Session</td></tr>
-        <tr><td>10:10 – 10:30 AM</td><td>☕ Refreshments</td></tr>
+        <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 1:</strong> Pengalaman dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut di Selangor<ul><li>Azhar Ahmad et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 2:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 3:</strong> Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Zainuddin Jamaluddin et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 4:</strong> Nature, Climate, and Economy: Sabah's Pathway Through Nature-Based Solutions<ul><li>Rosilia Anthony et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
+        <tr><td>10:10 AM – 10:30 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration</strong></td></tr>
-        <tr><td>10:30 – 10:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>10:40 – 11:00 AM</td><td><strong>Paper 1:</strong> Sabah Timber Legality Assurance System Plus (TLAS+)<ul><li>Mijol R. M. et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>11:00 – 11:20 AM</td><td><strong>Paper 2:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R. K. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>11:20 – 11:40 AM</td><td><strong>Paper 3:</strong> Digitalizing Conservation Governance: HOBS Cross-Agency Project Management System<ul><li>Habibah binti Salleh, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>10:30 AM – 10:40 AM</td><td>Session Commencement</td></tr>
+        <tr><td>10:40 AM – 11:00 AM</td><td><strong>Paper 1:</strong> Sabah Timber Legality Assurance System Plus (TLAS+)<ul><li>Mijol R. M. et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 2:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R. K. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>11:20 AM – 11:40 AM</td><td><strong>Paper 3:</strong> Digitalizing Conservation Governance: HOBS Cross-Agency Project Management System<ul><li>Habibah binti Salleh, Forest Department Sarawak</li></ul></td></tr>
         <tr><td>11:40 AM – 12:00 PM</td><td><strong>Paper 4</strong><ul><li>Professor Ts. Dr. Faisal Ali bin Anwarali Khan, Unimas</li></ul></td></tr>
-        <tr><td>12:00 – 12:10 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>12:10 – 1:30 PM</td><td>🍽 Lunch</td></tr>
+        <tr><td>12:00 PM – 12:10 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>12:10 PM – 1:30 PM</td><td>Lunch</td></tr>
         <tr><td colspan="2"><strong>Subtheme 4: Biodiversity Research and Conservation</strong></td></tr>
-        <tr><td>1:30 – 1:40 PM</td><td>Session Commencement</td></tr>
-        <tr><td>1:40 – 2:00 PM</td><td><strong>Paper 1:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>2:00 – 2:20 PM</td><td><strong>Paper 2:</strong> Developing a Forest Reference Level Monitoring System in Sabah<ul><li>Reuben Nilus et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>2:20 – 2:40 PM</td><td><strong>Paper 3:</strong> The Use of UAV-based LiDAR for Forest Volume Modeling in Sarawak<ul><li>Bibian Anak Micheal Diway, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>2:40 – 3:00 PM</td><td><strong>Paper 4</strong><ul><li>Sarawak Forestry Corporation</li></ul></td></tr>
-        <tr><td>3:00 – 3:10 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>3:10 – 3:20 PM</td><td>☕ Refreshments</td></tr>
+        <tr><td>1:30 PM – 1:40 PM</td><td>Session Commencement</td></tr>
+        <tr><td>1:40 PM – 2:00 PM</td><td><strong>Paper 1:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 2:</strong> Developing a Forest Reference Level Monitoring System in Sabah<ul><li>Reuben Nilus et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 3:</strong> The Use of UAV-based LiDAR for Forest Volume Modeling in Sarawak<ul><li>Bibian Anak Micheal Diway, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 4</strong><ul><li>Sarawak Forestry Corporation</li></ul></td></tr>
+        <tr><td>3:00 PM – 3:10 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>3:10 PM – 3:20 PM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration</strong></td></tr>
-        <tr><td>3:20 – 3:30 PM</td><td>Session Commencement</td></tr>
-        <tr><td>3:30 – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>3:50 – 4:10 PM</td><td><strong>Paper 2:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia<ul><li>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>4:10 – 4:30 PM</td><td><strong>Paper 3:</strong> Shifting Dependency on Natural Forests to Forest Plantations<ul><li>Heidi Henry William et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>4:30 – 4:50 PM</td><td><strong>Paper 4:</strong> Transforming Industrial Forest Plantations through R&amp;D and Certification<ul><li>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</li></ul></td></tr>
-        <tr><td>4:50 – 5:00 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>3:20 PM – 3:30 PM</td><td>Session Commencement</td></tr>
+        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>3:50 PM – 4:10 PM</td><td><strong>Paper 2:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia<ul><li>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>4:10 PM – 4:30 PM</td><td><strong>Paper 3:</strong> Shifting Dependency on Natural Forests to Forest Plantations<ul><li>Heidi Henry William et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 4:</strong> Transforming Industrial Forest Plantations through R&amp;D and Certification<ul><li>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</li></ul></td></tr>
+        <tr><td>4:50 PM – 5:00 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>5:00 PM</td><td>End of Day 2</td></tr>
       </table>
       <div class="punch-in-container">
@@ -156,19 +188,19 @@
     <!-- DAY 3 -->
     <div id="day3" class="agenda-day" style="display:none;">
       <table>
-        <tr><th>Time</th><th>Activity</th></tr>
+        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
         <tr><td colspan="2"><strong>Subtheme 6: Social Forestry &amp; Ecotourism</strong></td></tr>
-        <tr><td>8:30 – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 – 9:00 AM</td><td><strong>Paper 1:</strong> Seridang Folia: A Community's Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>9:00 – 9:20 AM</td><td><strong>Paper 2:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah<ul><li>E. B. Johnlee et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>9:20 – 9:40 AM</td><td><strong>Paper 3:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Nor Zaidi Jusoh et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:40 – 10:00 AM</td><td><strong>Paper 4:</strong> Community-based Tourism and its Contribution to Local Economies: Insights from Peros<ul><li>Madeline George Pau et al., Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>10:00 – 10:10 AM</td><td>Question and Answer Session</td></tr>
-        <tr><td>10:10 – 11:00 AM</td><td>☕ Refreshments</td></tr>
-        <tr><td>11:00 – 11:05 AM</td><td>Session Commencement</td></tr>
+        <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 1:</strong> Seridang Folia: A Community's Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 2:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah<ul><li>E. B. Johnlee et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 3:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Nor Zaidi Jusoh et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
+        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 4:</strong> Community-based Tourism and its Contribution to Local Economies: Insights from Peros<ul><li>Madeline George Pau et al., Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
+        <tr><td>10:10 AM – 11:00 AM</td><td>Refreshments</td></tr>
+        <tr><td>11:00 AM – 11:05 AM</td><td>Session Commencement</td></tr>
         <tr><td>11:05 AM – 12:30 PM</td><td>Conference Resolution Presentation and Adoption</td></tr>
-        <tr><td>12:30 – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Datu Haji Abdullah Bin Julaihi, Permanent Secretary</li></ul></td></tr>
-        <tr><td>1:30 PM</td><td>🍽 Lunch and End of Conference</td></tr>
+        <tr><td>12:30 AM – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Datu Haji Abdullah Bin Julaihi, Permanent Secretary</li></ul></td></tr>
+        <tr><td>1:30 PM</td><td>Lunch and End of Conference</td></tr>
       </table>
       <div class="punch-in-container">
         @if($settings['attendance_day3'])
@@ -469,6 +501,7 @@
           </form>
       </div>
   </div>
+
   <script>
 
      // Reopen attendance modal if there's a flash message
@@ -541,15 +574,6 @@ function showSlideDay(n) {
 }
 
   </script>
-  @if(session('success'))
-    <script>
-        Swal.fire({
-            title: 'Success!',
-            text: "{{ session('success') }}",
-            icon: 'success',
-            confirmButtonText: 'OK'
-        });
-    </script>
-@endif
+  
 </body>
 </html>
