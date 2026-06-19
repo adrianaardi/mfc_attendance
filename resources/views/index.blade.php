@@ -101,7 +101,6 @@
 <section id="agenda">
     <span class="section-label">Schedule</span>
     <h2>Conference Agenda</h2>
-    <p>Attendance button is at the end of agendas.</p>
 
     <div class="agenda-tabs" id="agenda-day-tabs">
         <button onclick="showDay(1)" class="active">Day 1</button>

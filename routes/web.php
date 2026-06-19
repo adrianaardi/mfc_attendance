@@ -42,14 +42,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 
-Route::get('/create-admin', function () {
-   \App\Models\User::create([
-      'name' => 'Admin',
-        'email' => 'admin@sarawak.gov.my',
-        'password' => bcrypt('password123'),
-    ]);
-    return 'User created!';
-});
+
 Route::get('/', function () {
     $settings = [
         'registration'    => \App\Models\Setting::isEnabled('registration'),
