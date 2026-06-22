@@ -463,32 +463,98 @@
     <div class="footer-container">
         <div class="footer-section">
             <h2 class="footer-title">Contact Us</h2>
-            <p class="footer-subtitle">Do you need help?</p>
-            <div class="footer-contacts">
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Transportation</span>
-                    <span class="contact-name">Encik Ali</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Accommodation</span>
-                    <span class="contact-name">Encik Abu</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Registration</span>
-                    <span class="contact-name">Encik Azam</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-            </div>
+            <p class="footer-subtitle">Tap a name to save the contact</p>
+        </div>
+
+        @php
+        $contactGroups = [
+            'Transportation' => [
+                ['name' => 'Yusof Bin Noh', 'number' => '0146909608'],
+                ['name' => 'Afreene Cecilia Binti Tuah', 'number' => '0105578894'],
+            ],
+            'Registration' => [
+                ['name' => 'Wilma Anak Mancu', 'number' => '0198169159'],
+                ['name' => 'Muammar Nur Parizzat', 'number' => '0149927904'],
+            ],
+            'Programme' => [
+                ['name' => 'Mohd Izzuddin Bin Sallehin', 'number' => '0198463949'],
+            ],
+            'Seminar' => [
+                ['name' => 'Dr Pang Shek Ling', 'number' => '0177171881'],
+            ],
+            'Spouse Programme' => [
+                ['name' => 'Nur Qamaereena Binti Karim', 'number' => '0168743246'],
+            ],
+            'Post-tour' => [
+                ['name' => 'Dulles Leo Balan', 'number' => '0198857074'],
+            ],
+            'Secretariates' => [
+                ['name' => 'Judy George Wan', 'number' => '0198597425'],
+                ['name' => 'Angel Kho', 'number' => '0165775122'],
+                ['name' => 'Zaima Darahim', 'number' => '0142204162'],
+            ],
+        ];
+        @endphp
+
+        <div class="footer-grid">
+            @foreach ($contactGroups as $role => $people)
+                <div class="footer-group">
+                    <h3 class="group-title">{{ $role }}</h3>
+                    <div class="footer-contacts">
+                        @foreach ($people as $person)
+                            @php
+                                $intlNumber = '+60' . substr($person['number'], 1);
+                            @endphp
+                            <button
+                                type="button"
+                                class="footer-contact-item"
+                                data-name="{{ $person['name'] }}"
+                                data-number="{{ $intlNumber }}"
+                                onclick="saveContact(this)"
+                            >
+                                <span class="contact-name">{{ $person['name'] }}</span>
+                                <span class="contact-number">{{ $person['number'] }}</span>
+                                <span class="contact-save">Save</span>
+                            </button>
+                        @endforeach
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
+
     <div class="footer-bottom">
         <a href="/admin" style="color:inherit; text-decoration:none;">
             <p>Copyright &copy; 2026 Forest Department Sarawak</p>
         </a>
     </div>
 </footer>
+
+<script>
+function saveContact(btn) {
+    const name = btn.dataset.name;
+    const number = btn.dataset.number;
+
+    const vcard = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        `FN:${name}`,
+        `TEL;TYPE=CELL:${number}`,
+        'END:VCARD'
+    ].join('\n');
+
+    const blob = new Blob([vcard], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${name.replace(/\s+/g, '_')}.vcf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+}
+</script>
 
   <!-- ── SPEAKER MODAL ────────────────────────────────────── -->
   <div id="speakerModal" class="modal">

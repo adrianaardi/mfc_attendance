@@ -528,28 +528,50 @@ footer {
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 36px;
-  max-width: 740px;
+  max-width: 980px;
   margin: 0 auto 36px;
+  width: 100%;
 }
 
-.footer-section { display: flex; flex-direction: column; }
+.footer-section {
+  text-align: center;
+  margin-bottom: 36px;
+}
 
 .footer-title {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 26px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .footer-subtitle {
   font-size: 13px;
   color: rgba(255,255,255,.4);
-  margin-bottom: 20px;
   letter-spacing: 0.03em;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-title {
+  font-size: 14px;
+  color: #6aab78;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
 .footer-contacts {
@@ -561,12 +583,16 @@ footer {
 .footer-contact-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 10px;
   padding: 12px 16px;
-  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
   transition: background .2s, border-color .2s;
 }
 
@@ -574,6 +600,41 @@ footer {
   background: rgba(106,171,120,.12);
   border-color: rgba(106,171,120,.3);
 }
+
+.contact-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  flex: 1;
+}
+
+.contact-number {
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+}
+
+.contact-save {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6aab78;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity .2s, transform .2s;
+}
+
+.footer-contact-item:hover .contact-save {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,.35);
+}
+
 .contact-role {
   font-size: 11px;
   font-weight: 600;
