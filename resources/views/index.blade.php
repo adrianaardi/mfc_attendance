@@ -96,18 +96,23 @@
     </div>
 
     <div class="slide" data-slide="2">
-      <div class="hero-inner">
-        <h1>About Malaysian <em>Forestry</em> Conference</h1>
-        <p>Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources. <br>
-        Over the decades, MFC has evolved into an important forum that brings together government agencies, researchers,academia, industry representatives and stakeholders to address emerging forestry challenges and opportunities at the national, regional and global levels.<br>
-        The conference continues to strengthen collaboration among forestry institutions while promoting innovation, sustainability and responsible stewardship of Malaysia's forests.</p>
-      </div>
-    </div>
+  <div class="hero-inner">
+    <h1>About Malaysian <em>Forestry</em> Conference</h1>
+    <p class="excerpt-text">
+      Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources.
+      <span class="more-text">
+        <br>Over the decades, MFC has evolved into an important forum that brings together government agencies, researchers, academia, industry representatives and stakeholders to address emerging forestry challenges and opportunities at the national, regional and global levels.
+        <br>The conference continues to strengthen collaboration among forestry institutions while promoting innovation, sustainability and responsible stewardship of Malaysia's forests.
+      </span>
+          <button class="read-more-btn">Read More</button>
+
+    </p>
+  </div>
+</div>
 
     <!-- Slide 3: Promotion -->
     <div class="slide" data-slide="3">
       <div class="hero-inner">
-        <div class="hero-tag">POST MFC</div>
         <h1>Post-conference tour packages title here</h1>
         <p>Full description goes here.... bla bla bla. To read view details, click the button below. user can view and decide to purchase weeee</p>
         <a href="#" class="register_btn">More on event here!</a>
@@ -710,6 +715,23 @@ function showSlideDay(n) {
     startAutoplay();
   });
 
+
+  document.querySelectorAll('.read-more-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    // Find the closest slide container
+    const slide = this.closest('.slide');
+    
+    // Toggle the expanded class
+    slide.classList.toggle('expanded');
+    
+    // Change button text based on the state
+    if (slide.classList.contains('expanded')) {
+      this.textContent = 'Read Less';
+    } else {
+      this.textContent = 'Read More';
+    }
+  });
+});
   </script>
   
 </body>
