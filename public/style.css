@@ -114,6 +114,10 @@ nav > a.nav-active {
   max-width: 540px;
 }
 
+.hero-inner p{
+  text-align: justify;
+}
+
 .hero-tag {
   display: inline-block;
   background: rgba(201,168,76,.18);
@@ -165,7 +169,6 @@ nav > a.nav-active {
 }
 
 .register_btn::after {
-  content: '→';
   font-size: 16px;
 }
 
@@ -1143,4 +1146,52 @@ justify-content: center;
 .swal-forest-title {
     font-family: 'Playfair Display', serif !important;
     color: var(--forest) !important;
+}
+
+/* ── Hero Slider ────────────────────────────────────────────── */
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .6s ease;
+}
+
+.slide.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 22px;
+  z-index: 2;
+  display: flex;
+  gap: 9px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.3);
+  border: 1px solid rgba(255,255,255,.4);
+  cursor: pointer;
+  transition: background .25s, transform .25s;
+}
+
+.dot.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: scale(1.15);
 }

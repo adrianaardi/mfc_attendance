@@ -79,23 +79,55 @@
     <a href="#footer">Contacts</a>
   </nav>
 
-  <!-- ── HERO ────────────────────────────────────────────── -->
-  <header id="header">
-    <div class="hero-inner">
-      <div class="hero-tag">21st Edition · 2026</div>
-      <h1>Malaysian <em>Forestry</em><br>Conference 2026</h1>
-      <p>Welcome to our official event. Please register before verifying your attendance.</p>
-      @if($settings['registration'])
-          <a href="/event-register" class="register_btn">Register Now</a>
-      @else
-          <button class="register_btn" disabled style="opacity:0.5; cursor:not-allowed;">Registration Closed</button>
-      @endif    
+<header id="header">
+  <div class="slider">
+
+    <div class="slide active" data-slide="1">
+      <div class="hero-inner">
+        <div class="hero-tag">21st Edition · 2026</div>
+        <h1>Malaysian <em>Forestry</em><br>Conference 2026</h1>
+        <p>The Malaysian Forestry Conference (MFC) is the premier national forestry conference in Malaysia. Since its inception in 1966, the conference has been organised on a rotational basis among the forestry authorities of Peninsular Malaysia, Sabah and Sarawak.</p>
+        <p style="text-decoration: underline;">Read more →</p>
+        @if($settings['registration'])
+            <a href="/event-register" class="register_btn">Register Here</a>
+        @else
+            <button class="register_btn" disabled style="opacity:0.5; cursor:not-allowed;">Registration Closed</button>
+        @endif
+      </div>
     </div>
-    <div class="scroll-hint">
-      <p>Scroll</p>
-      <span></span>
+
+    <div class="slide" data-slide="2">
+      <div class="hero-inner">
+        <h1>About Malaysian Forestry Conference</h1>
+        <p>Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources. <br>
+        Over the decades, MFC has evolved into an important forum that brings together government agencies, researchers,academia, industry representatives and stakeholders to address emerging forestry challenges and opportunities at the national, regional and global levels.<br>
+        The conference continues to strengthen collaboration among forestry institutions while promoting innovation, sustainability and responsible stewardship of Malaysia's forests.</p>
+      </div>
     </div>
-  </header>
+
+    <!-- Slide 3: Promotion -->
+    <div class="slide" data-slide="3">
+      <div class="hero-inner">
+        <div class="hero-tag">Promotion!</div>
+        <h1>Title here</h1>
+        <p>the quick brown fox jumps over the lazy dog. bla bla description goes here.</p>
+        <p>To view the full details, please click the button below.</p>
+        <a href="#" class="register_btn">More on event here!</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-dots">
+    <span class="dot active" data-dot="1"></span>
+    <span class="dot" data-dot="2"></span>
+    <span class="dot" data-dot="3"></span>
+  </div>
+
+  <div class="scroll-hint">
+    [lokasi disini]
+  </div>
+</header>
 
   <!-- ── AGENDA ───────────────────────────────────────────── -->
 <section id="agenda">
@@ -571,6 +603,39 @@ function showSlideDay(n) {
     document.getElementById('slides-day' + n).style.display = 'block';
     document.getElementById('slide-tab-' + n).classList.add('active');
 }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+    let autoplay;
+
+    function goToSlide(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = index;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function nextSlide() {
+      goToSlide((current + 1) % slides.length);
+    }
+
+    function startAutoplay() {
+      autoplay = setInterval(nextSlide, 5000);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(autoplay);
+        goToSlide(i);
+        startAutoplay();
+      });
+    });
+
+    startAutoplay();
+  });
 
   </script>
   
