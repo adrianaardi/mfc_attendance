@@ -589,23 +589,20 @@ footer {
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 10px;
   padding: 12px 16px;
-  cursor: pointer;
-  font: inherit;
+  text-decoration: none;
   color: inherit;
-  text-align: left;
   transition: background .2s, border-color .2s;
 }
 
 .footer-contact-item:hover {
-  background: rgba(106,171,120,.12);
-  border-color: rgba(106,171,120,.3);
+  background: rgba(37,211,102,.12);
+  border-color: rgba(37,211,102,.3);
 }
 
 .contact-name {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  flex: 1;
 }
 
 .contact-number {
@@ -613,62 +610,11 @@ footer {
   color: rgba(255,255,255,.45);
 }
 
-.contact-save {
-  font-size: 11px;
-  font-weight: 600;
-  color: #6aab78;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0;
-  transform: translateX(-4px);
-  transition: opacity .2s, transform .2s;
-}
-
-.footer-contact-item:hover .contact-save {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .footer-bottom {
   text-align: center;
   font-size: 12px;
   color: rgba(255,255,255,.35);
 }
-
-.contact-role {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--fern);
-  min-width: 90px;
-}
-
-.contact-name {
-  font-size: 13px;
-  color: rgba(255,255,255,.8);
-  font-weight: 500;
-  flex: 1;
-}
-
-.contact-number {
-  font-size: 13px;
-  color: rgba(255,255,255,.5);
-  font-family: monospace;
-  letter-spacing: 0.04em;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,.08);
-  font-size: 12px;
-  color: rgba(255,255,255,.28);
-  max-width: 740px;
-  margin: 0 auto;
-  width: 100%;
-}
-
 @media (max-width: 480px) {
   .footer-contact-item { flex-wrap: wrap; gap: 4px; }
   .contact-role { min-width: unset; width: 100%; }

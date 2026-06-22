@@ -458,66 +458,101 @@
 </section>
 
 <footer id="footer">
+<footer id="footer">
     <div class="footer-container">
         <div class="footer-section">
             <h2 class="footer-title">Contact Us</h2>
-            <p class="footer-subtitle">Tap a name to save the contact</p>
+            <p class="footer-subtitle">Tap a name to message on WhatsApp</p>
         </div>
 
-        @php
-        $contactGroups = [
-            'Transportation' => [
-                ['name' => 'Yusof Bin Noh', 'number' => '0146909608'],
-                ['name' => 'Afreene Cecilia Binti Tuah', 'number' => '0105578894'],
-            ],
-            'Registration' => [
-                ['name' => 'Wilma Anak Mancu', 'number' => '0198169159'],
-                ['name' => 'Muammar Nur Parizzat', 'number' => '0149927904'],
-            ],
-            'Programme' => [
-                ['name' => 'Mohd Izzuddin Bin Sallehin', 'number' => '0198463949'],
-            ],
-            'Seminar' => [
-                ['name' => 'Dr Pang Shek Ling', 'number' => '0177171881'],
-            ],
-            'Spouse Programme' => [
-                ['name' => 'Nur Qamaereena Binti Karim', 'number' => '0168743246'],
-            ],
-            'Post-tour' => [
-                ['name' => 'Dulles Leo Balan', 'number' => '0198857074'],
-            ],
-            'Secretariates' => [
-                ['name' => 'Judy George Wan', 'number' => '0198597425'],
-                ['name' => 'Angel Kho', 'number' => '0165775122'],
-                ['name' => 'Zaima Darahim', 'number' => '0142204162'],
-            ],
-        ];
-        @endphp
-
         <div class="footer-grid">
-            @foreach ($contactGroups as $role => $people)
-                <div class="footer-group">
-                    <h3 class="group-title">{{ $role }}</h3>
-                    <div class="footer-contacts">
-                        @foreach ($people as $person)
-                            @php
-                                $intlNumber = '+60' . substr($person['number'], 1);
-                            @endphp
-                            <button
-                                type="button"
-                                class="footer-contact-item"
-                                data-name="{{ $person['name'] }}"
-                                data-number="{{ $intlNumber }}"
-                                onclick="saveContact(this)"
-                            >
-                                <span class="contact-name">{{ $person['name'] }}</span>
-                                <span class="contact-number">{{ $person['number'] }}</span>
-                                <span class="contact-save">Save</span>
-                            </button>
-                        @endforeach
-                    </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Transportation</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60146909608" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Yusof Bin Noh</span>
+                        <span class="contact-number">014-6909608</span>
+                    </a>
+                    <a href="https://wa.me/60105578894" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Afreene Cecilia Binti Tuah</span>
+                        <span class="contact-number">010-5578894</span>
+                    </a>
                 </div>
-            @endforeach
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Registration</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60198169159" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Wilma Anak Mancu</span>
+                        <span class="contact-number">019-8169159</span>
+                    </a>
+                    <a href="https://wa.me/60149927904" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Muammar Nur Parizzat</span>
+                        <span class="contact-number">014-9927904</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Programme</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60198463949" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Mohd Izzuddin Bin Sallehin</span>
+                        <span class="contact-number">019-8463949</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Seminar</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60177171881" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Dr Pang Shek Ling</span>
+                        <span class="contact-number">017-7171881</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Spouse Programme</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60168743246" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Nur Qamaereena Binti Karim</span>
+                        <span class="contact-number">016-8743246</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Post-tour</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60198857074" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Dulles Leo Balan</span>
+                        <span class="contact-number">019-8857074</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-group">
+                <h3 class="group-title">Secretariates</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60198597425" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Judy George Wan</span>
+                        <span class="contact-number">019-8597425</span>
+                    </a>
+                    <a href="https://wa.me/60165775122" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Angel Kho</span>
+                        <span class="contact-number">016-5775122</span>
+                    </a>
+                    <a href="https://wa.me/60142204162" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Zaima Darahim</span>
+                        <span class="contact-number">014-2204162</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -528,33 +563,7 @@
     </div>
 </footer>
 
-<script>
-function saveContact(btn) {
-    const name = btn.dataset.name;
-    const number = btn.dataset.number;
-
-    const vcard = [
-        'BEGIN:VCARD',
-        'VERSION:3.0',
-        `FN:${name}`,
-        `TEL;TYPE=CELL:${number}`,
-        'END:VCARD'
-    ].join('\n');
-
-    const blob = new Blob([vcard], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
-
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `${name.replace(/\s+/g, '_')}.vcf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-}
-</script>
-
-  <!-- ── SPEAKER MODAL ────────────────────────────────────── -->
+<!-- ── SPEAKER MODAL ────────────────────────────────────── -->
   <div id="speakerModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
