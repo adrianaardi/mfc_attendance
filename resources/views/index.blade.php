@@ -87,7 +87,6 @@
         <div class="hero-tag">21st Edition · 2026</div>
         <h1>Malaysian <em>Forestry</em><br>Conference 2026</h1>
         <p>The Malaysian Forestry Conference (MFC) is the premier national forestry conference in Malaysia. Since its inception in 1966, the conference has been organised on a rotational basis among the forestry authorities of Peninsular Malaysia, Sabah and Sarawak.</p>
-        <p style="text-decoration: underline;">Read more →</p>
         @if($settings['registration'])
             <a href="/event-register" class="register_btn">Register Here</a>
         @else
@@ -98,7 +97,7 @@
 
     <div class="slide" data-slide="2">
       <div class="hero-inner">
-        <h1>About Malaysian Forestry Conference</h1>
+        <h1>About Malaysian <em>Forestry</em> Conference</h1>
         <p>Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources. <br>
         Over the decades, MFC has evolved into an important forum that brings together government agencies, researchers,academia, industry representatives and stakeholders to address emerging forestry challenges and opportunities at the national, regional and global levels.<br>
         The conference continues to strengthen collaboration among forestry institutions while promoting innovation, sustainability and responsible stewardship of Malaysia's forests.</p>
@@ -108,10 +107,9 @@
     <!-- Slide 3: Promotion -->
     <div class="slide" data-slide="3">
       <div class="hero-inner">
-        <div class="hero-tag">Promotion!</div>
-        <h1>Title here</h1>
-        <p>the quick brown fox jumps over the lazy dog. bla bla description goes here.</p>
-        <p>To view the full details, please click the button below.</p>
+        <div class="hero-tag">POST MFC</div>
+        <h1>Post-conference tour packages title here</h1>
+        <p>Full description goes here.... bla bla bla. To read view details, click the button below. user can view and decide to purchase weeee</p>
         <a href="#" class="register_btn">More on event here!</a>
       </div>
     </div>
@@ -125,7 +123,7 @@
   </div>
 
   <div class="scroll-hint">
-    [lokasi disini]
+    Kelingkang Range
   </div>
 </header>
 
