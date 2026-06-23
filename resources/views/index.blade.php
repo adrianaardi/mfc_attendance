@@ -125,7 +125,7 @@
   </div>
 
   <div class="scroll-hint">
-    Kuching Wetlands Ramsar Site
+    Kelingkang Range
   </div>
 </header>
 
