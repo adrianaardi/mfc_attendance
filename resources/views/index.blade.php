@@ -579,7 +579,7 @@
   <div id="attendanceModal" class="modal" style="display:none;">
       <div class="modal-content">
           <span class="close" onclick="closeAttendanceModal()">&times;</span>
-          <h2>Verify Attendance</h2>
+          <h2 style="color: var(--canopy)">Verify Attendance</h2>
           <p style="color: var(--text-soft); font-size:14px; margin-bottom:20px;">Enter your registered email to verify attendance.</p>
 
           @if(session('attendance_success'))
