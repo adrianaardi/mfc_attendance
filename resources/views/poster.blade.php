@@ -44,12 +44,11 @@
 <body>
   <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>
-    <a href="#header">
+    <a href="/">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
-    </a>
-    <a href="#header">
       <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
     </a>
+
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Speakers</a>
     <a href="#slides">Slides</a>
