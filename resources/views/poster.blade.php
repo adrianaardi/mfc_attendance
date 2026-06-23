@@ -57,7 +57,7 @@
 
   <section id="events">
 
-    <span class="section-label">Conference Highlights</span>
+    <span class="section-label">Discover. Connect. Collaborate.</span>
     <h2>MFC 2026 Post-Tour</h2>
 
     <div class="back-btn">
@@ -70,7 +70,7 @@
     </div>
 
     <div class="events-cta">
-      <a href="#" class="register_btn">Join Us</a>
+      <a href="https://forms.gle/Y1LY3HnbGtcNYgUd6" target="_blank" class="register_btn">Join Us</a>
     </div>
   </section>
 </body>
