@@ -68,20 +68,6 @@ nav > a:first-child img {
   border: 2px solid rgba(255,255,255,.2);
 }
 
-nav > a:nth-child(2) {
-  margin-right: auto;
-  padding: 4px 6px;
-  line-height: 0;
-}
-
-nav > a:nth-child(2) img {
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255,255,255,.2);
-}
-
 nav > a {
   color: rgba(255,255,255,.78);
   text-decoration: none;
