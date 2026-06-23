@@ -108,7 +108,7 @@
       <div class="hero-inner">
                 <div class="hero-tag">MFC 2026 Event</div>
 
-        <h1 style="font-size: 30px">Discover · Connect · Collaborate</h1>
+        <h1 style="font-size: 25px">Discover · Connect · Collaborate</h1>
         <p>Explore the beauty of Sarawak, connect with fellow participants, and create lasting partnerships through the MFC 2026 experience.</p>
         <a href="/poster" class="register_btn">Click to read more</a>
       </div>
