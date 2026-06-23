@@ -14,7 +14,6 @@
 <body>
 
 @if(session('success'))
-    <!-- Temporarily hide the announcement layout if it exists so SweetAlert shows first -->
     @if($activeDay && $currentActivity)
         <style>
             #announcementModal { display: none !important; }
@@ -53,7 +52,13 @@
   <div id="announcementModal" class="announcement-overlay">
       <div class="announcement-content">
           <div class="announcement-header">
-              <span>Live Now — Day {{ $activeDay }}</span>
+            @if($activeDay == 1)
+                <span>Live Now — 13th July 2026</span>
+            @elseif($activeDay == 2)
+                <span>Live Now — 14th July 2026</span>
+            @elseif($activeDay == 3)
+                <span>Live Now — 15th July 2026</span>
+            @endif
               <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
           </div>
           <div class="announcement-body">
@@ -134,9 +139,9 @@
     <h2>Conference Agenda</h2>
 
     <div class="agenda-tabs" id="agenda-day-tabs">
-        <button onclick="showDay(1)" class="active">Day 1</button>
-        <button onclick="showDay(2)">Day 2</button>
-        <button onclick="showDay(3)">Day 3</button>
+        <button onclick="showDay(1)" class="active">13th July 2026 <br> DAY 1</button>
+        <button onclick="showDay(2)">14th July 2026 <br> DAY 2</button>
+        <button onclick="showDay(3)">15th July 2026 <br> DAY 3</button>
     </div>
 
     <!-- DAY 1 -->
@@ -199,7 +204,7 @@
         <tr><td>3:10 PM – 3:20 PM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration</strong></td></tr>
         <tr><td>3:20 PM – 3:30 PM</td><td>Session Commencement</td></tr>
-        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shelbi, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</li></ul></td></tr>
         <tr><td>3:50 PM – 4:10 PM</td><td><strong>Paper 2:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia<ul><li>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
         <tr><td>4:10 PM – 4:30 PM</td><td><strong>Paper 3:</strong> Shifting Dependency on Natural Forests to Forest Plantations<ul><li>Heidi Henry William et al., Sabah Forestry Department</li></ul></td></tr>
         <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 4:</strong> Transforming Industrial Forest Plantations through R&amp;D and Certification<ul><li>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</li></ul></td></tr>
@@ -272,9 +277,9 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shelbi','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHELBI.png') }}')">
-        <img src="{{ asset('images/talker/ZARINA SHELBI.png') }}" alt="Zarina Shelbi" />
-        <strong>Zarina Shelbi</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA Shebli.png') }}')">
+        <img src="{{ asset('images/talker/ZARINA Shebli.png') }}" alt="Zarina Shebli" />
+        <strong>Zarina Shebli</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
@@ -338,9 +343,9 @@
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Habibah binti Salleh','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/HABIBAH BINTI SALLEH.png') }}')">
-        <img src="{{ asset('images/talker/HABIBAH BINTI SALLEH.png') }}" alt="Habibah binti Salleh" />
-        <strong>Habibah binti Salleh</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Meliza Binti Mohd Rizan','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Meliza+Rizan&background=2e7d32&color=fff&size=150')">
+        <img src="https://ui-avatars.com/api/?name=Meliza+Rizan&background=2e7d32&color=fff&size=150" alt="Meliza Binti Mohd Rizan" />
+        <strong>Meliza Binti Mohd Rizan</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
@@ -414,9 +419,9 @@
     <p>Download the official presentation slides from each session below.</p>
 
     <div class="slides-tabs">
-        <button onclick="showSlideDay(1)" class="active" id="slide-tab-1">Day 1</button>
-        <button onclick="showSlideDay(2)" id="slide-tab-2">Day 2</button>
-        <button onclick="showSlideDay(3)" id="slide-tab-3">Day 3</button>
+        <button onclick="showSlideDay(1)" class="active" id="slide-tab-1">13th July 2026 <br> DAY 1</button>
+        <button onclick="showSlideDay(2)" id="slide-tab-2">14th July 2026 <br> DAY 2</button>
+        <button onclick="showSlideDay(3)" id="slide-tab-3">15th July 2026 <br> DAY 3</button>
     </div>
 
 @foreach([1,2,3] as $day)
