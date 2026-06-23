@@ -66,8 +66,8 @@
     </div>
 
     <div class="events-gallery">
-      <img src="{{ asset('images/poster/post-conference tour 1.jpg') }}" alt="Post Conference Tour" />
-      <img src="{{ asset('images/poster/post-conference tour 2.jpg') }}" alt="Post Conference Tour" />
+      <img src="{{ asset('images/poster/post-conference-tour-1.jpg') }}" alt="Post Conference Tour" />
+      <img src="{{ asset('images/poster/post-conference-tour-2.jpg') }}" alt="Post Conference Tour" />
     </div>
 
     <div class="events-cta">
