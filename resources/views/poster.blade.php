@@ -3,13 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Malaysian Forestry Conference 2026</title>
+  <title>Malaysian Forestry Conference 2026 — Events</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ asset('style.css') }}">
   <link rel="icon" href="{{ asset('images/logo-icon.png')}}">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    #events {
+      align-items: center;
+      padding-top: calc(var(--nav-h) + 30px);
+    }
+
+    #events > * {
+      width: 100%;
+      max-width: 740px;
+    }
+
+    .events-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin: 0px 0 32px;
+    }
+
+    .events-gallery img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+      display: block;
+    }
+
+    .events-cta {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- ── NAV ─────────────────────────────────────────────── -->
@@ -17,25 +47,32 @@
     <a href="#header">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
     </a>
+    <a href="#header">
+      <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
+    </a>
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Speakers</a>
     <a href="#slides">Slides</a>
     <a href="#footer">Contacts</a>
   </nav>
 
-<section class="poster-section">
-            <a href="javascript:history.back()" class="btn-back">← Back</a>
+  <section id="events">
 
-        <h1>Post-Conference Tour</h1>
-        
-        <iframe src="{{ asset('pdfs/Post-Conference Tour.pdf') }}" width="100%" height="600px" style="border: none;">
-        <p>Your browser does not support PDFs. 
-           <a href="{{ asset('pdfs/Post-Conference Tour.pdf') }}">Download the PDF instead</a>.
-        </p>
-    </iframe>
+    <span class="section-label">Conference Highlights</span>
+    <h2>MFC 2026 Events</h2>
 
-        <a href="#" class="btn-join">Click here to register for event</a>
+    <div class="back-btn">
+      <a href="javascript:history.back()">← Back</a>
+    </div>
 
-</section>
+    <div class="events-gallery">
+      <img src="{{ asset('images/poster/post-conference tour 1.jpg') }}" alt="Post Conference Tour" />
+      <img src="{{ asset('images/poster/post-conference tour 2.jpg') }}" alt="Post Conference Tour" />
+    </div>
+
+    <div class="events-cta">
+      <a href="#" class="register_btn">Join Us</a>
+    </div>
+  </section>
 </body>
 </html>

@@ -73,6 +73,9 @@
     <a href="#header">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
     </a>
+    <a href="#header">
+      <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
+    </a>
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Speakers</a>
     <a href="#slides">Slides</a>
@@ -87,8 +90,7 @@
         <div class="hero-tag">21st Edition · 2026</div>
         <h1>Malaysian <em>Forestry</em><br>Conference 2026</h1>
           <p class="excerpt-text">
-            The Malaysian Forestry Conference (MFC) is the premier national forestry conference in Malaysia. Since its inception in 1966, the conference has been organised on a rotational basis among the forestry authorities of Peninsular Malaysia, Sabah and Sarawak.
-          <span class="more-text">
+            The Malaysian Forestry Conference (MFC) is the premier national forestry conference in Malaysia. <br> <span class="more-text"> Since its inception in 1966, the conference has been organised on a rotational basis among the forestry authorities of Peninsular Malaysia, Sabah and Sarawak.<br>
             Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources.
             <br>Over the decades, MFC has evolved into an important forum that brings together government agencies, researchers, academia, industry representatives and stakeholders to address emerging forestry challenges and opportunities at the national, regional and global levels.
             <br>The conference continues to strengthen collaboration among forestry institutions while promoting innovation, sustainability and responsible stewardship of Malaysia's forests.
@@ -108,9 +110,10 @@
       <div class="hero-inner">
                 <div class="hero-tag">MFC 2026 Event</div>
 
-        <h1 style="font-size: 25px">Discover · Connect · Collaborate</h1>
+        <h1 style="font-size: clamp(20px, 6vw, 48px);
+  white-space: nowrap;">Discover · Connect · Collaborate</h1>
         <p>Explore the beauty of Sarawak, connect with fellow participants, and create lasting partnerships through the MFC 2026 experience.</p>
-        <a href="/poster" class="register_btn">Click to read more</a>
+        <a href="/poster" class="register_btn">View Here</a>
       </div>
     </div>
 
@@ -122,7 +125,7 @@
   </div>
 
   <div class="scroll-hint">
-    Kelingkang Range
+    Kuching Wetlands Ramsar Site
   </div>
 </header>
 
@@ -264,6 +267,24 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
+      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}')">
+        <img src="{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}" alt="Suliman Bin Haji Jamahari" />
+        <strong>Suliman Bin Haji Jamahari</strong>
+        <span>Paper Presenter · Forest Department Sarawak</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shelbi','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHELBI.png') }}')">
+        <img src="{{ asset('images/talker/ZARINA SHELBI.png') }}" alt="Zarina Shelbi" />
+        <strong>Zarina Shelbi</strong>
+        <span>Paper Presenter · Forest Department Sarawak</span>
+      </div>
+
+       <div class="speaker-card" onclick="showSpeakerModal('Madeline George Pau','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MADELINE GEORGE PAU.png') }}')">
+        <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
+        <strong>Madeline George Pau</strong>
+        <span>Paper Presenter · Forest Department Sarawak</span>
+      </div>
+
       <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Paper Presenter','Sabah Forestry Department','https://ui-avatars.com/api/?name=Indra+Sunjoto&background=4a7c59&color=fff&size=150')">
         <img src="https://ui-avatars.com/api/?name=Indra+Sunjoto&background=4a7c59&color=fff&size=150" alt="Indra P. H. Sunjoto" />
         <strong>Indra P. H. Sunjoto</strong>
@@ -354,12 +375,6 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shelbi','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHELBI.png') }}')">
-        <img src="{{ asset('images/talker/ZARINA SHELBI.png') }}" alt="Zarina Shelbi" />
-        <strong>Zarina Shelbi</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
-      </div>
-
       <div class="speaker-card" onclick="showSpeakerModal('M. Hafni','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=M+Hafni&background=4a7c59&color=fff&size=150')">
         <img src="https://ui-avatars.com/api/?name=M+Hafni&background=4a7c59&color=fff&size=150" alt="M. Hafni" />
         <strong>M. Hafni</strong>
@@ -378,12 +393,6 @@
         <span>Paper Presenter · Samling Reforestation (Bintulu) Sdn. Bhd.</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}')">
-        <img src="{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}" alt="Suliman Bin Haji Jamahari" />
-        <strong>Suliman Bin Haji Jamahari</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
-      </div>
-
       <div class="speaker-card" onclick="showSpeakerModal('E. B. Johnlee','Paper Presenter','Sabah Forestry Department','https://ui-avatars.com/api/?name=EB+Johnlee&background=4a7c59&color=fff&size=150')">
         <img src="https://ui-avatars.com/api/?name=EB+Johnlee&background=4a7c59&color=fff&size=150" alt="E. B. Johnlee" />
         <strong>E. B. Johnlee</strong>
@@ -394,12 +403,6 @@
         <img src="https://ui-avatars.com/api/?name=Nor+Zaidi&background=2d5a3d&color=fff&size=150" alt="Nor Zaidi Jusoh" />
         <strong>Nor Zaidi Jusoh</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
-      </div>
-
-      <div class="speaker-card" onclick="showSpeakerModal('Madeline George Pau','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MADELINE GEORGE PAU.png') }}')">
-        <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
-        <strong>Madeline George Pau</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
     </div>

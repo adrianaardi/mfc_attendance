@@ -68,6 +68,20 @@ nav > a:first-child img {
   border: 2px solid rgba(255,255,255,.2);
 }
 
+nav > a:nth-child(2) {
+  margin-right: auto;
+  padding: 4px 6px;
+  line-height: 0;
+}
+
+nav > a:nth-child(2) img {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,.2);
+}
+
 nav > a {
   color: rgba(255,255,255,.78);
   text-decoration: none;
@@ -89,8 +103,8 @@ nav > a.nav-active {
 #header {
   min-height: 100svh;
   background:
-    linear-gradient(170deg, rgba(8, 20, 12, 0.671) 0%, rgba(26,58,42,.80) 55%, rgba(45, 90, 61, 0.349) 100%),
-    url('images/boom.jpeg') center / cover no-repeat;
+    linear-gradient(170deg, rgba(8, 20, 12, 0.753) 0%, rgba(26, 58, 42, 0.795) 55%, rgba(45, 90, 61, 0.349) 100%),
+    url('images/Kelingkang Range.jpeg') center / cover no-repeat;
   background-color: #0e2018; /* fallback */
   display: flex;
   flex-direction: column;
