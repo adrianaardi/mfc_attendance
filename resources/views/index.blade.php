@@ -195,7 +195,7 @@
         <tr><td>3:10 PM – 3:20 PM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration</strong></td></tr>
         <tr><td>3:20 PM – 3:30 PM</td><td>Session Commencement</td></tr>
-        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shelbi, Forest Department Sarawak</li></ul></td></tr>
         <tr><td>3:50 PM – 4:10 PM</td><td><strong>Paper 2:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia<ul><li>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
         <tr><td>4:10 PM – 4:30 PM</td><td><strong>Paper 3:</strong> Shifting Dependency on Natural Forests to Forest Plantations<ul><li>Heidi Henry William et al., Sabah Forestry Department</li></ul></td></tr>
         <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 4:</strong> Transforming Industrial Forest Plantations through R&amp;D and Certification<ul><li>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</li></ul></td></tr>
@@ -244,14 +244,14 @@
     <h2>Speaker Information</h2>
     <div class="speakers-grid">
 
-      <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Keynote Speaker','','https://ui-avatars.com/api/?name=Ibrahim+Komoo&background=2e7d32&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Ibrahim+Komoo&background=2e7d32&color=fff&size=150" alt="Prof. Emeritus Dato Dr. Ibrahim Komoo" />
+      <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Keynote Speaker','','{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}')">
+        <img src="{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}" alt="Prof. Emeritus Dato Dr. Ibrahim Komoo" />
         <strong>Prof. Emeritus Dato Dr. Ibrahim Komoo</strong>
         <span>Keynote Speaker</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Semilan Ripot','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Semilan+Ripot&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Semilan+Ripot&background=1a5c2e&color=fff&size=150" alt="Semilan Ripot" />
+      <div class="speaker-card" onclick="showSpeakerModal('Semilan Ripot','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SEMILAN RIPOT.png') }}')">
+        <img src="{{ asset('images/talker/SEMILAN RIPOT.png') }}" alt="Semilan Ripot" />
         <strong>Semilan Ripot</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -268,8 +268,8 @@
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Vilma Bodos','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Vilma+Bodos&background=2e7d32&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Vilma+Bodos&background=2e7d32&color=fff&size=150" alt="Vilma Bodos" />
+      <div class="speaker-card" onclick="showSpeakerModal('Vilma Bodos','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/VILMA ANAK BODOS.png') }}')">
+        <img src="{{ asset('images/talker/VILMA ANAK BODOS.png') }}" alt="Vilma Bodos" />
         <strong>Vilma Bodos</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -280,8 +280,8 @@
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Dr Malcom anak Demies','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Malcom+Demies&background=4a7c59&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Malcom+Demies&background=4a7c59&color=fff&size=150" alt="Dr Malcom anak Demies" />
+      <div class="speaker-card" onclick="showSpeakerModal('Dr Malcom anak Demies','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/DR MALCOM DEMIES.png') }}')">
+        <img src="{{ asset('images/talker/DR MALCOM DEMIES.png') }}" alt="Dr Malcom anak Demies" />
         <strong>Dr Malcom anak Demies</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -310,8 +310,8 @@
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Habibah binti Salleh','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Habibah+Salleh&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Habibah+Salleh&background=2d5a3d&color=fff&size=150" alt="Habibah binti Salleh" />
+      <div class="speaker-card" onclick="showSpeakerModal('Habibah binti Salleh','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/HABIBAH BINTI SALLEH.png') }}')">
+        <img src="{{ asset('images/talker/HABIBAH BINTI SALLEH.png') }}" alt="Habibah binti Salleh" />
         <strong>Habibah binti Salleh</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -334,21 +334,21 @@
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Bibian Anak Micheal Diway','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Bibian+Diway&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Bibian+Diway&background=2d5a3d&color=fff&size=150" alt="Bibian Anak Micheal Diway" />
+      <div class="speaker-card" onclick="showSpeakerModal('Bibian Anak Micheal Diway','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/BIBIAN MICHAEL DIWAY.JPG-no-bg.png') }}')">
+        <img src="{{ asset('images/talker/BIBIAN MICHAEL DIWAY.JPG-no-bg.png') }}" alt="Bibian Anak Micheal Diway" />
         <strong>Bibian Anak Micheal Diway</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Rohanie Bohan','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Rohanie+Bohan&background=2e7d32&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Rohanie+Bohan&background=2e7d32&color=fff&size=150" alt="Rohanie Bohan" />
+      <div class="speaker-card" onclick="showSpeakerModal('Rohanie Bohan','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ROHANIE BOLHAN.png') }}')">
+        <img src="{{ asset('images/talker/ROHANIE BOLHAN.png') }}" alt="Rohanie Bohan" />
         <strong>Rohanie Bohan</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Zarina+Shebli&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Zarina+Shebli&background=1a5c2e&color=fff&size=150" alt="Zarina Shebli" />
-        <strong>Zarina Shebli</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shelbi','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHELBI.png') }}')">
+        <img src="{{ asset('images/talker/ZARINA SHELBI.png') }}" alt="Zarina Shelbi" />
+        <strong>Zarina Shelbi</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
@@ -370,8 +370,8 @@
         <span>Paper Presenter · Samling Reforestation (Bintulu) Sdn. Bhd.</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Suliman+Jamahari&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Suliman+Jamahari&background=1a5c2e&color=fff&size=150" alt="Suliman Bin Haji Jamahari" />
+      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}')">
+        <img src="{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}" alt="Suliman Bin Haji Jamahari" />
         <strong>Suliman Bin Haji Jamahari</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -388,8 +388,8 @@
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Madeline George Pau','Paper Presenter','Forest Department Sarawak','https://ui-avatars.com/api/?name=Madeline+Pau&background=2e7d32&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Madeline+Pau&background=2e7d32&color=fff&size=150" alt="Madeline George Pau" />
+      <div class="speaker-card" onclick="showSpeakerModal('Madeline George Pau','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MADELINE GEORGE PAU.png') }}')">
+        <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
         <strong>Madeline George Pau</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>

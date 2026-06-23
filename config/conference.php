@@ -40,7 +40,7 @@ return [
             ['time_start' => '15:00', 'time_end' => '15:10', 'activity' => 'Question and Answer Session'],
             ['time_start' => '15:10', 'time_end' => '15:20', 'activity' => 'Refreshments'],
             ['time_start' => '15:20', 'time_end' => '15:30', 'activity' => 'Subtheme 5: Forest Plantation and Restoration — Session Commencement'],
-            ['time_start' => '15:30', 'time_end' => '15:50', 'activity' => 'Paper 1: Forest Restoration and Rehabilitation: Experience and Insights', 'speaker' => 'Rohanie Bohan & Zarina Shebli, Forest Department Sarawak'],
+            ['time_start' => '15:30', 'time_end' => '15:50', 'activity' => 'Paper 1: Forest Restoration and Rehabilitation: Experience and Insights', 'speaker' => 'Rohanie Bohan & Zarina Shelbi, Forest Department Sarawak'],
             ['time_start' => '15:50', 'time_end' => '16:10', 'activity' => 'Paper 2: Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia', 'speaker' => 'M. Hafni & A. Richard, Jabatan Perhutanan Semenanjung Malaysia'],
             ['time_start' => '16:10', 'time_end' => '16:30', 'activity' => 'Paper 3: Shifting Dependency on Natural Forests to Forest Plantations', 'speaker' => 'Heidi Henry William et al., Sabah Forestry Department'],
             ['time_start' => '16:30', 'time_end' => '16:50', 'activity' => 'Paper 4: Transforming Industrial Forest Plantations through R&D and Certification', 'speaker' => 'Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.'],
