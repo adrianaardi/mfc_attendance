@@ -89,7 +89,7 @@ nav > a.nav-active {
 #header {
   min-height: 100svh;
   background:
-    linear-gradient(170deg, rgba(8, 20, 12, 0.753) 0%, rgba(26, 58, 42, 0.795) 55%, rgba(45, 90, 61, 0.349) 100%),
+    linear-gradient(170deg, rgba(8, 20, 12, 0.904) 0%, rgba(26, 58, 42, 0.877) 55%, rgba(45, 90, 61, 0.616) 100%),
     url('images/Kelingkang Range.jpeg') center / cover no-repeat;
   background-color: #0e2018; /* fallback */
   display: flex;
