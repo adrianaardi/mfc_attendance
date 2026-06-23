@@ -107,7 +107,7 @@
     <!-- Slide 2: Promotion -->
     <div class="slide" data-slide="2">
       <div class="hero-inner">
-                <div class="hero-tag">MFC 2026 Event</div>
+                <div class="hero-tag">MFC 2026 Post-Tour</div>
 
         <h1 style="font-size: clamp(20px, 6vw, 48px);
   white-space: nowrap;">Discover · Connect · Collaborate</h1>

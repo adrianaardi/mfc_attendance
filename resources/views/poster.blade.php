@@ -58,7 +58,7 @@
   <section id="events">
 
     <span class="section-label">Conference Highlights</span>
-    <h2>MFC 2026 Events</h2>
+    <h2>MFC 2026 Post-Tour</h2>
 
     <div class="back-btn">
       <a href="javascript:history.back()">← Back</a>
