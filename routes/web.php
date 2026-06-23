@@ -22,6 +22,9 @@ Route::get('/', function () {
 Route::get('/event-register', [RegistrationController::class, 'show']);
 Route::post('/event-register', [RegistrationController::class, 'store']);
 
+//poster
+Route::view('/poster', 'poster');
+
 // Attendance
 Route::post('/attendance', [AttendanceController::class, 'store']);
 

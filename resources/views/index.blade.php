@@ -106,9 +106,11 @@
     <!-- Slide 2: Promotion -->
     <div class="slide" data-slide="2">
       <div class="hero-inner">
-        <h1>Post-conference tour packages title here</h1>
-        <p>Full description goes here.... bla bla bla. To read view details, click the button below. user can view and decide to purchase weeee</p>
-        <a href="#" class="register_btn">More on event here!</a>
+                <div class="hero-tag">MFC 2026 Event</div>
+
+        <h1 style="font-size: 30px">Discover · Connect · Collaborate</h1>
+        <p>Explore the beauty of Sarawak, connect with fellow participants, and create lasting partnerships through the MFC 2026 experience.</p>
+        <a href="/poster" class="register_btn">Click to read more</a>
       </div>
     </div>
 
