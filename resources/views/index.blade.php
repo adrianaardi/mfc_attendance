@@ -244,6 +244,12 @@
     <h2>Speaker Information</h2>
     <div class="speakers-grid">
 
+      <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Abdullah Bin Julaihi','Permanent Secretary','','{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}')">
+        <img src="{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}" alt="Datu Haji Abdullah Bin Julaihi" />
+        <strong>Datu Haji Abdullah Bin Julaihi</strong>
+        <span>Permanent Secretary</span>
+      </div>
+
       <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Keynote Speaker','','{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}')">
         <img src="{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}" alt="Prof. Emeritus Dato Dr. Ibrahim Komoo" />
         <strong>Prof. Emeritus Dato Dr. Ibrahim Komoo</strong>
@@ -392,12 +398,6 @@
         <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
         <strong>Madeline George Pau</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
-      </div>
-
-      <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Abdullah Bin Julaihi','Permanent Secretary','','https://ui-avatars.com/api/?name=Abdullah+Julaihi&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Abdullah+Julaihi&background=1a5c2e&color=fff&size=150" alt="Datu Haji Abdullah Bin Julaihi" />
-        <strong>Datu Haji Abdullah Bin Julaihi</strong>
-        <span>Permanent Secretary</span>
       </div>
 
     </div>
