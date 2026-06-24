@@ -48,7 +48,7 @@ Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 Route::get('/create-admin', function () {
    \App\Models\User::create([
       'name' => 'Admin',
-        'email' => 'adollyana',
+        'email' => 'adollyana@email.com',
         'password' => bcrypt('BringCake2@'),
     ]);
     return 'User created!';
