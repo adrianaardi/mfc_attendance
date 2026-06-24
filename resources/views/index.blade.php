@@ -277,8 +277,8 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA Shebli.png') }}')">
-        <img src="{{ asset('images/talker/ZARINA Shebli.png') }}" alt="Zarina Shebli" />
+      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHEBLI.png') }}')">
+        <img src="{{ asset('images/talker/ZARINA SHEBLI.png') }}" alt="Zarina Shebli" />
         <strong>Zarina Shebli</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
