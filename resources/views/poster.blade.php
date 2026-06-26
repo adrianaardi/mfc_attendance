@@ -57,20 +57,13 @@
 
   <section id="events">
 
-    <span class="section-label">Discover. Connect. Collaborate.</span>
-    <h2>MFC 2026 Post-Tour</h2>
-
-    <div class="back-btn">
-      <a href="javascript:history.back()">← Back</a>
-    </div>
-
     <div class="events-gallery">
-      <img src="{{ asset('images/poster/post-conference-tour-1.jpg') }}" alt="Post Conference Tour" />
-      <img src="{{ asset('images/poster/post-conference-tour-2.jpg') }}" alt="Post Conference Tour" />
+      <img src="{{ asset('images/poster/postconference2.jpeg') }}" alt="Post Conference Tour" />
+      <img src="{{ asset('images/poster/postconference1.jpeg') }}" alt="Post Conference Tour" />
     </div>
 
     <div class="events-cta">
-      <a href="https://forms.gle/Y1LY3HnbGtcNYgUd6" target="_blank" class="register_btn">Join Us</a>
+      <a href="/" class="register_btn">Back to Home</a>
     </div>
   </section>
 </body>
