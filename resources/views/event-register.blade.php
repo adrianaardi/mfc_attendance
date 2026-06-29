@@ -15,11 +15,13 @@
     <!-- Nav -->
     <nav>
         <a href="/">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
+        <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
+        <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
         </a>
-        <a href="/">Home</a>
+
         <a href="/#agenda">Agenda</a>
         <a href="/#speakers">Speakers</a>
+        <a href="/#slides">Slides</a>
         <a href="/#footer">Contacts</a>
     </nav>
 
@@ -38,9 +40,7 @@
                 </ul>
             </div>
         @endif
-        <div class="back-btn">
-            <a href="/">← Back</a>
-        </div>
+
         <form method="POST" action="/event-register" class="register-form">
             @csrf
 
@@ -104,37 +104,10 @@
             </button>
 
         </form>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="/" class="register_btn">Back to Home</a>
+        </div>
     </section>
 
-<footer id="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h2 class="footer-title">Contact Us</h2>
-            <p class="footer-subtitle">Do you need help?</p>
-            <div class="footer-contacts">
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Transportation</span>
-                    <span class="contact-name">Encik Ali</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Accommodation</span>
-                    <span class="contact-name">Encik Abu</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-                <a href="tel:+60123456789" class="footer-contact-item">
-                    <span class="contact-role">Registration</span>
-                    <span class="contact-name">Encik Azam</span>
-                    <span class="contact-number">012-3456789</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <a href="/admin" style="color:inherit; text-decoration:none;">
-            <p>Copyright &copy; 2026 Forest Department Sarawak</p>
-        </a>
-    </div>
-</footer>
 </body>
 </html>
