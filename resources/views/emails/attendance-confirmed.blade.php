@@ -62,7 +62,7 @@
                 </table>
             </div>
 
-            <p>If you have any questions, please contact us at <a href="mailto:forestdepartment@sarawak.gov.my" style="color:#2d5a3d;">forestdepartment@sarawak.gov.my</a></p>
+            <p>If you have any questions, please contact among the numbers listed in <a href="mfc2026.com" style="color:#2d5a3d;">mfc2026.com</a>.</p>
         </div>
         <div class="footer">
             <p>© 2026 Forest Department Sarawak · This is an automated email, please do not reply.</p>
