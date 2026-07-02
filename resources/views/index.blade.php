@@ -147,21 +147,26 @@
     <!-- DAY 1 -->
     <div id="day1" class="agenda-day">
       <table>
-        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
-        <tr><td>8:15 AM – 10:15 AM</td><td><strong>Closed Session (For Members Only)</strong></td></tr>
+        <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
+        <tr><td>8:15 AM – 10:15 AM</td><td><ul><li>Appointment of the Conference's Chairman by previous Chairman</li>
+        <li>Introduction remarks by respective Heads of Departments</li>
+      <li>Appointment of Conference Officials</li>
+        <li>Reporting of the 20th Malaysian Forestry Conference Resolutions</li>
+          <li>Amendment to the Standing Orders of Malaysian Forestry Conference, if any.</li>
+      </ul></td></tr>
         <tr><td>10:15 AM – 10:30 AM</td><td>Refreshments</td></tr>
-        <tr><td>10:30 AM – 11:00 AM</td><td><strong>Keynote Address</strong><ul><li>Prof. Emeritus Dato Dr. Ibrahim Komoo</li></ul></td></tr>
-        <tr><td colspan="2"><strong>Plenary Session: Main Working Paper</strong></td></tr>
-        <tr><td>11:00 AM – 11:30 AM</td><td>Sabah Forestry Department</td></tr>
-        <tr><td>11:30 AM – 12:00 PM</td><td>Forestry Department of Peninsular Malaysia</td></tr>
-        <tr><td>12:00 AM – 12:30 PM</td><td>Forest Department Sarawak</td></tr>
+        <tr><td colspan="2"><strong>Plenary Session: Keynote Address and Main Working Paper</strong></td></tr>
+        <tr><td>10:30 AM – 11:00 AM</td><td><strong>Keynote Address:</strong> Protected Areas, Eco-Forest Parks, and Geoparks: Drivers of Green Economy and Sustainability in Malaysian Forestry<ul><li>Prof. Emeritus Dato Dr. Ibrahim Komoo, Norhayati Ahmad</li></ul></td></tr>
+        <tr><td>11:00 AM – 11:30 AM</td><td><strong>Main Working Paper 1:</strong> Sabah Forestry Department</td></tr>
+        <tr><td>11:30 AM – 12:00 PM</td><td><strong>Main Working Paper 2:</strong> Forestry Department of Peninsular Malaysia</td></tr>
+        <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong> Forest Department Sarawak</td></tr>
         <tr><td>12:30 PM – 1:45 PM</td><td>Lunch</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance</strong></td></tr>
+        <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance<br>Chairman: </strong>Tuan Muhamad Bin Abdullah (Jabatan Perhutanan Semenanjung Malaysia)</td></tr>
         <tr><td>1:45 PM – 2:00 PM</td><td>Session Commencement</td></tr>
-        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 1:</strong> Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency<ul><li>Semilan Ripot et al., Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 2:</strong> Unlocking Natural Capital: Sabah's Policy Frameworks for a Forest-Based Green Economy<ul><li>Indra P. H. Sunjoto et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam Bagi Pewartaan Keluar Hutan Simpanan Kekal<ul><li>Zarin R. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy: Integrating Dipterocarp Population Assessment into Sarawak's CITES Framework<ul><li>Vilma Bodos, Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 1:</strong> Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency as a Catalyst for Sarawak’s Green Economy<ul><li>Hasnaliza B.A., Semilan Ripot, Shamsul B., Joshua D., Pamela, J.D., Zamri R. (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 2:</strong> Unlocking Natural Capital: Sabah’s Policy Frameworks for a Forest-Based Green Economy <ul><li>Indra P. H. Sunjoto, Rosila Anthony, Siti Zubaidah S. Abdullah, Mohamad Hafiza Addli Bin Lamin, Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam (Public Hearing) Bagi Pewartaan Keluar Hutan Simpanan Kekal (HSK) Di Semenanjung Malaysia<ul><li>Zarin R., Noradli P., Radhi C.A. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy in Action: Integrating Dipterocarp Population Assessment into Sarawak's Efforts on CITES and the Sustainable Timber Framework<ul><li>Vilma Bodos, Semilan Ripot, Joshua Deri (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>3:20 PM – 3:30 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>3:30 PM</td><td>Refreshments &amp; End of Day 1</td></tr>
       </table>
@@ -177,39 +182,44 @@
     <!-- DAY 2 -->
     <div id="day2" class="agenda-day" style="display:none;">
       <table>
-        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
-        <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Resolution</strong></td></tr>
+        <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
+        <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Solution<br>Chairman: </strong>Tuan Haji Mohd. Ridzuwan Bin Endor (Jabatan Perhutanan Semenanjung Malaysia)</td></tr>
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 1:</strong> Pengalaman dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut di Selangor<ul><li>Azhar Ahmad et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 2:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 3:</strong> Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Zainuddin Jamaluddin et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 4:</strong> Nature, Climate, and Economy: Sabah's Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony et al., Sabah Forestry Department</li></ul></td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Azhar Ahmad, Amsari Mahmud, Debora Belawan, Siti Syafiqah Yusof, Shairani Mamat, Veronica Justin, Syamimi Mohd Adam, Punitha A/P Murgis (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 6:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies,  Mohamad Hidayatullah Mohamad, Ricky Jonathan (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Zainuddin Jamaluddin, Harry Yong, Iqtie Qamar Laila Mohd Gani, Mohd Saman Mohd Sanget, Farah Wahida Ayob and Fathin Haryanni Ahmad Faris (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony, Alexander Hastie, Norasyikin Binti Ab Karim, Joseph Pirin, Kristo Henry William(Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:30 AM</td><td>Refreshments</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration</strong></td></tr>
+        <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration<br>Chairman: </strong>Tuan Indra Puwandita Bin Herry Sunjoto (Sabah Forestry Department)</td></tr>
         <tr><td>10:30 AM – 10:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>10:40 AM – 11:00 AM</td><td><strong>Paper 1:</strong> Sabah Timber Legality Assurance System Plus (TLAS+)<ul><li>Mijol R. M. et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 2:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R. K. et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>11:20 AM – 11:40 AM</td><td><strong>Paper 3:</strong> Digitalizing Conservation Governance: HOBS Cross-Agency Project Management System<ul><li>Meliza Binti Mohd Rizan, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>11:40 AM – 12:00 PM</td><td><strong>Paper 4</strong><ul><li>Professor Ts. Dr. Faisal Ali bin Anwarali Khan, Unimas</li></ul></td></tr>
+        <tr><td>10:40 AM – 11:00 AM</td><td><strong>Paper 9:</strong> Sabah Timber Legality Assurance System Plus (TLAS+): Advancing Timber Legality through International Collaboration<ul><li>Mijol R. M, Balingi D. & Billy C. (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 10:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R.K, Noradli P., Radhi C.A. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>11:20 AM – 11:40 AM</td><td><strong>Paper 11:</strong> Digitalizing Conservation Governance: [HOBS] A Cross-Agency Project Management System for the Heart of Borneo in Sarawak<ul><li>Meliza Binti Mohd Rizan, Habibah S., Mohizag M., Sock T., Khadeeja A.W., Muhammad Hafeez Syakireen R.A., Nisle B., Ajmal Asraff I., Affendi S. (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>11:40 AM – 12:00 PM</td><td><strong>Paper 12</strong>Small Mammal Diversity in Borneo: Insights from Historical Records and Collaborative Biodiversity Assessments<ul><li>Professor Ts. Dr. Faisal Ali bin Anwarali Khan, Victor Lee Sien, Asfa Hanis Mohamad-Azmi, Muhammad Danish Haqeem, Ain Najwa Nasihah Eazali, Alya Fathyn Sahibulfadillah (Unimas)</li></ul></td></tr>
         <tr><td>12:00 PM – 12:10 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>12:10 PM – 1:30 PM</td><td>Lunch</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 4: Biodiversity Research and Conservation</strong></td></tr>
+        <tr><td colspan="2"><strong>Subtheme 4: Biodiversity Research and Conservation<br>Chairman</strong> Arthur Chung Yaw Chyang (Sabah Forestry Department</td></tr>
         <tr><td>1:30 PM – 1:40 PM</td><td>Session Commencement</td></tr>
-        <tr><td>1:40 PM – 2:00 PM</td><td><strong>Paper 1:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 2:</strong> Developing a Forest Reference Level Monitoring System in Sabah<ul><li>Reuben Nilus et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 3:</strong> The Use of UAV-based LiDAR for Forest Volume Modeling in Sarawak<ul><li>Bibian Anak Micheal Diway, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 4</strong><ul><li>Sarawak Forestry Corporation</li></ul></td></tr>
-        <tr><td>3:00 PM – 3:10 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>3:10 PM – 3:20 PM</td><td>Refreshments</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration</strong></td></tr>
-        <tr><td>3:20 PM – 3:30 PM</td><td>Session Commencement</td></tr>
-        <tr><td>3:30 PM – 3:50 PM</td><td><strong>Paper 1:</strong> Forest Restoration and Rehabilitation: Experience and Insights<ul><li>Rohanie Bohan &amp; Zarina Shebli, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>3:50 PM – 4:10 PM</td><td><strong>Paper 2:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability in Peninsular Malaysia<ul><li>M. Hafni &amp; A. Richard, Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>4:10 PM – 4:30 PM</td><td><strong>Paper 3:</strong> Shifting Dependency on Natural Forests to Forest Plantations<ul><li>Heidi Henry William et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 4:</strong> Transforming Industrial Forest Plantations through R&amp;D and Certification<ul><li>Roger Tami, Samling Reforestation (Bintulu) Sdn. Bhd.</li></ul></td></tr>
-        <tr><td>4:50 PM – 5:00 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>5:00 PM</td><td>End of Day 2</td></tr>
+        <tr><td>1:40 PM – 2:00 PM</td><td><strong>Paper 13:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman, Faiz Aiman Ashaari, Juliana Yahya, Azizul Razali, Nor Hidayu Abdul Razak, Mohd Syafiq Syazwan Rosli & A. Richard (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 14:</strong> Developing a Forest Reference Level Monitoring System in Sabah: Integrating Field Biometrics and Remote Sensing for Biodiversity Conservation and Sustainable Forest Management<ul><li>Reuben Nilus, Julsun Sikui, Sandy Tsen Tze Lui, Esther Dyi Ka Mei, Sarah J Mianus, Charissa J Wong, Jonathan J Lucas & Joan T Pereira (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 15:</strong> The use of UAV-based LiDAR for Forest Volume Modeling in Sarawak<ul><li>Bibian Diway, Ling Chea Yiing, Yayoi Takeuchi, Habura Borjigin, Makoto Oba, Paulus Meleng, Runi Sylvester Pungga, Affendi Suhaili (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 16</strong>An An Overview of Orangutan Conservation in Sarawak for the Next Decade<ul><li>Aliana Binti Affendi, Yonny Stanly Anyie, Sundai Silang, Abang Arabi Bin Abang Aimran, James Bali, Joshua Pandong, and Dr Mark Rayan Darmaraj (Sarawak Forestry Corporation)</li></ul></td></tr>
+        <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 17:</strong> Vascular Plant Diversity and Conservation Importance of the Ultramafic Forests of Meliau Range, Central Sabah
+        <ul>
+          <li>Jonathan J. Lucas, Joan T. Pereira, Alviana Damit, Suzana Sabran & John B. Sugau (Sabah Forestry Department)</li>
+        </ul>
+      </td></tr>
+        <tr><td>3:20 PM – 3:30 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>3:30 PM – 3:40 PM</td><td>Refreshments</td></tr>
+        <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration<br>Chairman: </strong>Dr. Affendi bin Suhaili (Forest Department Sarawak)</td></tr>
+        <tr><td>3:40 PM – 4:00 PM</td><td>Session Commencement</td></tr>
+        <tr><td>4:00 PM – 4:20 PM</td><td><strong>Paper 18:</strong> Forest Restoration and Rehabilitation: Experiences and Insights<ul><li>Zarina, S. , Rohanie, B. , and Millicent, A (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni, A. Richard (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 20:</strong> Shifting Dependency on Natural Forests to Forest Plantations in Support of Forest Landscape Sustainability<ul><li>Heidi Henry William, Hamidah Bujing, Ricky Alisky Martin & Daim Balingi (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>4:50 PM – 5:10 PM</td><td><strong>Paper 21:</strong> Transforming Industrial Forest Plantations through R&D and Certification: Samling’s Experience In Sarawak, Malaysia.<ul><li>Roger Tami, Francois Blignaut (Samling Reforestation [Bintulu] Sdn. Bhd.)</li></ul></td></tr>
+        <tr><td>5:10 PM – 5:20 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>5:20 PM</td><td>End of Day 2</td></tr>
       </table>
       <div class="punch-in-container">
         @if($settings['attendance_day2'])
@@ -223,18 +233,25 @@
     <!-- DAY 3 -->
     <div id="day3" class="agenda-day" style="display:none;">
       <table>
-        <tr><th style="width: 40%;">Time</th><th>Activity</th></tr>
-        <tr><td colspan="2"><strong>Subtheme 6: Social Forestry &amp; Ecotourism</strong></td></tr>
+        <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
+        <tr><td colspan="2"><strong>Subtheme 6: Social Forestry &amp; Ecotourism<br>Chairman:</strong> Tuan Haji Happysupina Bin Sait (Forest Department Sarawak)</td></tr>
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 1:</strong> Seridang Folia: A Community's Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari, Forest Department Sarawak</li></ul></td></tr>
-        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 2:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah<ul><li>E. B. Johnlee et al., Sabah Forestry Department</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 3:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Nor Zaidi Jusoh et al., Jabatan Perhutanan Semenanjung Malaysia</li></ul></td></tr>
-        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 4:</strong> Community-based Tourism and its Contribution to Local Economies: Insights from Peros<ul><li>Madeline George Pau et al., Forest Department Sarawak</li></ul></td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 22:</strong> Seridan Folia: A Community’s Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari, Asan Odau, Albart Lasa (Forest Department Sarawak)</li></ul></td></tr>
+        <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 23:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah’s Forest Landscapes<ul><li>E.B. Johnlee, J. Kijin, D. Ijes, S.J. Mianus, N.S.A. Bakar, A. Bisuk, J.J. Jakiwa (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 24:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Nor Zaidi Jusoh, Reanee Lee, Mohammad Ifratshim Muhamad Sa’ed, Che Engku Nor Amiza Che Engku Chik, Muhamat Azman Yahya, Zulkurnain Zakaria, Mohd Basri bin Abdul Manaf, Azni Rahman bin A. Wahid & Muhammad Asyraf bin Zainul (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 25:</strong> Community-based Tourism and its Contribution to  Local Economies: Insights from Peros<ul><li>Madeline George Pau, Irmadiana Ardi & Lelawati Othman (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
-        <tr><td>10:10 AM – 11:00 AM</td><td>Refreshments</td></tr>
-        <tr><td>11:00 AM – 11:05 AM</td><td>Session Commencement</td></tr>
-        <tr><td>11:05 AM – 12:30 PM</td><td>Conference Resolution Presentation and Adoption</td></tr>
-        <tr><td>12:30 AM – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Datu Haji Abdullah Bin Julaihi, Permanent Secretary</li></ul></td></tr>
+        <tr><td>10:10 AM – 10:25 AM</td><td>Refreshments</td></tr>
+        <tr><td colspan="2"><strong>Closed Sessions (For Members Only)</strong></td></tr>
+        <tr><td>10:25 AM – 10:30 AM</td><td>Session Commencement</td></tr>
+        <tr><td>10:30 AM – 12:30 PM</td><td>Conference Resolution Presentation and Adoption</td></tr>
+        <tr><td colspan="2"><strong>Closing Ceremony</strong></td></tr>
+        <tr><td>12:30 PM – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Arrival of Permanent Secretary, Ministry of Natural Resources and Urban Development, Datu Haji Abdullah Bin Julaihi</li>
+        <li>Negaraku and Ibu Pertiwiku</li>
+      <li>Recital of Doa</li>
+    <li>Closing Address by Permanent Secretary</li>
+  <li>Photo Session</li>
+</ul></td></tr>
         <tr><td>1:30 PM</td><td>Lunch and End of Conference</td></tr>
       </table>
       <div class="punch-in-container">

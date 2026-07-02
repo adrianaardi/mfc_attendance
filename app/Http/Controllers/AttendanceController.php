@@ -42,8 +42,8 @@ class AttendanceController extends Controller
                 'Content-Type' => 'application/json',
             ])->post('https://api.brevo.com/v3/smtp/email', [
                 'sender' => [
-                    'name'  => 'MFC 2026',
-                    'email' => 'adrianaardi.aa@gmail.com',
+                    'name'  => 'Malaysian Forestry Conference 2026',
+                    'email' => 'noreply@mfc2026.com',
                 ],
                 'to' => [[
                     'email' => $registration->email,
