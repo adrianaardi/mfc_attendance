@@ -304,8 +304,8 @@
         <span>Session Chairman · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','https://ui-avatars.com/api/?name=Arthur+Chung&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Arthur+Chung&background=1a5c2e&color=fff&size=150" alt="Arthur Chung Yaw Chyang" />
+      <div class="speaker-card" onclick="showSpeakerModal('Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
+        <img src="{{ asset('images/talker/ARTHUR CHUNG.png') }}" alt="Arthur Chung Yaw Chyang" />
         <strong>Arthur Chung Yaw Chyang</strong>
         <span>Session Chairman · Sabah Forestry Department</span>
       </div>
@@ -616,6 +616,15 @@
                 </div>
             </div>
 
+            <div class="footer-group">
+                <h3 class="group-title">Technical Support</h3>
+                <div class="footer-contacts">
+                    <a href="https://wa.me/60182804204" target="_blank" class="footer-contact-item">
+                        <span class="contact-name">Adriana Ardi</span>
+                        <span class="contact-number">018-2804204</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
