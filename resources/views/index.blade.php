@@ -185,10 +185,10 @@
         <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
         <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Solution<br>Chairman: </strong>Tuan Haji Mohd. Ridzuwan Bin Endor (Jabatan Perhutanan Semenanjung Malaysia)</td></tr>
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Azhar Ahmad et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Debora Belawan et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
         <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 6:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies et al. (Forest Department Sarawak)</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Zainuddin Jamaluddin et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
-        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony, Alexander Hastie et al. (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Iqtie Qamar Laila Mohd Gani et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:30 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration<br>Chairman: </strong>Tuan Indra Puwandita Bin Herry Sunjoto (Sabah Forestry Department)</td></tr>
@@ -215,7 +215,7 @@
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration<br>Chairman: </strong>Dr. Affendi bin Suhaili (Forest Department Sarawak)</td></tr>
         <tr><td>3:40 PM – 4:00 PM</td><td>Session Commencement</td></tr>
         <tr><td>4:00 PM – 4:20 PM</td><td><strong>Paper 18:</strong> Forest Restoration and Rehabilitation: Experiences and Insights<ul><li>Zarina, S. et al.(Forest Department Sarawak)</li></ul></td></tr>
-        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni, A. Richard (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
         <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 20:</strong> Shifting Dependency on Natural Forests to Forest Plantations in Support of Forest Landscape Sustainability<ul><li>Heidi Henry William et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>4:50 PM – 5:10 PM</td><td><strong>Paper 21:</strong> Transforming Industrial Forest Plantations through R&D and Certification: Samling’s Experience In Sarawak, Malaysia.<ul><li>Roger Tami et al. (Samling Reforestation [Bintulu] Sdn. Bhd.)</li></ul></td></tr>
         <tr><td>5:10 PM – 5:20 PM</td><td>Question and Answer Session</td></tr>
@@ -238,7 +238,7 @@
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
         <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 22:</strong> Seridan Folia: A Community’s Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 23:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah’s Forest Landscapes<ul><li>E.B. Johnlee et al. (Sabah Forestry Department)</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 24:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Nor Zaidi Jusoh et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 24:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Reanee Lee et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
         <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 25:</strong> Community-based Tourism and its Contribution to  Local Economies: Insights from Peros<ul><li>Madeline George Pau et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:25 AM</td><td>Refreshments</td></tr>
@@ -265,17 +265,19 @@
   </section>
 
 <!-- ── SPEAKERS ─────────────────────────────────────────── -->
+<!-- ── SPEAKERS ─────────────────────────────────────────── -->
  <section id="speakers">
     <span class="section-label">Our Presenters</span>
     <h2>Speaker Information</h2>
     <div class="speakers-grid">
 
+      <!-- Permanent Secretary -->
       <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Abdullah Bin Julaihi','Permanent Secretary','','{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}')">
         <img src="{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}" alt="Datu Haji Abdullah Bin Julaihi" />
         <strong>Datu Haji Abdullah Bin Julaihi</strong>
         <span>Permanent Secretary</span>
       </div>
-      
+
       <!-- Day 1: Keynote -->
       <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Keynote Speaker','','{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}')">
         <img src="{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}" alt="Prof. Emeritus Dato Dr. Ibrahim Komoo" />
@@ -284,14 +286,50 @@
       </div>
 
       <!-- Day 1: Subtheme 1 - Policy and Governance -->
-      <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/INDRA PH SUNJOTO.png') }}')">
-        <img src="{{ asset('images/talker/INDRA PH SUNJOTO.png') }}" alt="Indra P. H. Sunjoto" />
-        <strong>Indra P. H. Sunjoto</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Session Chairman','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}')">
+        <img src="{{ asset('images/talker/TUAN ABDULLAH.png') }}" alt="Tuan Muhamad Bin Abdullah" />
+        <strong>Tuan Muhamad Bin Abdullah</strong>
+        <span>Session Chairman · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarin R.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Zarin+R&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Zarin+R&background=2d5a3d&color=fff&size=150" alt="Zarin R." />
+      <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Paper Presenter & Session Chairman','Sabah Forestry Department','{{ asset('images/talker/INDRA PH SUNJOTO.png') }}')">
+        <img src="{{ asset('images/talker/INDRA PH SUNJOTO.png') }}" alt="Indra P. H. Sunjoto" />
+        <strong>Indra P. H. Sunjoto</strong>
+        <span>Paper Presenter & Session Chairman · Sabah Forestry Department</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Mohd. Ridzuwan Bin Endor','Session Chairman','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/RIDZUWAN.png') }}')">
+        <img src="{{ asset('images/talker/RIDZUWAN.png') }}" alt="Tuan Haji Mohd. Ridzuwan Bin Endor" />
+        <strong>Tuan Haji Mohd. Ridzuwan Bin Endor</strong>
+        <span>Session Chairman · Jabatan Perhutanan Semenanjung Malaysia</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','https://ui-avatars.com/api/?name=Arthur+Chung&background=1a5c2e&color=fff&size=150')">
+        <img src="https://ui-avatars.com/api/?name=Arthur+Chung&background=1a5c2e&color=fff&size=150" alt="Arthur Chung Yaw Chyang" />
+        <strong>Arthur Chung Yaw Chyang</strong>
+        <span>Session Chairman · Sabah Forestry Department</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Affendi bin Suhaili','Session Chairman','Forest Department Sarawak','{{ asset('images/talker/DR AFFENDI.png') }}')">
+        <img src="{{ asset('images/talker/DR AFFENDI.png') }}" alt="Dr. Affendi bin Suhaili" />
+        <strong>Dr. Affendi bin Suhaili</strong>
+        <span>Session Chairman · Forest Department Sarawak</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Happysupina Bin Sait','Session Chairman','Forest Department Sarawak','{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}')">
+        <img src="{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}" alt="Tuan Haji Happysupina Bin Sait" />
+        <strong>Tuan Haji Happysupina Bin Sait</strong>
+        <span>Session Chairman · Forest Department Sarawak</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Hasnaliza B.A.','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/HASNALIZA.png') }}')">
+        <img src="{{ asset('images/talker/HASNALIZA.png') }}" alt="Hasnaliza B.A." />
+        <strong>Hasnaliza B.A.</strong>
+        <span>Paper Presenter · Forest Department Sarawak</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Zarin R.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/ZARIN R.png') }}')">
+        <img src="{{ asset('images/talker/ZARIN R.png') }}" alt="Zarin R." />
         <strong>Zarin R.</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
@@ -302,10 +340,9 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <!-- Day 2: Subtheme 2 - Nature-Based Adaptation and Solution -->
-      <div class="speaker-card" onclick="showSpeakerModal('Azhar Ahmad','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Azhar+Ahmad&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Azhar+Ahmad&background=1a5c2e&color=fff&size=150" alt="Azhar Ahmad" />
-        <strong>Azhar Ahmad</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Debora Belawan','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/DEBORA.png') }}')">
+        <img src="{{ asset('images/talker/DEBORA.png') }}" alt="Debora Belawan" />
+        <strong>Debora Belawan</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
@@ -315,9 +352,9 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zainuddin Jamaluddin','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Zainuddin+Jamaluddin&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Zainuddin+Jamaluddin&background=2d5a3d&color=fff&size=150" alt="Zainuddin Jamaluddin" />
-        <strong>Zainuddin Jamaluddin</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Iqtie Qamar Laila Mohd Gani','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/IQTIE.jpg') }}')">
+        <img src="{{ asset('images/talker/IQTIE.jpg') }}" alt="Iqtie Qamar Laila Mohd Gani" />
+        <strong>Iqtie Qamar Laila Mohd Gani</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
@@ -327,27 +364,20 @@
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Alexander Hastie','Paper Presenter','Sabah Forestry Department','https://ui-avatars.com/api/?name=Alexander+Hastie&background=4a7c59&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Alexander+Hastie&background=4a7c59&color=fff&size=150" alt="Alexander Hastie" />
-        <strong>Alexander Hastie</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
-      </div>
-
-      <!-- Day 2: Subtheme 3 - Partnership and Collaboration -->
       <div class="speaker-card" onclick="showSpeakerModal('Mijol R. M.','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/MIJOL RM.png') }}')">
         <img src="{{ asset('images/talker/MIJOL RM.png') }}" alt="Mijol R. M." />
         <strong>Mijol R. M.</strong>
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Gana R. K.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Gana+RK&background=4a7c59&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Gana+RK&background=4a7c59&color=fff&size=150" alt="Gana R. K." />
+      <div class="speaker-card" onclick="showSpeakerModal('Gana R. K.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/GANA R.png') }}')">
+        <img src="{{ asset('images/talker/GANA R.png') }}" alt="Gana R. K." />
         <strong>Gana R. K.</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Meliza Binti Mohd Rizan','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MELIZA.png') }}')">
-        <img src="{{ asset('images/talker/MELIZA.png') }}" alt="Meliza Binti Mohd Rizan" />
+      <div class="speaker-card" onclick="showSpeakerModal('Meliza Binti Mohd Rizan','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MELIZA.jpg') }}')">
+        <img src="{{ asset('images/talker/MELIZA.jpg') }}" alt="Meliza Binti Mohd Rizan" />
         <strong>Meliza Binti Mohd Rizan</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
@@ -358,9 +388,8 @@
         <span>Paper Presenter · Unimas</span>
       </div>
 
-      <!-- Day 2: Subtheme 4 - Biodiversity Research and Conservation -->
-      <div class="speaker-card" onclick="showSpeakerModal('Siti Khatijah Othman','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Siti+Khatijah&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Siti+Khatijah&background=1a5c2e&color=fff&size=150" alt="Siti Khatijah Othman" />
+      <div class="speaker-card" onclick="showSpeakerModal('Siti Khatijah Othman','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/SITI KHATIJAH.png') }}')">
+        <img src="{{ asset('images/talker/SITI KHATIJAH.png') }}" alt="Siti Khatijah Othman" />
         <strong>Siti Khatijah Othman</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
@@ -377,34 +406,27 @@
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Aliana Binti Affendi','Paper Presenter','Sarawak Forestry Corporation','https://ui-avatars.com/api/?name=Aliana+Affendi&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Aliana+Affendi&background=2d5a3d&color=fff&size=150" alt="Aliana Binti Affendi" />
+      <div class="speaker-card" onclick="showSpeakerModal('Aliana Binti Affendi','Paper Presenter','Sarawak Forestry Corporation','{{ asset('images/talker/ALIANA.jpg') }}')">
+        <img src="{{ asset('images/talker/ALIANA.jpg') }}" alt="Aliana Binti Affendi" />
         <strong>Aliana Binti Affendi</strong>
         <span>Paper Presenter · Sarawak Forestry Corporation</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Jonathan J. Lucas','Paper Presenter','Sabah Forestry Department','https://ui-avatars.com/api/?name=Jonathan+Lucas&background=1a5c2e&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Jonathan+Lucas&background=1a5c2e&color=fff&size=150" alt="Jonathan J. Lucas" />
+      <div class="speaker-card" onclick="showSpeakerModal('Jonathan J. Lucas','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/JONATHAN J LUCAS.jpg') }}')">
+        <img src="{{ asset('images/talker/JONATHAN J LUCAS.jpg') }}" alt="Jonathan J. Lucas" />
         <strong>Jonathan J. Lucas</strong>
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <!-- Day 2: Subtheme 5 - Forest Plantation and Restoration -->
       <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHEBLI.png') }}')">
         <img src="{{ asset('images/talker/ZARINA SHEBLI.png') }}" alt="Zarina Shebli" />
         <strong>Zarina Shebli</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('M. Hafni','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=M+Hafni&background=4a7c59&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=M+Hafni&background=4a7c59&color=fff&size=150" alt="M. Hafni" />
+      <div class="speaker-card" onclick="showSpeakerModal('M. Hafni','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/HAFNI.png') }}')">
+        <img src="{{ asset('images/talker/HAFNI.png') }}" alt="M. Hafni" />
         <strong>M. Hafni</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
-      </div>
-
-      <div class="speaker-card" onclick="showSpeakerModal('A. Richard','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=A+Richard&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=A+Richard&background=2d5a3d&color=fff&size=150" alt="A. Richard" />
-        <strong>A. Richard</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
@@ -414,13 +436,12 @@
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Roger Tami','Paper Presenter','Samling Reforestation (Bintulu) Sdn. Bhd.','{{ asset('images/talker/ROGER TAMI.png') }}')">
-        <img src="{{ asset('images/talker/ROGER TAMI.png') }}" alt="Roger Tami" />
+      <div class="speaker-card" onclick="showSpeakerModal('Roger Tami','Paper Presenter','Samling Reforestation (Bintulu) Sdn. Bhd.','{{ asset('images/talker/ROGER TAMI.jpg') }}')">
+        <img src="{{ asset('images/talker/ROGER TAMI.jpg') }}" alt="Roger Tami" />
         <strong>Roger Tami</strong>
         <span>Paper Presenter · Samling Reforestation (Bintulu) Sdn. Bhd.</span>
       </div>
-
-      <!-- Day 3: Subtheme 6 - Social Forestry & Ecotourism -->
+    
       <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}')">
         <img src="{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}" alt="Suliman Bin Haji Jamahari" />
         <strong>Suliman Bin Haji Jamahari</strong>
@@ -433,9 +454,9 @@
         <span>Paper Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Nor Zaidi Jusoh','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','https://ui-avatars.com/api/?name=Nor+Zaidi&background=2d5a3d&color=fff&size=150')">
-        <img src="https://ui-avatars.com/api/?name=Nor+Zaidi&background=2d5a3d&color=fff&size=150" alt="Nor Zaidi Jusoh" />
-        <strong>Nor Zaidi Jusoh</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Reanee Lee','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/REANEE LEE.png') }}')">
+        <img src="{{ asset('images/talker/REANEE LEE.png') }}" alt="Reanee Lee" />
+        <strong>Reanee Lee</strong>
         <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
       </div>
 
@@ -443,13 +464,6 @@
         <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
         <strong>Madeline George Pau</strong>
         <span>Paper Presenter · Forest Department Sarawak</span>
-      </div>
-
-      <!-- Day 3: Closing Ceremony -->
-      <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Abdullah Bin Julaihi','Permanent Secretary','','{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}')">
-        <img src="{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}" alt="Datu Haji Abdullah Bin Julaihi" />
-        <strong>Datu Haji Abdullah Bin Julaihi</strong>
-        <span>Permanent Secretary</span>
       </div>
 
     </div>
