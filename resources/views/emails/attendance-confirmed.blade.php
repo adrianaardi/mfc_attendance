@@ -7,7 +7,8 @@
         .wrapper { max-width: 580px; margin: 40px auto; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,.08); }
         .header { background: #1a3a2a; padding: 36px 32px; text-align: center; }
         .header h1 { color: #fff; font-size: 22px; margin: 0; }
-        .header p { color: rgba(255,255,255,.65); font-size: 13px; margin: 6px 0 0; }
+        .header h2 { color: #fff; font-weight:500;  font-size: 13px;  margin: -2px 0 15px 0; }
+        .header p { color: #fff; font-size: 13px; margin: 6px 0 0; }
         .body { padding: 32px; }
         .body h2 { color: #1a3a2a; font-size: 20px; margin-bottom: 10px; }
         .body p { color: #4a5e4f; font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
@@ -24,6 +25,7 @@
     <div class="wrapper">
         <div class="header">
             <h1>Malaysian Forestry Conference 2026</h1>
+            <h2>Hosted by Forest Department Sarawak</h2>
             <p>Attendance Confirmation</p>
         </div>
         <div class="body">
