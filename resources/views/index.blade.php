@@ -161,11 +161,11 @@
         <tr><td>11:30 AM – 12:00 PM</td><td><strong>Main Working Paper 2:</strong> Forestry Department of Peninsular Malaysia</td></tr>
         <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong> Forest Department Sarawak</td></tr>
         <tr><td>12:30 PM – 1:45 PM</td><td>Lunch</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance<br>Chairman: </strong>Tuan Muhamad Bin Abdullah (Jabatan Perhutanan Semenanjung Malaysia)</td></tr>
+        <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance<br>Chairman: </strong>Tuan Muhamad Bin Abdullah (Forestry Department of Peninsular Malaysia)</td></tr>
         <tr><td>1:45 PM – 2:00 PM</td><td>Session Commencement</td></tr>
         <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 1:</strong> Digital Governance in Forestry: Enhancing STLVS Integrity and Revenue Efficiency as a Catalyst for Sarawak’s Green Economy<ul><li>Hasnaliza B.A. et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 2:</strong> Unlocking Natural Capital: Sabah’s Policy Frameworks for a Forest-Based Green Economy <ul><li>Indra P. H. Sunjoto et al. (Sabah Forestry Department)</li></ul></td></tr>
-        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam (Public Hearing) Bagi Pewartaan Keluar Hutan Simpanan Kekal (HSK) Di Semenanjung Malaysia<ul><li>Zarin R. et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 3:</strong> Penetapan Pendengaran Awam (Public Hearing) Bagi Pewartaan Keluar Hutan Simpanan Kekal (HSK) Di Semenanjung Malaysia<ul><li>Zarin R. et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy in Action: Integrating Dipterocarp Population Assessment into Sarawak's Efforts on CITES and the Sustainable Timber Framework<ul><li>Vilma Bodos et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>3:20 PM – 3:30 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>3:30 PM</td><td>Refreshments &amp; End of Day 1</td></tr>
@@ -183,25 +183,25 @@
     <div id="day2" class="agenda-day" style="display:none;">
       <table>
         <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
-        <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Solution<br>Chairman: </strong>Tuan Haji Mohd. Ridzuwan Bin Endor (Jabatan Perhutanan Semenanjung Malaysia)</td></tr>
+        <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Solution<br>Chairman: </strong>Tuan Haji Mohd. Ridzuwan Bin Endor (Forestry Department of Peninsular Malaysia)</td></tr>
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Debora Belawan et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Debora Belawan et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 6:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies et al. (Forest Department Sarawak)</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Iqtie Qamar Laila Mohd Gani et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Iqtie Qamar Laila Mohd Gani et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:30 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration<br>Chairman: </strong>Tuan Indra Puwandita Bin Herry Sunjoto (Sabah Forestry Department)</td></tr>
         <tr><td>10:30 AM – 10:40 AM</td><td>Session Commencement</td></tr>
         <tr><td>10:40 AM – 11:00 AM</td><td><strong>Paper 9:</strong> Sabah Timber Legality Assurance System Plus (TLAS+): Advancing Timber Legality through International Collaboration<ul><li>Mijol R. M et al. (Sabah Forestry Department)</li></ul></td></tr>
-        <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 10:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R.K et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 10:</strong> Operasi Penguatkuasaan Bersepadu Forestry Department of Peninsular Malaysia<ul><li>Gana R.K et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>11:20 AM – 11:40 AM</td><td><strong>Paper 11:</strong> Digitalizing Conservation Governance: [HOBS] A Cross-Agency Project Management System for the Heart of Borneo in Sarawak<ul><li>Meliza Binti Mohd Rizan et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>11:40 AM – 12:00 PM</td><td><strong>Paper 12: </strong>Small Mammal Diversity in Borneo: Insights from Historical Records and Collaborative Biodiversity Assessments<ul><li>Professor Ts. Dr. Faisal Ali bin Anwarali Khan et al. (Unimas)</li></ul></td></tr>
         <tr><td>12:00 PM – 12:10 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>12:10 PM – 1:30 PM</td><td>Lunch</td></tr>
         <tr><td colspan="2"><strong>Subtheme 4: Biodiversity Research and Conservation<br>Chairman</strong> Arthur Chung Yaw Chyang (Sabah Forestry Department)</td></tr>
         <tr><td>1:30 PM – 1:40 PM</td><td>Session Commencement</td></tr>
-        <tr><td>1:40 PM – 2:00 PM</td><td><strong>Paper 13:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>1:40 PM – 2:00 PM</td><td><strong>Paper 13:</strong> Ekspedisi Saintifik Kepelbagaian Biologi Hutan: Pencapaian dan Hala Tuju<ul><li>Siti Khatijah Othman et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>2:00 PM – 2:20 PM</td><td><strong>Paper 14:</strong> Developing a Forest Reference Level Monitoring System in Sabah: Integrating Field Biometrics and Remote Sensing for Biodiversity Conservation and Sustainable Forest Management<ul><li>Reuben Nilus et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>2:20 PM – 2:40 PM</td><td><strong>Paper 15:</strong> The use of UAV-based LiDAR for Forest Volume Modeling in Sarawak<ul><li>Bibian Diway et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>2:40 PM – 3:00 PM</td><td><strong>Paper 16: </strong>An An Overview of Orangutan Conservation in Sarawak for the Next Decade<ul><li>Aliana Binti Affendi et al. (Sarawak Forestry Corporation)</li></ul></td></tr>
@@ -215,7 +215,7 @@
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration<br>Chairman: </strong>Dr. Affendi bin Suhaili (Forest Department Sarawak)</td></tr>
         <tr><td>3:40 PM – 4:00 PM</td><td>Session Commencement</td></tr>
         <tr><td>4:00 PM – 4:20 PM</td><td><strong>Paper 18:</strong> Forest Restoration and Rehabilitation: Experiences and Insights<ul><li>Zarina, S. et al.(Forest Department Sarawak)</li></ul></td></tr>
-        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 20:</strong> Shifting Dependency on Natural Forests to Forest Plantations in Support of Forest Landscape Sustainability<ul><li>Heidi Henry William et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>4:50 PM – 5:10 PM</td><td><strong>Paper 21:</strong> Transforming Industrial Forest Plantations through R&D and Certification: Samling’s Experience In Sarawak, Malaysia.<ul><li>Roger Tami et al. (Samling Reforestation [Bintulu] Sdn. Bhd.)</li></ul></td></tr>
         <tr><td>5:10 PM – 5:20 PM</td><td>Question and Answer Session</td></tr>
@@ -238,7 +238,7 @@
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
         <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 22:</strong> Seridan Folia: A Community’s Journey with Tongkat Ali in the Heart of Borneo<ul><li>Suliman Bin Haji Jamahari et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 23:</strong> Beyond Conservation: Community Participation as a Driver of Green Economy in Sabah’s Forest Landscapes<ul><li>E.B. Johnlee et al. (Sabah Forestry Department)</li></ul></td></tr>
-        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 24:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Reanee Lee et al. (Jabatan Perhutanan Semenanjung Malaysia)</li></ul></td></tr>
+        <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 24:</strong> Pengurusan Kawasan Pendakian Di Dalam Hutan Simpanan Kekal Di Semenanjung Malaysia<ul><li>Reanee Lee et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 25:</strong> Community-based Tourism and its Contribution to  Local Economies: Insights from Peros<ul><li>Madeline George Pau et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:25 AM</td><td>Refreshments</td></tr>
@@ -265,43 +265,35 @@
   </section>
 
 <!-- ── SPEAKERS ─────────────────────────────────────────── -->
-<!-- ── SPEAKERS ─────────────────────────────────────────── -->
  <section id="speakers">
     <span class="section-label">Our Presenters</span>
-    <h2>Speaker Information</h2>
+    <h2>Presenters' Information</h2>
     <div class="speakers-grid">
 
-      <!-- Permanent Secretary -->
-      <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Abdullah Bin Julaihi','Permanent Secretary','','{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}')">
-        <img src="{{ asset('images/talker/DATU HAJI ABDULLAH JULAIHI.png') }}" alt="Datu Haji Abdullah Bin Julaihi" />
-        <strong>Datu Haji Abdullah Bin Julaihi</strong>
-        <span>Permanent Secretary</span>
-      </div>
-
       <!-- Day 1: Keynote -->
-      <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Keynote Speaker','','{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Prof. Emeritus Dato Dr. Ibrahim Komoo','Research Fellow, Geopark Research Centre (PPG)','Universiti Kebangsaan Malaysia','{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}','Emeritus Professor (Engineering Geology), Universiti Kebangsaan Malaysia UKM – expert in geological disasters, environmental geoscience, geoparks and geotourism. Founder Vice President, Global Geoparks Network (GGN); Founder Vice Chairman, Asia Pacific Geopark Network (APGN); Founder Vice Chair, UNESCO Global Geopark Council (UGGpC); Senior Evaluator, UGGp; and Chairman, National Heritage Council. Among the recognitions received are the Langkawi Award (2009); IUGS Science Excellence Award (Environmental Geology) (2013); ASEAN Biodiversity Heroes (2022); and Malaysian Geologist Laureate (2026).')">
         <img src="{{ asset('images/talker/PROF EMERITUS DATO DR IBRAHIM KOMOO.png') }}" alt="Prof. Emeritus Dato Dr. Ibrahim Komoo" />
         <strong>Prof. Emeritus Dato Dr. Ibrahim Komoo</strong>
         <span>Keynote Speaker</span>
       </div>
 
       <!-- Day 1: Subtheme 1 - Policy and Governance -->
-      <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Session Chairman','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Senior Director of the Forest Planning and Economics Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}','Tuan Muhamad bin Abdullah is the Senior Director of the Forest Planning and Economics Division at the Forestry Department of Peninsular Malaysia, bringing nearly two decades of experience to the role since joining the department in July 2006. His extensive expertise bridges forestry and social sciences, focusing on forest planning, policy development, governance, and anti-corruption studies. Throughout his career, he has contributed to key national and international initiatives, including legislative reform, climate change, biodiversity conservation, and the Malaysian Criteria and Indicators for Sustainable Forest Management (MC&I SFM). In recognition of his distinguished public service, he was conferred the Darjah Ahli Mahkota Perak by the Perak Government, and he continues his leadership in the sector as the Chairman of Subtheme 1 (Policy and Governance) for the 21st Malaysian Forestry Conference (MFC-21).')">
         <img src="{{ asset('images/talker/TUAN ABDULLAH.png') }}" alt="Tuan Muhamad Bin Abdullah" />
         <strong>Tuan Muhamad Bin Abdullah</strong>
-        <span>Session Chairman · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Session Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Paper Presenter & Session Chairman','Sabah Forestry Department','{{ asset('images/talker/INDRA PH SUNJOTO.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Deputy Chief Conservator of Forests (Planning & Management)','Sabah Forestry Department','{{ asset('images/talker/INDRA PH SUNJOTO.png') }}','Indra Purwandita H. Sunjoto has been working in the Sabah Forestry Department for 30 years. He was assigned as District Forestry Officer and gained experiences in managing Forest Management Unit at several districts. He has experience in implementing sustainable forest management concepts, from planning, management, assessment and operation. He has been actively involved on forest conservation & protection programme, forest rehabilitation, wildlife monitoring and habitat management, forest fire management, timber legality assurance system, forest certification and payment for ecosystem services (PES). He is also responsible on forest protection programme, particularly on anti-poaching programme in Sabah.')">
         <img src="{{ asset('images/talker/INDRA PH SUNJOTO.png') }}" alt="Indra P. H. Sunjoto" />
         <strong>Indra P. H. Sunjoto</strong>
-        <span>Paper Presenter & Session Chairman · Sabah Forestry Department</span>
+        <span>Paper 2 Presenter & Session Chairman · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Mohd. Ridzuwan Bin Endor','Session Chairman','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/RIDZUWAN.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Mohd. Ridzuwan Bin Endor','Senior Director of the Forest Management Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/RIDZUWAN.png') }}','Tuan Haji Mohd Ridzuwan bin Endot, born in Pokok Sena, Kedah in 1968, is a highly experienced registered Forester (IRIM-171) with 34 years of extensive expertise in the forestry sector. A graduate of UPM and UKM, he has dedicated his career to the Forestry Department of Peninsular Malaysia (FDPM), specializing in key areas such as silviculture, sustainable forest management, peatland management, carbon credits, and degraded forest restoration. Throughout his distinguished career, he has held prominent administrative roles, including Director of the Selangor State Forestry Department, Director of the Silviculture Division, and Senior Director of the Forest Management Division at FDPM. In addition to his leadership duties, he is an active researcher who frequently authors local and international scientific papers, serves as an expert panellist, and dedicates his time to community healthcare volunteer work.')">
         <img src="{{ asset('images/talker/RIDZUWAN.png') }}" alt="Tuan Haji Mohd. Ridzuwan Bin Endor" />
         <strong>Tuan Haji Mohd. Ridzuwan Bin Endor</strong>
-        <span>Session Chairman · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Session Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
 
       <div class="speaker-card" onclick="showSpeakerModal('Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
@@ -310,160 +302,166 @@
         <span>Session Chairman · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Dr. Affendi bin Suhaili','Session Chairman','Forest Department Sarawak','{{ asset('images/talker/DR AFFENDI.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Affendi bin Suhaili','Head of Forest Technology and Geospatial Division','Forest Department Sarawak','{{ asset('images/talker/DR AFFENDI.png') }}','Dr. Affendi bin Suhaili is the Head of the Forest Technology and Geospatial Division at the Forest Department Sarawak, bringing over three decades of expertise in precision forestry, geospatial science, and hyperspectral remote sensing. Beginning his career in 1991, he later established and directed the Systems Application and Development Unit (SADU) from 2008 to 2020, laying the groundwork for Sarawak\'s modern digital forestry framework before stepping into his current role to lead the division\'s digital transformation. He holds a PhD in Precision Forestry, a Bachelor of Forestry, and a Diploma in Forestry from Universiti Putra Malaysia, and he spent a decade lecturing part-time on Remote Sensing and GIS at Universiti Malaysia Sarawak. An active researcher and author of over 20 scientific publications, Dr. Affendi frequently shares his expertise on forest monitoring and REDD+ readiness globally, bridging the gap between advanced spatial technologies and sustainable forest management.')">
         <img src="{{ asset('images/talker/DR AFFENDI.png') }}" alt="Dr. Affendi bin Suhaili" />
         <strong>Dr. Affendi bin Suhaili</strong>
         <span>Session Chairman · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Happysupina Bin Sait','Session Chairman','Forest Department Sarawak','{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Happysupina Bin Sait','Deputy Director of Forest (Conservation & Development)','Forest Department Sarawak','{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}','Happysupina Bin Sait is the Deputy Director of Forest (Conservation & Development) at the Forest Department Sarawak, a role he has held since January 2023 to lead strategic initiatives in forest conservation, innovation, and sustainable development. Since joining the department in 1995, he has accumulated over 30 years of experience across forestry administration, licensing, revenue management, and strategic planning, holding key leadership positions such as Head of Regional Forest Offices in Sibu and Kuching. Notably, during his tenure as Chief Information Officer from 2014 to December 2020, he spearheaded major digital transformation initiatives and coordinated vital frameworks, including the Forest Department Sarawak Strategic Plan 2021–2025 and PCDS 2030 initiatives. Happysupina holds a Bachelor of Science in Forestry from Universiti Pertanian Malaysia and a Master of Science in Project Management from Curtin University Malaysia.')">
         <img src="{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}" alt="Tuan Haji Happysupina Bin Sait" />
         <strong>Tuan Haji Happysupina Bin Sait</strong>
         <span>Session Chairman · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Hasnaliza B.A.','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/HASNALIZA.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Hasnaliza B.A.','Senior Research Officer','Forest Department Sarawak','{{ asset('images/talker/HASNALIZA.png') }}','Hasanaliza Binti Bujang Abdillah is the Head of the Forest Supply Chain Operations and Compliance Section within the Revenue and Data Management Division at the Forest Department Sarawak, bringing over 16 years of expertise in forestry revenue management, supply chain compliance, and sustainable governance. She holds a Bachelor of Science in Aquatic Resource Science & Management and a Master of Science in Environmental Science from UNIMAS, along with a foundational background in forest plantation soil research. Throughout her career, Hasanaliza has managed revenue operations at local and headquarters levels and supported the development of key digital systems like LoTS, RBS, and REVLOG. Furthermore, in her role as Secretariat for the Sarawak Timber Legality Verification System (STLVS), she oversees certification and auditor renewals, leveraging her core strengths in compliance and digital transformation to advance transparent and sustainable forest administration.')">
         <img src="{{ asset('images/talker/HASNALIZA.png') }}" alt="Hasnaliza B.A." />
         <strong>Hasnaliza B.A.</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 1 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarin R.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/ZARIN R.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Zarin R.','Assistant Director Enforcement (Prevention)','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/ZARIN R.png') }}','This highly experienced forestry professional holds a comprehensive academic background, including a Diploma of Forestry from UPM, a Bachelor of Science in Forestry from UMS, and a recently completed Master of Science in Conservation Biology from UKM (2025). They have built a diverse career within the Forestry Department of Peninsular Malaysia (FDPM), developing deep expertise through both administrative and field-based roles. Their foundational experience includes resource planning and silviculture management in Pahang, followed by a tenure as Assistant Director of Forest Eco-Park and State Park Forest. They went on to serve as the Jerantut District Forest Officer from 2017 to 2021 before moving into legal and enforcement roles, serving as Assistant Director of Legislation III and undertaking specialized training. Currently, they apply their extensive background in conservation, law, and field management as the Assistant Director of Enforcement (Prevention) within FDPM’s Forest Enforcement Division.')">
         <img src="{{ asset('images/talker/ZARIN R.png') }}" alt="Zarin R." />
         <strong>Zarin R.</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 3 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Vilma Bodos','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/VILMA ANAK BODOS.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Vilma Bodos','Research Officer','Forest Department Sarawak','{{ asset('images/talker/VILMA ANAK BODOS.png') }}','This experienced forestry and plant conservation professional possesses 19 years of expertise spanning forest ecology, tree diversity and High Conservation Value Area (HCVA) assessments, and sustainable forest management. After serving as an Environment Executive with the Sarawak Forestry Corporation from 2007 to 2020, they joined the Forest Department Sarawak in 2020 as a Research Officer in the Research & Development Division, where they focus on forest research and species conservation planning. A recognized expert in tree conservation and forestry policy, they are actively involved in national and international red listing and CITES initiatives, and contribute to global conservation frameworks as a member of the IUCN Global Tree Specialist Group.')">
         <img src="{{ asset('images/talker/VILMA ANAK BODOS.png') }}" alt="Vilma Bodos" />
         <strong>Vilma Bodos</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 4 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Debora Belawan','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/DEBORA.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Debora Belawan','Assistant Director (Forest Plantation and Innovation Section)','Selangor State Forestry Department','{{ asset('images/talker/DEBORA.png') }}','This experienced forestry professional holds a Bachelor of Forestry Science and possesses extensive expertise in forestry management and environmental conservation. She began her career with the Forestry Department Peninsular Malaysia, serving from 2011 to 2019, before joining the Selangor State Forestry Department, where she focuses on forest plantation development, innovation initiatives, and sustainable forest management. A key figure in environmental protection, she plays an important role in directing forest fire prevention and control efforts in Selangor by coordinating preparedness programmes, inter-agency collaborations, monitoring activities, and public awareness initiatives to mitigate forest and peatland fire risks.')">
         <img src="{{ asset('images/talker/DEBORA.png') }}" alt="Debora Belawan" />
         <strong>Debora Belawan</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 5 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Dr Malcom anak Demies','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/DR MALCOM DEMIES.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Dr Malcom anak Demies','Head, Forest Carbon Unit','Forest Department Sarawak','{{ asset('images/talker/DR MALCOM DEMIES.png') }}','Dr. Malcom Anak Demies is the Head of the Forest Carbon Unit at the Forest Department Sarawak, bringing over 25 years of research and field experience in the state\'s diverse rainforests. He holds a BSc in Conservation Biology and Ecology of Tropical Forests, an MSc in Botany from UKM, and a PhD in Tropical Ecology and Forestry from UNIMAS. A pioneer in the region\'s forestry practices, Dr. Malcom introduced High Conservation Value Forest assessments to Sarawak—enabling the certification of over ten Forest Management Units—and served as the principal architect of the state\'s forest carbon management framework, which was instrumental in enacting the Forests (Forest Carbon Activity) Rules, 2022. His extensive technical expertise spans traditional and LiDAR-based carbon stock measurement, MRV systems, GIS, and carbon policy development, successfully bridging rigorous science with practical governance to position Sarawak as a leader in climate change mitigation.')">
         <img src="{{ asset('images/talker/DR MALCOM DEMIES.png') }}" alt="Dr Malcom anak Demies" />
         <strong>Dr Malcom anak Demies</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 6 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Iqtie Qamar Laila Mohd Gani','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/IQTIE.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Iqtie Qamar Laila Mohd Gani','Principle Assistant Director (Development)','Pahang State Forestry Department','{{ asset('images/talker/IQTIE.jpg') }}','This highly qualified forestry professional holds a Bachelor Degree in Forestry Science from Universiti Malaysia Sabah and a Master Degree in Forest Management and Economics from Beijing Forestry University. Over an extensive career with the Forestry Department of Peninsular Malaysia, they have held numerous key administrative and field positions, beginning in 2009 as Assistant Director of Extension before advancing through roles in planning, corporate communication, and enforcement across Pahang and Kelantan. After serving as Senior Assistant Director of International Affairs at the department\'s headquarters starting in 2019, they were appointed as the Principal Assistant Director of Development for the Pahang State Forestry Department in October 2025, bringing diverse expertise in enforcement, international relations, and regional forest development to their leadership.')">
         <img src="{{ asset('images/talker/IQTIE.jpg') }}" alt="Iqtie Qamar Laila Mohd Gani" />
         <strong>Iqtie Qamar Laila Mohd Gani</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 7 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Rosila Anthony','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/ROSILA ANTHONY.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Rosila Anthony','Head of Division (Forest Sector Planning)','Sabah Forestry Department','{{ asset('images/talker/ROSILA ANTHONY.png') }}','Rosila Anthony is a key figure in the Sabah Forestry Department (SFD) and leads various important initiatives in forest management and climate change action. She holds a MSc holder in Tropical Forest Resource Management from Universiti Putra Malaysia (UPM) and has been with the Sabah Forestry Department (SFD) since 1992. As the Head of the Forest Sector Planning Division, she coordinates with government and international organizations on forestry matters and spearheads projects such as the EU funded Tackling Climate Change through Sustainable Forest Management and Community Development Project, Sustainable Use of Peatland and Haze Mitigation in ASEAN (SUPA) Project, Sustainable Management of Peatland Ecosystem in Malaysia (SMPEM), and the GEF-UNDP FOLUR Impact Program. Additionally, she plays a vital role in the Secretariat of the Sabah Climate Change Action Council (SCAC), focusing on climate-related forestry projects like REDDPlus, PES, and NBS.')">
         <img src="{{ asset('images/talker/ROSILA ANTHONY.png') }}" alt="Rosila Anthony" />
         <strong>Rosila Anthony</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 8 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Mijol R. M.','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/MIJOL RM.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Mijol R. M.','Head of Section Forest Audit, Sustainable Forest Management Division','Sabah Forestry Department','{{ asset('images/talker/MIJOL RM.png') }}','Robert Martin Mijol is the Head of the Forest Audit Section at the Sabah Forestry Department, holding a Bachelor’s Degree in Biotechnology from Universiti Malaysia Sabah and nearly two decades of forestry experience since joining the sector in 2007. He began his career with the Heart of Borneo Initiative focusing on transboundary conservation before stepping into the role of District Forestry Officer for the Ulu Segama-Malua Forest Reserve in 2016, where he championed sustainable forest management and FSC certification. Since 2021, he has overseen forest certification and Sabah Timber Legality Assurance System (Sabah TLAS) auditing under the Sustainable Forest Management Division. Notably, his recent efforts to align regional frameworks with international regulations like the EUDR and EU CS3D culminated in the launch of the enhanced Sabah TLAS+ in February 2026, reinforcing his ongoing commitment to credible forest governance, traceability, and responsible timber trade.')">
         <img src="{{ asset('images/talker/MIJOL RM.png') }}" alt="Mijol R. M." />
         <strong>Mijol R. M.</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 9 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Gana R. K.','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/GANA R.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Gana R. K.','Assistant Director of Forest Enforcement (Forensics)','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/GANA R.png') }}','Gana Raj Anak Katharayan from Sentul, Kuala Lumpur. Holds a Diploma in Forestry from UPM, a Bachelor of Forestry Science from UPM, and a Master\'s Degree in Science, Technology, and Innovation Policy from UTM. Has served with the Forestry Department Peninsular Malaysia (JPSM) for 16 years, including 2 years with the Forest Enforcement Division in the Forest Forensics Section. Cooperates with the Department of Chemistry Malaysia and the Forest Research Institute Malaysia (FRIM) in an effort to establish a Malaysia plant DNA database and Document Security for forest operations.')">
         <img src="{{ asset('images/talker/GANA R.png') }}" alt="Gana R. K." />
         <strong>Gana R. K.</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 10 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Meliza Binti Mohd Rizan','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MELIZA.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Hajah Meliza Binti Mohd Rizan','Senior Executive Forester','Forest Department Sarawak','{{ asset('images/talker/MELIZA.jpg') }}','Hajah Meliza Bt Mohd Rizan is a Senior Executive Forester and the Head of the Remote Sensing and Geodata Section within the Forest Technology and Geospatial Division at the Forest Department Sarawak. Since joining the department in 2010 and moving to permanent service in 2013, she has gained extensive experience across various key divisions before joining the geospatial team in 2018. In her current role, she spearheads strategic initiatives in geospatial technologies and digital innovation to strengthen evidence-based forest governance and enhance national and international reporting on climate change and sustainability. As Data Custodian for national forest datasets, she oversees the continuous enhancement of the Enterprise Forest Information Management System (EFIMS) and the Continuous Monitoring and Surveillance (COMOS) initiative. A champion for innovation, she has actively driven organizational excellence as Team Leader of the ConservaTech Group and participated in major exhibitions like the MTE 2025 with the EcoHub project to advance Sarawak\'s sustainable forest management goals.')">
         <img src="{{ asset('images/talker/MELIZA.jpg') }}" alt="Meliza Binti Mohd Rizan" />
         <strong>Meliza Binti Mohd Rizan</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 11 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Prof. Ts. Dr. Faisal Ali bin Anwarali Khan','Paper Presenter','Unimas','{{ asset('images/talker/FAISAL ALI.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Prof. Ts. Dr. Faisal Ali bin Anwarali Khan','Dean, Faculty of Resource Science and Technology','Universiti Malaysia Sarawak','{{ asset('images/talker/FAISAL ALI.jpg') }}','Professor Faisal is a zoologist specialising in the systematics, evolution and taxonomy of small mammals, with particular emphasis on bats in Malaysia. He holds a PhD and MSc in Zoology from Texas Tech University, and a BSc (Hons) in Biotechnology Resource from Universiti Malaysia Sarawak (UNIMAS). His research is strongly grounded in field-based biodiversity studies, contributing to the documentation of bat diversity, species distributions, and community assemblages across tropical ecosystems particularly in Sarawak and wider Malaysia. He has been actively involved in biodiversity surveys and taxonomic work that support regional efforts to better understand and conserve small mammal fauna, an ecologically significant yet understudied component of Southeast Asian biodiversity.')">
         <img src="{{ asset('images/talker/FAISAL ALI.jpg') }}" alt="Prof. Ts. Dr. Faisal Ali bin Anwarali Khan" />
         <strong>Prof. Ts. Dr. Faisal Ali bin Anwarali Khan</strong>
-        <span>Paper Presenter · Unimas</span>
+        <span>Paper 12 Presenter · Universiti Malaysia Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Siti Khatijah Othman','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/SITI KHATIJAH.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Siti Khatijah Othman','Head of Section (Forest Biodiversity)','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/SITI KHATIJAH.png') }}','SITI KHATIJAH BINTI OTHMAN serves as the Head of Section (Forest Biodiversity) at the Forestry Department of Peninsular Malaysia (FDPM). She holds a Bachelor of Forestry Science from University Putra Malaysia. Her career with FDPM began in 2010 as Assistant Director of Macro and Micro Planning. In 2016, she advanced to Assistant Director of Water Catchment Forest Management and Monitoring, focusing on conserving water catchment areas within Permanent Reserved Forests (HSK). In 2020, she was appointed to lead the Forest Planning and Management Unit at the Terengganu State Forestry Department. Promoted to Senior Assistant Director in 2025, she now is responsible for forest biodiversity conservation across Peninsular Malaysia. Her current key responsibilities include overseeing scientific biodiversity expeditions to explore HSK areas, strengthening the nation\'s scientific database, and ensuring evidence-based, sustainable forest resource management.')">
         <img src="{{ asset('images/talker/SITI KHATIJAH.png') }}" alt="Siti Khatijah Othman" />
         <strong>Siti Khatijah Othman</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 13 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Reuben Nilus','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/REUBEN NILUS.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Reuben Nilus','Forest Ecologist','Sabah Forestry Department','{{ asset('images/talker/REUBEN NILUS.png') }}','Reuben Nilus is a Malaysian forest ecologist with the Sabah Forestry Department, where he has served at the Forest Research Centre in Sandakan since October 1994. He holds a Bachelor of Science in Botany from the University of Malaya and a PhD in Tropical Plant Ecology from the University of Aberdeen. Over more than three decades, his expertise has spanned forest dynamics, rehabilitation, conservation biology, and biodiversity monitoring, with a strong focus on ecosystem integrity and sustainable landscape management in Sabah. An active researcher and author, he has contributed extensively to High Conservation Value (HCV) assessments, ecological monitoring, and forest management plans, leveraging his scientific work to support evidence-based decision-making for forest conservation and the protection of ecosystem services.')">
         <img src="{{ asset('images/talker/REUBEN NILUS.png') }}" alt="Reuben Nilus" />
         <strong>Reuben Nilus</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 14 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Bibian Anak Micheal Diway','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/BIBIAN MICHAEL DIWAY.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Bibian Anak Micheal Diway','Executive Forester','Forest Department Sarawak','{{ asset('images/talker/BIBIAN MICHAEL DIWAY.png') }}','Bibian Diway is an experienced forestry professional who holds a Bachelor of Science in Forestry from Universiti Putra Malaysia and a Master of Plant Science from Universiti Malaysia Sarawak. Since beginning her career in 2001, she has focused on forest ecology and forest inventory, actively leading research projects in forest resources assessment, structural analysis, and monitoring to support sustainable forest management in Sarawak. While her foundational work relied on conventional assessment methods, her current research interests focus on integrating advanced technologies, such as drone-based LiDAR, for biomass estimation, forest volume modeling, and modern forest resource assessments.')">
         <img src="{{ asset('images/talker/BIBIAN MICHAEL DIWAY.png') }}" alt="Bibian Anak Micheal Diway" />
         <strong>Bibian Anak Micheal Diway</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 15 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Aliana Binti Affendi','Paper Presenter','Sarawak Forestry Corporation','{{ asset('images/talker/ALIANA.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Aliana Binti Affendi','Conservation Officer','Sarawak Forestry Corporation, SFC','{{ asset('images/talker/ALIANA.jpg') }}','Aliana Affendi is a Conservation Officer within the Biodiversity Conservation and Research Division at the Sarawak Forestry Corporation (SFC). A graduate of Universiti Malaysia Sarawak (UNIMAS), her research and professional practice focus on the ecology and protection of terrestrial fauna, with a primary specialization in primate conservation. Since 2022, she has been instrumental in bridging the gap between field-based research and conservation policy, particularly through her contributions to developing and implementing species-specific action plan. With over four years of experience in the field, she has developed technical skills in wildlife surveys and managing an integrated wildlife project. Her current interests lie in applying emerging technologies to conservation biology. Through her work with the SFC, she continues to drive essential efforts for the protection and conservation of primate species and the long-term preservation of Sarawak’s unique biodiversity.')">
         <img src="{{ asset('images/talker/ALIANA.jpg') }}" alt="Aliana Binti Affendi" />
         <strong>Aliana Binti Affendi</strong>
-        <span>Paper Presenter · Sarawak Forestry Corporation</span>
+        <span>Paper 16 Presenter · Sarawak Forestry Corporation</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Jonathan J. Lucas','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/JONATHAN J LUCAS.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Jonathan J. Lucas','Research Officer','Sabah Forestry Department','{{ asset('images/talker/JONATHAN J LUCAS.jpg') }}','Jonathan Jimmey Lucas is a Research Officer with the Systematic Botany Section (Sandakan Herbarium), Forest Research Centre, Sabah Forestry Department. He graduated with a Bachelor’s Degree with Honours in Forestry Science (International Tropical Forestry) from Universiti Malaysia Sabah in 2021. With over four years of experience in botanical and forestry research, he has been developing his expertise in forest inventory, plant taxonomy, herbarium management, and biodiversity conservation. His work focuses on documenting and conserving Sabah’s rich flora through field surveys, taxonomic research, and conservation assessments, contributing to evidence-based forest management and biodiversity conservation initiatives.')">
         <img src="{{ asset('images/talker/JONATHAN J LUCAS.jpg') }}" alt="Jonathan J. Lucas" />
         <strong>Jonathan J. Lucas</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 17 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHEBLI.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Zarina Shebli','Head, Restoration and Industrial Forest Division','Forest Department Sarawak','{{ asset('images/talker/ZARINA SHEBLI.png') }}','Hajah Meliza Bt Mohd Rizan is a Senior Executive Forester and the Head of the Remote Sensing and Geodata Section within the Forest Technology and Geospatial Division at the Forest Department Sarawak. Since joining the department in 2010 and moving to permanent service in 2013, she has gained extensive experience across various key divisions before joining the geospatial team in 2018. In her current role, she spearheads strategic initiatives in geospatial technologies and digital innovation to strengthen evidence-based forest governance and enhance national and international reporting on climate change and sustainability. As Data Custodian for national forest datasets, she oversees the continuous enhancement of the Enterprise Forest Information Management System (EFIMS) and the Continuous Monitoring and Surveillance (COMOS) initiative. A champion for innovation, she has actively driven organizational excellence as Team Leader of the ConservaTech Group and participated in major exhibitions like the MTE 2025 with the EcoHub project to advance Sarawak\'s sustainable forest management goals.')">
         <img src="{{ asset('images/talker/ZARINA SHEBLI.png') }}" alt="Zarina Shebli" />
         <strong>Zarina Shebli</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 18 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('M. Hafni','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/HAFNI.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('M. Hafni','Senior Assistant Director (Natural Forest Silviculture)','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/HAFNI.png') }}','Holder of a Bachelor\'s Degree in International Tropical Science (University of Malaysia Sabah, UMS). Started working at the Peninsular Malaysia Forestry Department (FDPM) since 2009. Previously worked at the Kedah State Forestry Department (2009-2011), Kelantan State Forestry Department (2011-2015), Terengganu State Forestry Department (2015-2020). Currently working at the Silviculture & Forest Biological Conservation Division, FDPM')">
         <img src="{{ asset('images/talker/HAFNI.png') }}" alt="M. Hafni" />
         <strong>M. Hafni</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 19 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Heidi Henry William','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/HEIDI HENRY.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Heidi Henry William','Head of Forest Plantation Section Sustainable Forest Management Division','Sabah Forestry Department','{{ asset('images/talker/HEIDI HENRY.png') }}','Heidi Henry William is the Head of the Forest Plantation Section at the Sabah Forestry Department. She holds a Bachelor of Forestry Science Degree (Wood Fibre & Technology) from Universiti Malaysia Sabah (UMS), and Master of Forestry Science from University of Canterbury, New Zealand. She has served in the Sabah Forestry Department since 2007, beginning from the Forest Sector Planning Division, specialized on project collaboration with local and international partners. Since 2023, Heidi became the Head of Forest Plantation Section under the Sustainable Forest Management Division. Her current portfolio focuses on overseeing the progress of forest plantation development in Sabah, which is crucial to ensure the sustainability and viability of the wood-based industry ')">
         <img src="{{ asset('images/talker/HEIDI HENRY.png') }}" alt="Heidi Henry William" />
         <strong>Heidi Henry William</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 20 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Roger Tami','Paper Presenter','Samling Reforestation (Bintulu) Sdn. Bhd.','{{ asset('images/talker/ROGER TAMI.jpg') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Roger Tami','Senior Manager, R&D','Samling Reforestation (Bintulu) Sdn. Bhd.','{{ asset('images/talker/ROGER TAMI.jpg') }}','Roger Richard Tami is an industrial forestry R&D and containerized nursery specialist who brings nearly three decades of tropical forest plantation experience to his role as Senior Manager, Research and Development at Samling Reforestation (Bintulu) Sdn. Bhd. He holds a Bachelor of Science in Botany, Conservation Biology, and Ecology from the National University of Malaysia, and his career has focused heavily on Acacia and Eucalyptus research, tree breeding, clonal screening, vegetative propagation, and pest management. Throughout his career, Roger has contributed to major industrial plantation programmes across Sarawak, Sabah, and Indonesia, working with prominent organizations like Samling, Jaya Tiasa Holdings, Sabah Forest Industries, Acacia Forestry Industry, and Sinarmas APP. In his current position, he leads the strategic transition from seed-based plantations to high-productivity clonal forestry, prioritizing genetic improvement, operational excellence, and certification-aligned plantation innovation.')">
         <img src="{{ asset('images/talker/ROGER TAMI.jpg') }}" alt="Roger Tami" />
         <strong>Roger Tami</strong>
-        <span>Paper Presenter · Samling Reforestation (Bintulu) Sdn. Bhd.</span>
+        <span>Paper 21 Presenter · Samling Reforestation (Bintulu) Sdn. Bhd.</span>
       </div>
     
-      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Suliman Bin Haji Jamahari','Senior Assistant Director (Social Forestry Division)','Forest Department Sarawak','{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}','Graduated from Universiti Pertanian Malaysia with a Bachelor of Science (Hons) in Forestry in 1995. He started his career as a Production Executive with the Samling Strategic Corporation in 1995 in Miri and joined the Forest Department Sarawak in 1996. He served in many roles, such as Warden of the Gunung Mulu World Heritage Area, Ramsar Site Manager, interim Project Manager of the Asia Pacific Forest Network (APFNet), Project Coordinator of the United Nations Development Programme-Global Environmental Facility (UNDP-GEF), and Head of the Enforcement Division. His current position is Senior Assistant Director of Forests in charge of the Social Forestry Division.')">
         <img src="{{ asset('images/talker/SULIMAN HAJI JAMAHARI.png') }}" alt="Suliman Bin Haji Jamahari" />
         <strong>Suliman Bin Haji Jamahari</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 22 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('E. B. Johnlee','Paper Presenter','Sabah Forestry Department','{{ asset('images/talker/EB JOHNLEE.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('E. B. Johnlee','Head of Forest Socio-Economic Programme, Forest Research Centre','Sabah Forestry Department','{{ asset('images/talker/EB JOHNLEE.png') }}','ELNE BETRECE JOHNLEE is the Head of the Forest Socioeconomic Programme at the Forest Research Centre (FRC), Sabah Forestry Department (SFD). She holds a Bachelor of Science and a Master of Science in Forestry from Universiti Malaysia Sabah. Since joining SFD in 2011, she has served in various capacities, including as a FLEGT Officer under the Sustainable Forest Management (SFM) Division, where she was involved in Timber Legality Assurance System (TLAS) and Sustainable Forest Management License Agreement (SFMLA) audits. In 2013, she served as Assistant District Forest Officer in Beaufort, and since 2015 has been attached to the Forest Research Centre, focusing on research and development. Her research interests include social forestry, forest socioeconomics, community participation in SFM, ecosystem services assessment, social impact assessment, forest recreation and ecotourism, ethnobotany, and agroforestry, with a focus on integrating social dimensions into forest conservation, sustainable livelihoods, and evidence-based forest governance in Sabah.')">
         <img src="{{ asset('images/talker/EB JOHNLEE.png') }}" alt="E. B. Johnlee" />
         <strong>E. B. Johnlee</strong>
-        <span>Paper Presenter · Sabah Forestry Department</span>
+        <span>Paper 23 Presenter · Sabah Forestry Department</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Reanee Lee','Paper Presenter','Jabatan Perhutanan Semenanjung Malaysia','{{ asset('images/talker/REANEE LEE.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal('Reanee Lee','Head, Forest Eco-Park & State Park Forest, FDPM','Forestry Department Peninsular Malaysia','{{ asset('images/talker/REANEE LEE.png') }}','This forestry and policy professional holds a Bachelor of Forestry Science with Honours in Nature Park & Recreation from Universiti Malaysia Sabah and a Master in Science, Technology, and Innovation Policy from Universiti Teknologi Malaysia. They began their career in 2009 as a Park and Recreation Planner at EKM Landscape Architect before joining the Forestry Department of Peninsular Malaysia (FDPM) in 2011, serving five years as Assistant Director in the Legal and Prosecution Division. They subsequently expanded their field experience as Assistant Director of Enforcement and Industrial Production at the Kedah State Forestry Department, followed by a five-year tenure managing in-situ and ex-situ conservation within FDPM\'s Silviculture & Forest Biodiversity Conservation Division. Currently, they leverage this extensive background in law, planning, and conservation to serve as the Head Section of Forest Eco-Park & State Park Forest at FDPM headquarters.')">
         <img src="{{ asset('images/talker/REANEE LEE.png') }}" alt="Reanee Lee" />
         <strong>Reanee Lee</strong>
-        <span>Paper Presenter · Jabatan Perhutanan Semenanjung Malaysia</span>
+        <span>Paper 24 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Madeline George Pau','Paper Presenter','Forest Department Sarawak','{{ asset('images/talker/MADELINE GEORGE PAU.png') }}')">
+      <div class="speaker-card" onclick="showSpeakerModal(
+          'Madeline George Pau',
+          'Head, Geopark Management Unit',
+          'Forest Department Sarawak',
+          '{{ asset('images/talker/MADELINE GEORGE PAU.png') }}',
+          'Madeline holds a Bachelor of Science in Forestry (Hons) from Universiti Pertanian Malaysia (1993) and a Master of Environmental Science (Land Use and Water Resource Management) from Universiti Malaysia Sarawak (2024) then joining the department as an Executive Forester, beginning in Sustainable Forest Management. Over the years she has served as Coordinator of the Heart of Borneo Initiatives (2008-2010; 2018-2020) and the FAO-EU-FLEGT Project (2018-2019). From 2020 to 2023, she headed the Consitution and Conservation Division. In 2024, she pioneered the establishment and leading the Geopark Management Unit, coordination the management and development of the Sarawak Delta Geopark. Under her coordination, Sarawak Delta achience designation as a UNESCO Global Geopark in April 2026, marking a significant milestone for Sarawak and Malaysia'
+        )">
         <img src="{{ asset('images/talker/MADELINE GEORGE PAU.png') }}" alt="Madeline George Pau" />
         <strong>Madeline George Pau</strong>
-        <span>Paper Presenter · Forest Department Sarawak</span>
+        <span>Paper 25 Presenter · Forest Department Sarawak</span>
       </div>
 
     </div>
@@ -639,10 +637,16 @@
   <div id="speakerModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <img id="modalImg" src="" alt="Speaker" />
+
+      <img id="modalImg" src="" alt="Speaker" class="modal-avatar" />
+
       <h2 id="modalName"></h2>
-      <p id="modalTitle"></p>
-      <p id="modalCompany"></p>
+      <p id="modalTitle" class="modal-role"></p>
+      <p id="modalCompany" class="modal-org"></p>
+
+      <div class="modal-bio-wrap">
+        <p id="modalBio" class="modal-bio"></p>
+      </div>
     </div>
   </div>
 
@@ -695,18 +699,30 @@
         });
     }
     // Speaker modal
-    function showSpeakerModal(name, title, company, imgSrc) {
+    function showSpeakerModal(name, title, company, imgSrc, bio) {
       document.getElementById('modalImg').src = imgSrc;
       document.getElementById('modalName').textContent = name;
       document.getElementById('modalTitle').textContent = title;
       document.getElementById('modalCompany').textContent = company;
+
+      const bioEl = document.getElementById('modalBio');
+      const bioWrap = document.querySelector('.modal-bio-wrap');
+
+      if (bio && bio.trim().length > 0) {
+        bioEl.textContent = bio;
+        bioWrap.style.display = 'block';
+      } else {
+        bioWrap.style.display = 'none'; // hide gracefully if no bio given
+      }
+
       document.getElementById('speakerModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // stop background scroll on mobile
     }
 
     function closeModal() {
       document.getElementById('speakerModal').style.display = 'none';
+      document.body.style.overflow = '';
     }
-
     window.addEventListener('click', e => {
       if (e.target === document.getElementById('speakerModal')) closeModal();
     });

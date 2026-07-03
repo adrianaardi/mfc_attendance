@@ -630,21 +630,97 @@ footer {
   background: rgba(10,24,16,.78);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  align-items: center;
+  align-items: flex-end; /* bottom sheet on mobile */
   justify-content: center;
-  padding: 24px;
+  padding: 0;
 }
 
-/* JS sets display:flex to open */
 .modal-content {
   background: var(--cream);
-  border-radius: 20px;
-  padding: 36px 24px 28px;
-  max-width: 320px;
+  border-radius: 20px 20px 0 0;
+  padding: 28px 24px 32px;
   width: 100%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
   text-align: center;
-  animation: popIn .32s cubic-bezier(.22,1,.36,1);
   position: relative;
+  animation: slideUp .32s cubic-bezier(.22,1,.36,1);
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 14px;
+  border: 3px solid var(--cream);
+  box-shadow: 0 4px 14px rgba(0,0,0,.15);
+}
+
+#modalName {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.modal-role {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f6b3c; /* tweak to your theme accent */
+  margin: 0 0 2px;
+}
+
+.modal-org {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 18px;
+}
+
+.modal-bio-wrap {
+  text-align: left;
+  border-top: 1px solid rgba(0,0,0,.08);
+  padding-top: 14px;
+  margin-top: 4px;
+}
+
+.modal-bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  max-height: 40vh;  
+  overflow-y: auto;
+  padding-right: 4px;
+  margin: 0;
+}
+
+/* thin, unobtrusive scrollbar for the bio */
+.modal-bio::-webkit-scrollbar { width: 4px; }
+.modal-bio::-webkit-scrollbar-thumb { background: rgba(0,0,0,.2); border-radius: 4px; }
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* on wider screens, revert to a centered popup instead of a bottom sheet */
+@media (min-width: 640px) {
+  .modal { align-items: center; padding: 24px; }
+  .modal-content { border-radius: 20px; animation: popIn .32s cubic-bezier(.22,1,.36,1); }
+  @keyframes popIn {
+    from { transform: scale(.92); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+  }
 }
 
 @keyframes popIn {
