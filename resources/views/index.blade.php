@@ -92,7 +92,7 @@
     <div class="slide active" data-slide="1">
       <div class="hero-inner">
         <div class="hero-tag">21st Edition · 2026</div>
-        <h1>21st Malaysian <em>Forestry</em><br>Conference 2026</h1>
+        <h1>21ˢᵗ Malaysian <em>Forestry</em><br>Conference 2026</h1>
           <p class="excerpt-text">
             The Malaysian Forestry Conference (MFC) is the premier national forestry conference in Malaysia. <br> <span class="more-text"> Since its inception in 1966, the conference has been organised on a rotational basis among the forestry authorities of Peninsular Malaysia, Sabah and Sarawak.<br>
             Held every few years, the conference provides a platform for forestry professionals to exchange knowledge, share experiences and discuss issues relating to the sustainable management of Malaysia's forest resources.
@@ -121,15 +121,34 @@
       </div>
     </div>
 
-  </div>
+    <div class="slide" data-slide="3">
+      <div class="hero-inner">
+        <div class="hero-tag">Official Announcement</div>
+        <h1>Conference Brochure <br>&amp; Guidelines</h1>
+        <p>Get the complete event overview, detailed daily agenda, speaker lineups, and guidelines for abstract submissions at a glance.</p>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:4a795ffd-c374-47c3-9d68-3215a3f6cb4c?viewer%21megaVerb=group-discover" target="_blank" class="register_btn">View Pamphlet</a>
+      </div>
+    </div>
+
+    <!-- Slide 4: Photo Gallery (Google Drive) -->
+    <div class="slide" data-slide="4">
+      <div class="hero-inner">
+        <div class="hero-tag">Event Gallery</div>
+        <h1>Capturing <em>Moments</em> <br>In Real-Time</h1>
+        <p>Browse through live highlights, keynote presentations, networking sessions, and field excursions from MFC 2026.</p>
+        <a href="https://drive.google.com/drive/u/0/folders/1vourATbZGHVgee8AXqApIPENJ0rzYkkC" target="_blank" class="register_btn">View Photo Gallery</a>
+      </div>
+    </div>
 
   <div class="slider-dots">
     <span class="dot active" data-dot="1"></span>
     <span class="dot" data-dot="2"></span>
+    <span class="dot" data-dot="3"></span>
+    <span class="dot" data-dot="4"></span>
   </div>
 
   <div class="scroll-hint">
-    Kelingkang Range
+    Kelingkang Range, sarawak
   </div>
 </header>
 
