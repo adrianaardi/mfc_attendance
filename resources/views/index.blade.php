@@ -299,10 +299,7 @@
     <span class="section-label">Our Presenters</span>
     <h2>Presenters' Information</h2>
 
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- GROUP 1: KEYNOTE SPEAKER & SESSION CHAIRMEN             -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <h3 class="group-title">Keynote Speaker &amp; Session Chairmen</h3>
+    <h3 class="group-title">Keynote Address & Main Working Paper</h3>
     <div class="speakers-grid">
 
       <!-- Day 1: Keynote -->
@@ -311,6 +308,21 @@
         <strong>Prof. Emeritus Dato Dr. Ibrahim Komoo</strong>
         <span>Keynote Speaker</span>
       </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Zulkifli bin Suara','Chief Conservator of Forests','Sabah Forestry Department','{{ asset('images/talker/DATUK SUARA.png') }}','Datuk Zulkifli bin Suara is the Chief Conservator of Forests of the Sabah Forestry Department. He holds a Diploma in Forestry from Universiti Pertanian Malaysia and a Bachelor of Science in Forestry from Universiti Putra Malaysia. With more than 30 years of service in the forestry sector, he has held various key positions, including Planning Officer, Assistant District Forest Officer, District Forest Officer, Monitoring, Controlling, Enforcement and Evaluation Officer, Head of Investigation, Enforcement and Prosecution Division, and Deputy Chief Conservator of Forests (Operation). His professional experience covers forest operations, enforcement, prosecution, governance and regional cooperation. He has also represented the Department in national and international platforms and has received various excellence awards in recognition of his service and leadership.')">
+        <img src="{{ asset('images/talker/DATUK SUARA.png') }}" alt="Zulkifli bin Suara" />
+        <strong>Zulkifli bin Suara</strong>
+        <span>Main Working Paper 1 Speaker</span>
+      </div>
+
+      <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Hamden Bin Haji Mohammad','Director of Forests Sarawak','Forest Department Sarawak','{{ asset('images/talker/HAJI HAMDEN.png') }}','Datu Haji Hamden bin Haji Mohammad has served as the Director of Forests Sarawak since 2018, distinguishing himself as an accomplished forestry professional and public sector leader dedicated to balancing environmental conservation with socio-economic development. Under his visionary leadership, the Forest Department Sarawak has advanced sustainable forest management, expanded conservation initiatives, and adopted modern technology like LiDAR, remote sensing, and geospatial analytics. A key highlight of his tenure is directing the Greening Sarawak Campaign, which allowed Sarawak to surpass its tree-planting targets ahead of schedule, while his commitment to international collaboration paved the way for major milestones, including the designation of the Sarawak Delta Geopark as a UNESCO Global Geopark. Widely respected for his expertise in environmental governance, climate action, and nature-based solutions, Datu Hamden continues to drive Sarawak\'s forestry sector toward long-term sustainability, innovation, and global recognition.')">
+        <img src="{{ asset('images/talker/HAJI HAMDEN.png') }}" alt="Datu Haji Hamden Bin Haji Mohammad" />
+        <strong>Datu Haji Hamden Bin Haji Mohammad</strong>
+        <span>Main Working Paper 3 Speaker</span>
+      </div>
+    </div>
+    <h3 class="group-title" style="margin-top:36px;">Session Chairmen</h3>
+    <div class="speakers-grid">
 
       <div class="speaker-card" onclick="showSpeakerModal('Tuan Haji Happysupina Bin Sait','Deputy Director of Forest (Conservation & Development)','Forest Department Sarawak','{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}','Happysupina Bin Sait is the Deputy Director of Forest (Conservation & Development) at the Forest Department Sarawak, a role he has held since January 2023 to lead strategic initiatives in forest conservation, innovation, and sustainable development. Since joining the department in 1995, he has accumulated over 30 years of experience across forestry administration, licensing, revenue management, and strategic planning, holding key leadership positions such as Head of Regional Forest Offices in Sibu and Kuching. Notably, during his tenure as Chief Information Officer from 2014 to December 2020, he spearheaded major digital transformation initiatives and coordinated vital frameworks, including the Forest Department Sarawak Strategic Plan 2021–2025 and PCDS 2030 initiatives. Happysupina holds a Bachelor of Science in Forestry from Universiti Pertanian Malaysia and a Master of Science in Project Management from Curtin University Malaysia.')">
         <img src="{{ asset('images/talker/HAJI HAPPYSUPINA.png') }}" alt="Tuan Haji Happysupina Bin Sait" />
