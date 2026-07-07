@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('day')->between(1, 3);
             $table->string('speaker');
             $table->string('title');
-            $table->string('pdf_url')->nullable();
+            $table->string('pdf_path')->nullable();
             $table->integer('order')->default(0);
             $table->timestamps();
         });

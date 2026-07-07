@@ -38,7 +38,7 @@
         <div class="table-header">
             <h3>Add New Slide</h3>
         </div>
-        <form method="POST" action="/admin/slides" style="background:#fff; padding:24px; border-radius:var(--radius); box-shadow:var(--shadow);">
+        <form method="POST" action="/admin/slides" enctype="multipart/form-data" style="background:#fff; padding:24px; border-radius:var(--radius); box-shadow:var(--shadow);">
             @csrf
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-bottom:16px;">
                 <div class="form-group">
@@ -58,8 +58,8 @@
                     <input type="text" name="title" placeholder="Paper/presentation title" required value="{{ old('title') }}">
                 </div>
                 <div class="form-group">
-                    <label>PDF Link <span style="color:var(--text-soft); font-weight:400;">(optional)</span></label>
-                    <input type="url" name="pdf_url" placeholder="https://..." value="{{ old('pdf_url') }}">
+                    <label>Upload PDF Slide <span style="color:var(--text-soft); font-weight:400;">(optional)</span></label>
+                    <input type="file" name="pdf_file" accept=".pdf" style="padding: 8px 0;">
                 </div>
             </div>
             @if($errors->any())
@@ -102,14 +102,14 @@
                         <td>{{ $slide->speaker }}</td>
                         <td>{{ $slide->title }}</td>
                         <td>
-                            @if($slide->pdf_url)
-                                <a href="{{ $slide->pdf_url }}" target="_blank" style="color:var(--moss); font-weight:600; font-size:13px; text-decoration:none;">↓ PDF</a>
+                            @if($slide->pdf_path)
+                                <a href="{{ asset('storage/' . $slide->pdf_path) }}" target="_blank" style="color:var(--moss); font-weight:600; font-size:13px; text-decoration:none;">📄 View PDF</a>
                             @else
                                 <span style="color:var(--text-soft); font-size:13px;">—</span>
                             @endif
                         </td>
                         <td style="white-space:nowrap;">
-                            <button onclick="openEdit({{ $slide->id }}, '{{ addslashes($slide->speaker) }}', '{{ addslashes($slide->title) }}', '{{ $slide->pdf_url }}', {{ $slide->day }})" class="export-btn" style="padding:6px 12px; font-size:12px; margin-right:6px;">Edit</button>
+                            <button onclick="openEdit({{ $slide->id }}, '{{ addslashes($slide->speaker) }}', '{{ addslashes($slide->title) }}', '{{ $slide->pdf_path }}', {{ $slide->day }})" class="export-btn" style="padding:6px 12px; font-size:12px; margin-right:6px;">Edit</button>
                             <form method="POST" action="/admin/slides/{{ $slide->id }}" style="display:inline;">
                                 @csrf
                                 @method('DELETE')
@@ -119,7 +119,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="5" style="text-align:center; color:var(--text-soft);">No slides added yet.</td>
+                        <td colspan="4" style="text-align:center; color:var(--text-soft);">No slides added yet.</td>
                     </tr>
                     @endforelse
                 </tbody>
@@ -135,7 +135,7 @@
     <div class="modal-content" style="max-width:480px;">
         <span class="close" onclick="closeEdit()">&times;</span>
         <h2 style="font-family:'Playfair Display',serif; font-size:20px; color:var(--forest); margin-bottom:20px;">Edit Slide</h2>
-        <form id="edit-form" method="POST">
+        <form id="edit-form" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group">
@@ -155,8 +155,9 @@
                 <input type="text" name="title" id="edit-title" style="padding:11px 14px; border:1.5px solid var(--mist); border-radius:10px; font-family:'DM Sans',sans-serif; font-size:14px; width:100%; outline:none; background:#fafcfb;">
             </div>
             <div class="form-group">
-                <label>PDF Link</label>
-                <input type="url" name="pdf_url" id="edit-pdf" style="padding:11px 14px; border:1.5px solid var(--mist); border-radius:10px; font-family:'DM Sans',sans-serif; font-size:14px; width:100%; outline:none; background:#fafcfb;">
+                <label>Replace PDF File <span style="color:var(--text-soft); font-weight:400;">(Leave blank to keep current)</span></label>
+                <input type="file" name="pdf_file" accept=".pdf" style="padding:8px 0;">
+                <span id="current-pdf-label" style="font-size:11px; color:var(--text-soft); display:block; margin-top:2px;"></span>
             </div>
             <button type="submit" class="export-btn" style="width:100%; justify-content:center; margin-top:8px;">Save Changes</button>
         </form>
@@ -171,12 +172,20 @@
         document.getElementById('stab-' + n).classList.add('active');
     }
 
-    function openEdit(id, speaker, title, pdf, day) {
+    function openEdit(id, speaker, title, pdfPath, day) {
         document.getElementById('edit-form').action = '/admin/slides/' + id;
         document.getElementById('edit-speaker').value = speaker;
         document.getElementById('edit-title').value = title;
-        document.getElementById('edit-pdf').value = pdf || '';
         document.getElementById('edit-day').value = day;
+        
+        // Show file presence feedback inside modal script
+        const label = document.getElementById('current-pdf-label');
+        if (pdfPath && pdfPath !== 'null' && pdfPath !== '') {
+            label.innerText = "Current file: " + pdfPath.split('/').pop();
+        } else {
+            label.innerText = "No file currently attached.";
+        }
+
         document.getElementById('editModal').style.display = 'flex';
     }
 
