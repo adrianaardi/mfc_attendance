@@ -44,15 +44,15 @@
 <body>
   <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>
-    <a href="#header">
+    <a href="/">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'" />
       <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
     </a>
 
-    <a href="#agenda">Agenda</a>
-    <a href="#speakers">Bios</a>
-    <a href="#slides">Slides</a>
-    <a href="#footer">Contacts</a>
+    <a href="/agenda">Agenda</a>
+    <a href="/speakers">Bios</a>
+    <a href="/slides">Slides</a>
+    <a href="/footer">Contacts</a>
         <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
   </nav>
 
