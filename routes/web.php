@@ -5,17 +5,7 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SlideController;
-use App\Models\Slide;
-use Illuminate\Support\Facades\DB;
 
-Route::get('/run-db-fix', function () {
-    try {
-        DB::statement('ALTER TABLE slides CHANGE pdf_url pdf_path VARCHAR(500) NULL');
-        return 'Success! The column has been renamed to pdf_path.';
-    } catch (\Exception $e) {
-        return 'Error: ' . $e->getMessage();
-    }
-});
 // Main event site
 Route::get('/', function () {
     $settings = [
