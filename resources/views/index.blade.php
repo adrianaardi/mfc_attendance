@@ -27,7 +27,7 @@
                 text: "{{ session('success') }}",
                 icon: 'success',
                 confirmButtonText: 'Got it!',
-                confirmButtonColor: '#1a3a2a',
+                confirmButtonColor: '#908D31',
                 background: '#f7f3ec',
                 color: '#1a2a1e',
                 iconColor: '#4a7c59',
@@ -177,9 +177,18 @@
         <tr><td>10:15 AM – 10:30 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Plenary Session: Main Working Paper</strong></td></tr>
         <tr><td>10:30 AM – 11:00 AM</td><td><strong>Keynote Address:</strong> Protected Areas, Eco-Forest Parks, and Geoparks: Drivers of Green Economy and Sustainability in Malaysian Forestry<ul><li>Prof. Emeritus Dato Dr. Ibrahim Komoo & Norhayati Ahmad (Universiti Kebangsaan Malaysia)</li></ul></td></tr>
-        <tr><td>11:00 AM – 11:30 AM</td><td><strong>Main Working Paper 1:</strong> Sabah Forestry Department</td></tr>
+        <tr><td>11:00 AM – 11:30 AM</td><td><strong>Main Working Paper 1:</strong> Forests at the Frontier:Powering a Green Economy through Sustainable Forest Stewardship for a Climate-Resilient Future
+        <ul>
+          <li>
+            Datuk Zulkifli Suara (Sabah Forestry Department)
+          </li>
+        </ul></td></tr>
         <tr><td>11:30 AM – 12:00 PM</td><td><strong>Main Working Paper 2:</strong> Forestry Department of Peninsular Malaysia</td></tr>
-        <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong> Forest Department Sarawak</td></tr>
+        <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong>Sarawak Strategic Blueprint for Sustainable Forestry and Climate Action. 
+          <ul>
+            <li>
+              Datu Haji Hamden Bin Haji Mohammad (Forest Department Sarawak)
+            </li></ul></td></tr>
         <tr><td>12:30 PM – 1:45 PM</td><td>Lunch</td></tr>
         <tr><td colspan="2"><strong>Subtheme 1: Policy and Governance<br>Chairman: </strong>Tuan Haji Happysupina bin Sait (Forest Department Sarawak)</td></tr>
         <tr><td>1:45 PM – 2:00 PM</td><td>Session Commencement</td></tr>
