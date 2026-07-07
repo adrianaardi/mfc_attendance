@@ -27,7 +27,7 @@
                 text: "{{ session('success') }}",
                 icon: 'success',
                 confirmButtonText: 'Got it!',
-                confirmButtonColor: '#908D31',
+                confirmButtonColor: '#1a3a2a',
                 background: '#f7f3ec',
                 color: '#1a2a1e',
                 iconColor: '#4a7c59',
