@@ -247,11 +247,11 @@
         <tr><td colspan="2"><strong>Subtheme 5: Forest Plantation and Restoration<br>Chairman: </strong>Dr. Affendi bin Suhaili (Forest Department Sarawak)</td></tr>
         <tr><td>3:40 PM – 4:00 PM</td><td>Session Commencement</td></tr>
         <tr><td>4:00 PM – 4:20 PM</td><td><strong>Paper 18:</strong> Forest Restoration and Rehabilitation: Experiences and Insights<ul><li>Zarina, S. et al.(Forest Department Sarawak)</li></ul></td></tr>
-        <tr><td>4:20 PM – 4:30 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
-        <tr><td>4:30 PM – 4:50 PM</td><td><strong>Paper 20:</strong> Shifting Dependency on Natural Forests to Forest Plantations in Support of Forest Landscape Sustainability<ul><li>Heidi Henry William et al. (Sabah Forestry Department)</li></ul></td></tr>
-        <tr><td>4:50 PM – 5:10 PM</td><td><strong>Paper 21:</strong> Transforming Industrial Forest Plantations through R&D and Certification: Samling’s Experience In Sarawak, Malaysia.<ul><li>Roger Tami et al. (Samling Reforestation [Bintulu] Sdn. Bhd.)</li></ul></td></tr>
-        <tr><td>5:10 PM – 5:20 PM</td><td>Question and Answer Session</td></tr>
-        <tr><td>5:20 PM</td><td>End of Day 2</td></tr>
+        <tr><td>4:20 PM – 4:40 PM</td><td><strong>Paper 19:</strong> Forest Landscape Restoration Approaches to Strengthen Forest Sustainability In Peninsular Malaysia<ul><li>M. Hafni et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
+        <tr><td>4:40 PM – 5:00 PM</td><td><strong>Paper 20:</strong> Shifting Dependency on Natural Forests to Forest Plantations in Support of Forest Landscape Sustainability<ul><li>Heidi Henry William et al. (Sabah Forestry Department)</li></ul></td></tr>
+        <tr><td>5:00 PM – 5:20 PM</td><td><strong>Paper 21:</strong> Transforming Industrial Forest Plantations through R&D and Certification: Samling’s Experience In Sarawak, Malaysia.<ul><li>Roger Tami et al. (Samling Reforestation [Bintulu] Sdn. Bhd.)</li></ul></td></tr>
+        <tr><td>5:20 PM – 5:30 PM</td><td>Question and Answer Session</td></tr>
+        <tr><td>5:30 PM</td><td>End of Day 2</td></tr>
       </table>
       <div class="punch-in-container">
         @if($settings['attendance_day2'])
