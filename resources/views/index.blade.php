@@ -82,7 +82,7 @@
 
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Bio's</a>
-    <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
+    <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank">Booklet</a>
     <a href="#slides">Slides</a>
     <a href="#footer">Contacts</a>
   </nav>
@@ -116,7 +116,7 @@
         <h1 style="font-size: clamp(20px, 6vw, 48px);
   white-space: nowrap;">Booklet Programme MFC 2026</h1>
         <p>Get the complete event overview, detailed daily agenda, speaker lineups, and guidelines for abstract submissions at a glance.</p>
-        <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank" class="register_btn">View Booklet</a>
+        <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank" class="register_btn">View Booklet</a>
       </div>
     </div>
 

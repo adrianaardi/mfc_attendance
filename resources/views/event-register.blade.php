@@ -19,11 +19,11 @@
       <img src="{{ asset('images/logo_mfc.jpeg') }}" alt="Logo" onerror="this.style.display='none'" />
     </a>
 
-    <a href="/agenda">Agenda</a>
-    <a href="/speakers">Bio's</a>
-    <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
-    <a href="/slides">Slides</a>
-    <a href="/footer">Contacts</a>
+    <a href="/#agenda">Agenda</a>
+    <a href="/#speakers">Bio's</a>
+    <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank">Booklet</a>
+    <a href="/#slides">Slides</a>
+    <a href="/#footer">Contacts</a>
   </nav>
 
 
