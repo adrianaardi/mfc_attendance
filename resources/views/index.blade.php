@@ -732,14 +732,10 @@
           @if(session('attendance_success'))
               <div class="alert-success">{{ session('attendance_success') }}</div>
           @endif
-          @if(session('attendance_error') || session('attendance_success'))
-              document.addEventListener('DOMContentLoaded', function() {
-                  document.getElementById('attendanceModal').style.display = 'flex';
-                  document.body.style.overflow = 'hidden';
-                  document.body.style.position = 'fixed';
-                  document.body.style.width = '100%';
-              });
+          @if(session('attendance_error'))
+              <div class="alert-error">{{ session('attendance_error') }}</div>
           @endif
+
           <form method="POST" action="/attendance">
               @csrf
               <input type="hidden" name="day" id="attendanceDay" value="1">
