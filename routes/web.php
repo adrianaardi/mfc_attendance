@@ -6,6 +6,17 @@ use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SlideController;
 
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/storagebengokmenyusahkanorang', function () {
+    try {
+        Artisan::call('storage:link');
+        return 'Storage symlink created successfully!';
+    } catch (\Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+});
+
 // Main event site
 Route::get('/', function () {
     $settings = [
