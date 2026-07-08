@@ -81,8 +81,8 @@
     </a>
 
     <a href="#agenda">Agenda</a>
-    <a href="#speakers">Bio's</a>
     <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank">Booklet</a>
+    <a href="#speakers">Bio's</a>
     <a href="#slides">Slides</a>
     <a href="#footer">Contacts</a>
   </nav>
@@ -695,8 +695,8 @@
 </footer>
 
 <!-- ── SPEAKER MODAL ────────────────────────────────────── -->
-  <div id="speakerModal" class="modal">
-    <div class="modal-content">
+<div id="speakerModal" class="modal" style="display:none;">
+      <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
 
       <img id="modalImg" src="" alt="Speaker" class="modal-avatar" />
