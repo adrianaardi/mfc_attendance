@@ -138,7 +138,8 @@
     <div class="slide" data-slide="4">
       <div class="hero-inner">
         <div class="hero-tag">Event Gallery</div>
-        <h1>Capturing <em>Moments</em> <br>In Real-Time</h1>
+        <h1 style="font-size: clamp(20px, 6vw, 48px);
+  white-space: nowrap;">Capturing <em>Moments</em> In Real-Time</h1>
         <p>Browse through live highlights, keynote presentations, networking sessions, and field excursions from MFC 2026.</p>
         <a href="https://drive.google.com/drive/u/0/folders/1vourATbZGHVgee8AXqApIPENJ0rzYkkC" target="_blank" class="register_btn">View Photo Gallery</a>
       </div>
