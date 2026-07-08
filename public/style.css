@@ -572,16 +572,17 @@ footer {
 
 /* ── Speaker / Announcement Modals ───────────────────────────── */
 .modal {
-  display: none;
+  display: flex;
   position: fixed;
   inset: 0;
   z-index: 1000;
   background: rgba(10,24,16,.78);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  align-items: flex-end; /* bottom sheet on mobile */
+  align-items: flex-end; 
   justify-content: center;
   padding: 0;
+  height: 100dvh;
 }
 
 .modal-content {
@@ -590,14 +591,13 @@ footer {
   padding: 28px 24px 32px;
   width: 100%;
   max-width: 420px;
-  max-height: 85vh;
+  max-height: 85dvh;          /* was 85vh — swap to dvh */
   overflow-y: auto;
   text-align: center;
   position: relative;
   animation: slideUp .32s cubic-bezier(.22,1,.36,1);
 }
 
-/* was declared twice as `.close` + `.modal-content .close`; merged into one */
 .modal-content .close {
   position: absolute;
   top: 14px;

@@ -309,9 +309,9 @@
         <span>Keynote Speaker</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Zulkifli bin Suara','Chief Conservator of Forests','Sabah Forestry Department','{{ asset('images/talker/DATUK SUARA.png') }}','Datuk Zulkifli bin Suara is the Chief Conservator of Forests of the Sabah Forestry Department. He holds a Diploma in Forestry from Universiti Pertanian Malaysia and a Bachelor of Science in Forestry from Universiti Putra Malaysia. With more than 30 years of service in the forestry sector, he has held various key positions, including Planning Officer, Assistant District Forest Officer, District Forest Officer, Monitoring, Controlling, Enforcement and Evaluation Officer, Head of Investigation, Enforcement and Prosecution Division, and Deputy Chief Conservator of Forests (Operation). His professional experience covers forest operations, enforcement, prosecution, governance and regional cooperation. He has also represented the Department in national and international platforms and has received various excellence awards in recognition of his service and leadership.')">
-        <img src="{{ asset('images/talker/DATUK SUARA.png') }}" alt="Zulkifli bin Suara" />
-        <strong>Zulkifli bin Suara</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Datuk Zulkifli bin Suara','Chief Conservator of Forests','Sabah Forestry Department','{{ asset('images/talker/DATUK SUARA.png') }}','Datuk Zulkifli bin Suara is the Chief Conservator of Forests of the Sabah Forestry Department. He holds a Diploma in Forestry from Universiti Pertanian Malaysia and a Bachelor of Science in Forestry from Universiti Putra Malaysia. With more than 30 years of service in the forestry sector, he has held various key positions, including Planning Officer, Assistant District Forest Officer, District Forest Officer, Monitoring, Controlling, Enforcement and Evaluation Officer, Head of Investigation, Enforcement and Prosecution Division, and Deputy Chief Conservator of Forests (Operation). His professional experience covers forest operations, enforcement, prosecution, governance and regional cooperation. He has also represented the Department in national and international platforms and has received various excellence awards in recognition of his service and leadership.')">
+        <img src="{{ asset('images/talker/DATUK SUARA.png') }}" alt="Datuk Zulkifli bin Suara" />
+        <strong>Datuk Zulkifli bin Suara</strong>
         <span>Main Working Paper 1 Speaker</span>
       </div>
 
@@ -721,11 +721,14 @@
           @if(session('attendance_success'))
               <div class="alert-success">{{ session('attendance_success') }}</div>
           @endif
-
-          @if(session('attendance_error'))
-              <div class="alert-error">{{ session('attendance_error') }}</div>
+          @if(session('attendance_error') || session('attendance_success'))
+              document.addEventListener('DOMContentLoaded', function() {
+                  document.getElementById('attendanceModal').style.display = 'flex';
+                  document.body.style.overflow = 'hidden';
+                  document.body.style.position = 'fixed';
+                  document.body.style.width = '100%';
+              });
           @endif
-
           <form method="POST" action="/attendance">
               @csrf
               <input type="hidden" name="day" id="attendanceDay" value="1">
@@ -809,15 +812,27 @@
       });
     });
 
-    function openAttendanceModal(day) {
-        document.getElementById('attendanceDay').value = day;
-        document.getElementById('attendanceModal').style.display = 'flex';
-    }
+function openAttendanceModal(day) {
+    document.getElementById('attendanceDay').value = day;
+    document.getElementById('attendanceModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';   // lock background scroll, same as speaker modal
+    document.body.style.position = 'fixed';    // iOS Safari needs this too, not just overflow
+    document.body.style.width = '100%';
+}
 
-    function closeAttendanceModal() {
-        document.getElementById('attendanceModal').style.display = 'none';
-    }
+function closeAttendanceModal() {
+    document.getElementById('attendanceModal').style.display = 'none';
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+}
     
+document.querySelector('.attendance-input').addEventListener('focus', (e) => {
+  setTimeout(() => {
+    e.target.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }, 300);
+});
+
 function showSlideDay(n) {
     document.querySelectorAll('.slides-day').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.slides-tabs button').forEach(el => el.classList.remove('active'));
