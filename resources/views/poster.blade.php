@@ -11,6 +11,10 @@
   <link rel="icon" href="{{ asset('images/logo-icon.png')}}">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
+
+    body {
+      background: var(--cream);
+    }
     #events {
       align-items: center;
       padding-top: calc(var(--nav-h) + 30px);

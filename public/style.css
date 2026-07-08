@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  background: var(--cream);
+  background: var(--forest);
   color: var(--text);
   font-size: 15px;
   line-height: 1.65;
@@ -38,15 +38,13 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
-  background: #1a3a2a54;
+  background: linear-gradient(to bottom, var(--forest),#1a3a2abd, #1a3a2a6b, #ffffff00);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   gap: 2px;
   padding: env(safe-area-inset-top, 0px) 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,.07);
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
@@ -234,6 +232,7 @@ section h2 {
 /* ── Agenda ─────────────────────────────────────────────────── */
 #agenda {
   max-width: 100%;
+  background: var(--cream);
   align-items: center;
 }
 
@@ -370,6 +369,7 @@ section h2 {
 
 /* ── Speakers ────────────────────────────────────────────────── */
 #speakers {
+  background: var(--cream);
   max-width: 100%;
   text-align: center;
   align-items: center;
@@ -427,6 +427,7 @@ section h2 {
 
 /* ── Slides ─────────────────────────────────────────────────── */
 #slides {
+  background: var(--cream);
   text-align: center;
   max-width: 100%;
   align-items: center;
