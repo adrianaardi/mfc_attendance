@@ -180,7 +180,7 @@ nav > a.nav-active {
 /* scroll indicator */
 .scroll-hint {
   position: absolute;
-  bottom: -20px;
+  bottom: -21px;
   right: 0px;
   z-index: 1;
   display: flex;
@@ -1268,7 +1268,9 @@ footer {
   transform: translateY(-50%) scale(1.08);
 }
 
-.slider-arrow.next { right: 16px; }
+.slider-arrow.next { 
+  right: 16px; 
+}
 
 @media (max-width: 600px) {
   .slider-arrow {

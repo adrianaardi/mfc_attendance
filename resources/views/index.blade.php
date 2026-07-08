@@ -81,7 +81,6 @@
     </a>
 
     <a href="#agenda">Agenda</a>
-    <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank">Booklet</a>
     <a href="#speakers">Bio's</a>
     <a href="#slides">Slides</a>
     <a href="#footer">Contacts</a>
@@ -118,9 +117,9 @@
       <div class="hero-inner">
         <div class="hero-tag">Official Announcement</div>
         <h1 style="font-size: clamp(20px, 6vw, 48px);
-  white-space: nowrap;">Booklet Programme MFC 2026</h1>
+  white-space: nowrap;">Programme Book MFC 2026</h1>
         <p>Get the complete event overview, detailed daily agenda, speaker lineups, and guidelines for abstract submissions at a glance.</p>
-        <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank" class="register_btn">View Booklet</a>
+        <a href="{{ asset('images/poster/pamphlet.pdf') }}" target="_blank" class="register_btn">View Book</a>
       </div>
     </div>
 
@@ -353,9 +352,9 @@
         <span>Session 3 Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
-        <img src="{{ asset('images/talker/ARTHUR CHUNG.png') }}" alt="Arthur Chung Yaw Chyang" />
-        <strong>Arthur Chung Yaw Chyang</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
+        <img src="{{ asset('images/talker/ARTHUR CHUNG.png') }}" alt="Dr. Chung Yaw Chyang" />
+        <strong>Dr. Chung Yaw Chyang</strong>
         <span>Session 4 Chairman · Sabah Forestry Department</span>
       </div>
 
@@ -440,7 +439,7 @@
         <span>Paper 10 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Hajah Meliza Binti Mohd Rizan','Senior Executive Forester','Forest Department Sarawak','{{ asset('images/talker/MELIZA.jpg') }}','Hajah Meliza Bt Mohd Rizan is a Senior Executive Forester and the Head of the Remote Sensing and Geodata Section within the Forest Technology and Geospatial Division at the Forest Department Sarawak. Since joining the department in 2010 and moving to permanent service in 2013, she has gained extensive experience across various key divisions before joining the geospatial team in 2018. In her current role, she spearheads strategic initiatives in geospatial technologies and digital innovation to strengthen evidence-based forest governance and enhance national and international reporting on climate change and sustainability. As Data Custodian for national forest datasets, she oversees the continuous enhancement of the Enterprise Forest Information Management System (EFIMS) and the Continuous Monitoring and Surveillance (COMOS) initiative. A champion for innovation, she has actively driven organizational excellence as Team Leader of the ConservaTech Group and participated in major exhibitions like the MTE 2025 with the EcoHub project to advance Sarawak\'s sustainable forest management goals.')">
+      <div class="speaker-card" onclick="showSpeakerModal('Hajah Meliza Binti Mohd Rizan','Senior Executive Forester','Forest Department Sarawak','{{ asset('images/talker/MELIZA.jpg') }}','Hajah Meliza Bt Mohd Rizan is the Head of the Remote Sensing and Geodata Section under the Forest Technology and Geospatial Division, Forest Department Sarawak, with over 15 years of experience in the forestry sector since joining the department in 2010. Her expertise includes geospatial technologies, remote sensing, spatial data management, digital transformation, and sustainable forest governance. Throughout her career, she has served in the Licences for Planted Forests (LPF), Nature Conservation and Constitution Division (NCCD), Regional Forest Office Miri, Preventive and Enforcement Division (PED), and the Systems Application and Development Unit (SADU). She currently leads strategic geospatial and digital transformation initiatives, oversees the Enterprise Forest Information Management System (EFIMS) and Continuous Monitoring and Surveillance (COMOS), and serves as the Data Custodian for national forest geospatial datasets. She also actively promotes innovation in the forestry sector as Team Leader of the ConservaTech Group and has represented the department at the Innovative and Creative Group (KIK) Convention 2024 and Malaysia Expo Trade (MTE) 2025 through the EcoHub project.')">
         <img src="{{ asset('images/talker/MELIZA.jpg') }}" alt="Meliza Binti Mohd Rizan" />
         <strong>Meliza Binti Mohd Rizan</strong>
         <span>Paper 11 Presenter · Forest Department Sarawak</span>
