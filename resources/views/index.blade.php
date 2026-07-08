@@ -319,12 +319,19 @@
         <span>Main Working Paper 1 Speaker</span>
       </div>
 
+      <div class="speaker-card" onclick="showSpeakerModal('Dato. Mohd Radhi Chu Bin Abdullah','Deputy Director-General of Forestry Peninsular Malaysia (Operations & Technical)','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/DATO CHU.png') }}','This distinguished forestry leader holds a Bachelor of Science in Forestry from Universiti Pertanian Malaysia (1992) and has dedicated over 30 years to civil service since starting as an Assistant Conservator of Forests in Pahang in 1996. Throughout his career, he has held major leadership roles across various states, including serving as Principal of the Terengganu Forestry Training Centre and State Forestry Director for Kelantan. At the Forestry Department of Peninsular Malaysia Headquarters, he has driven progress across the Forest Management, Planning, and Plantation divisions, culminating in his promotion to Senior Director of Forest Planning and Economics in July 2024. A champion for modern governance, he serves as the department\'s Chief Information Officer and Chairman of the Technical Committee for the Forest Resources and Operations Digitalisation Project, contributions that were highly honored in 2025 when he was bestowed the prestigious title of Dato’ Paduka Setia Mahkota Kelantan (D.P.S.K).')">
+        <img src="{{ asset('images/talker/DATO CHU.png') }}" alt="Dato. Mohd Radhi Chu Bin Abdullah" />
+        <strong>Dato. Mohd Radhi Chu Bin Abdullah</strong>
+        <span>Main Working Paper 2 Speaker</span>
+      </div>
+
       <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Hamden Bin Haji Mohammad','Director of Forests Sarawak','Forest Department Sarawak','{{ asset('images/talker/HAJI HAMDEN.png') }}','Datu Haji Hamden bin Haji Mohammad has served as the Director of Forests Sarawak since 2018, distinguishing himself as an accomplished forestry professional and public sector leader dedicated to balancing environmental conservation with socio-economic development. Under his visionary leadership, the Forest Department Sarawak has advanced sustainable forest management, expanded conservation initiatives, and adopted modern technology like LiDAR, remote sensing, and geospatial analytics. A key highlight of his tenure is directing the Greening Sarawak Campaign, which allowed Sarawak to surpass its tree-planting targets ahead of schedule, while his commitment to international collaboration paved the way for major milestones, including the designation of the Sarawak Delta Geopark as a UNESCO Global Geopark. Widely respected for his expertise in environmental governance, climate action, and nature-based solutions, Datu Hamden continues to drive Sarawak\'s forestry sector toward long-term sustainability, innovation, and global recognition.')">
         <img src="{{ asset('images/talker/HAJI HAMDEN.png') }}" alt="Datu Haji Hamden Bin Haji Mohammad" />
         <strong>Datu Haji Hamden Bin Haji Mohammad</strong>
         <span>Main Working Paper 3 Speaker</span>
       </div>
     </div>
+
     <h3 class="group-title" style="margin-top:36px;">Session Chairmen</h3>
     <div class="speakers-grid">
 

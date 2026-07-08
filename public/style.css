@@ -39,7 +39,7 @@ nav {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   height: var(--nav-h);
-  background: #1a3a2ac0;
+  background: #1a3a2a54;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -208,7 +208,7 @@ nav > a.nav-active {
 /* ── Shared Section Styles ──────────────────────────────────── */
 section {
   min-height: 100svh;
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +235,6 @@ section h2 {
 /* ── Agenda ─────────────────────────────────────────────────── */
 #agenda {
   max-width: 100%;
-  padding: 80px 20px;
   align-items: center;
 }
 
