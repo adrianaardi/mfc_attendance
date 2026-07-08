@@ -131,7 +131,7 @@
 </section>
 
 {{-- EDIT MODAL --}}
-<div id="editModal" class="modal">
+<div id="editModal" class="modal" style="display:none;">
     <div class="modal-content" style="max-width:480px;">
         <span class="close" onclick="closeEdit()">&times;</span>
         <h2 style="font-family:'Playfair Display',serif; font-size:20px; color:var(--forest); margin-bottom:20px;">Edit Slide</h2>
