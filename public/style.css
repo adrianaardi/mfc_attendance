@@ -38,25 +38,14 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  
-  /* 1. Remove the rigid fixed height */
-  /* height: var(--nav-h); */ 
-  
-  /* 2. Add safe area padding to push content below the notch/status bar */
-  padding-top: env(safe-area-inset-top, 0px);
-  
-  /* 3. Give the actual interactive area a height using min-height or standard padding */
-  min-height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px; /* Adjust if you want vertical centering */
-
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
   background: #1a3a2a54;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   gap: 2px;
+  padding: env(safe-area-inset-top, 0px) 10px 0;
   border-bottom: 1px solid rgba(255,255,255,.07);
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -102,14 +91,11 @@ nav > a.nav-active {
   background:
     linear-gradient(170deg, rgba(8, 20, 12, 0.904) 0%, rgba(26, 58, 42, 0.877) 55%, rgba(45, 90, 61, 0.616) 100%),
     url('images/Kelingkang Range.jpeg') center / cover no-repeat;
-  background-color: #0e2018;
+  background-color: #0e2018; /* fallback */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
-  /* Use safe-area-inset-top here as well so content clears the expanded navbar */
   padding: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 20px) 22px 40px;
-  position: relative;
 }
 
 /* radial glow at bottom */
