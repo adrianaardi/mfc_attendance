@@ -27,7 +27,7 @@
                 text: "{{ session('success') }}",
                 icon: 'success',
                 confirmButtonText: 'Got it!',
-                confirmButtonColor: '#1a3a2a',
+                confirmButtonColor: '#1a3a2ac0',
                 background: '#f7f3ec',
                 color: '#1a2a1e',
                 iconColor: '#4a7c59',
@@ -81,10 +81,10 @@
     </a>
 
     <a href="#agenda">Agenda</a>
-    <a href="#speakers">Bios</a>
+    <a href="#speakers">Bio's</a>
+    <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
     <a href="#slides">Slides</a>
     <a href="#footer">Contacts</a>
-        <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
   </nav>
 
 <header id="header">
@@ -158,7 +158,7 @@
     <span class="section-label">Schedule</span>
     <h2>Conference Agenda</h2>
 
-    <div class="agenda-tabs" id="agenda-day-tabs">
+    <div class="slides-tabs" id="agenda-day-tabs">
         <button onclick="showDay(1)" class="active">13th July 2026 <br> DAY 1</button>
         <button onclick="showDay(2)">14th July 2026 <br> DAY 2</button>
         <button onclick="showDay(3)">15th July 2026 <br> DAY 3</button>
@@ -297,7 +297,7 @@
 <!-- ── SPEAKERS ─────────────────────────────────────────── -->
  <section id="speakers">
     <span class="section-label">Our Presenters</span>
-    <h2>Presenters' Information</h2>
+    <h2>Biography</h2>
 
     <h3 class="group-title">Keynote Address & Main Working Paper</h3>
     <div class="speakers-grid">

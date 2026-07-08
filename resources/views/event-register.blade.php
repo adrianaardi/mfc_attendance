@@ -20,10 +20,10 @@
     </a>
 
     <a href="/agenda">Agenda</a>
-    <a href="/speakers">Bios</a>
+    <a href="/speakers">Bio's</a>
+    <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
     <a href="/slides">Slides</a>
     <a href="/footer">Contacts</a>
-        <a href="{{ asset('pdf/pamphlet.pdf') }}" target="_blank">Booklet</a>
   </nav>
 
 
