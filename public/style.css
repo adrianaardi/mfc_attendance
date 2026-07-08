@@ -1243,3 +1243,38 @@ footer {
 .slide.expanded .more-text {
   display: inline;
 }
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(201,168,76,.18);
+  border: 1px solid rgba(201,168,76,.45);
+  color: var(--gold);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  transition: background .25s, transform .25s;
+}
+
+.slider-arrow:hover {
+  background: rgba(201,168,76,.18);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slider-arrow.next { right: 16px; }
+
+@media (max-width: 600px) {
+  .slider-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}

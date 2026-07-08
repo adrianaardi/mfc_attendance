@@ -88,6 +88,10 @@
   </nav>
 
 <header id="header">
+
+
+  <button class="slider-arrow next" aria-label="Next slide">&#10095;</button>
+
   <div class="slider">
 
     <div class="slide active" data-slide="1">
@@ -936,6 +940,14 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.addEventListener('mouseup', onDragEnd);
     slider.addEventListener('mouseleave', () => {
       if (isDragging) onDragEnd();
+    });
+
+
+    const nextBtn = document.querySelector('.slider-arrow.next');
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartAutoplay();
     });
 
     startAutoplay();
