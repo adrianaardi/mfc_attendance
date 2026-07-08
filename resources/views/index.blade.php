@@ -141,7 +141,7 @@
         <h1 style="font-size: clamp(20px, 6vw, 48px);
   white-space: nowrap;">Capturing <em>Moments</em> In Real-Time</h1>
         <p>Browse through live highlights, keynote presentations, networking sessions, and field excursions from MFC 2026.</p>
-        <a href="https://drive.google.com/drive/u/0/folders/1vourATbZGHVgee8AXqApIPENJ0rzYkkC" target="_blank" class="register_btn">View Photo Gallery</a>
+        <a href="https://cloud.sarawak.gov.my/index.php/s/rkmAe2JeqxE5YnA" target="_blank" class="register_btn">View Photo Gallery</a>
       </div>
     </div>
 
