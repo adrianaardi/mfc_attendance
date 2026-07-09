@@ -15,6 +15,7 @@
     body {
       background: var(--cream);
     }
+    
     #events {
       align-items: center;
       padding-top: calc(var(--nav-h) + 30px);
