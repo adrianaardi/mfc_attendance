@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Registration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Services\BrevoMailer;
 
 class RegistrationController extends Controller
 {
@@ -25,24 +26,17 @@ class RegistrationController extends Controller
 
         $registration = Registration::create($validated);
 
-        try {
-            Http::withHeaders([
-                'api-key'      => config('services.brevo.key'),
-                'Content-Type' => 'application/json',
-            ])->post('https://api.brevo.com/v3/smtp/email', [
-                'sender' => [
-                    'name'  => 'Malaysian Forestry Conference 2026',
-                    'email' => 'noreply@mfc2026.com',
-                ],
-                'to' => [[
-                    'email' => $registration->email,
-                    'name'  => $registration->name,
-                ]],
-                'subject'     => 'Registration Confirmed — MFC 2026',
-'htmlContent' => view('emails.registration-confirmed', compact('registration'))->render(),            ]);
-        } catch (\Exception $e) {
-            dd('Error: ' . $e->getMessage());
-        }
+        $result = BrevoMailer::send(
+            $registration->email,
+            $registration->name,
+            'Registration Confirmed — MFC 2026',
+            view('emails.registration-confirmed', compact('registration'))->render()
+        );
+
+        $registration->update([
+            'email_status' => $result['status'],
+            'email_error'  => $result['error'],
+        ]);
 
         return redirect('/')->with('success', 'Registration successful! A confirmation email has been sent.');
     }

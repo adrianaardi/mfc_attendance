@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Admin Panel — Malaysian Forestry Conference 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,6 +111,7 @@
                                 <th>Designation</th>
                                 <th>Agency</th>
                                 <th>Registered At</th>
+                                <th>Email Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -122,6 +124,18 @@
                                 <td>{{ $reg->designation }}</td>
                                 <td>{{ $reg->agency }}</td>
                                 <td>{{ $reg->created_at->format('d M Y, h:i A') }}</td>
+                                <td>
+                                    @if($reg->email_status === 'sent')
+                                        <span class="email-badge email-sent">✅ Sent</span>
+                                    @elseif($reg->email_status === 'failed')
+                                        <span class="email-badge email-failed" title="{{ $reg->email_error }}">❌ Failed</span>
+                                    @else
+                                        <span class="email-badge email-pending">⏳ Pending</span>
+                                    @endif
+                                    @if($reg->email_status !== 'sent')
+                                        <button type="button" class="resend-btn" onclick="resend('/admin/registrations/{{ $reg->id }}/resend')">Resend</button>
+                                    @endif
+                                </td>
                             </tr>
                             @empty
                             <tr>
@@ -157,6 +171,7 @@
                                 <th>Designation</th>
                                 <th>Agency</th>
                                 <th>Check-in Time</th>
+                                <th>Email Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -169,6 +184,18 @@
                                 <td>{{ $att->registration->designation }}</td>
                                 <td>{{ $att->registration->agency }}</td>
                                 <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                                <td>
+                                    @if($att->email_status === 'sent')
+                                        <span class="email-badge email-sent">✅ Sent</span>
+                                    @elseif($att->email_status === 'failed')
+                                        <span class="email-badge email-failed" title="{{ $att->email_error }}">❌ Failed</span>
+                                    @else
+                                        <span class="email-badge email-pending">⏳ Pending</span>
+                                    @endif
+                                    @if($att->email_status !== 'sent')
+                                        <button type="button" class="resend-btn" onclick="resend('/admin/attendances/{{ $att->id }}/resend')">Resend</button>
+                                    @endif
+                                </td>
                             </tr>
                             @empty
                             <tr>
@@ -184,9 +211,9 @@
         <!-- Day 2 Table -->
         <div id="table-day2" class="admin-table-section" style="display:none;">
             <div class="table-header">
-                <h3>Day 1 Attendance</h3>
+                <h3>Day 2 Attendance</h3>
                 <div style="display:flex; gap:10px;">
-                    <a href="/admin/export/1" class="export-btn">Export CSV</a>
+                    <a href="/admin/export/2" class="export-btn">Export CSV</a>
                     <button type="button" onclick="submitDelete('form-delete-day2')" class="delete-btn">Delete Selected</button>
                 </div>
             </div>
@@ -204,6 +231,7 @@
                                 <th>Designation</th>
                                 <th>Agency</th>
                                 <th>Check-in Time</th>
+                                <th>Email Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -216,6 +244,18 @@
                                 <td>{{ $att->registration->designation }}</td>
                                 <td>{{ $att->registration->agency }}</td>
                                 <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                                <td>
+                                    @if($att->email_status === 'sent')
+                                        <span class="email-badge email-sent">✅ Sent</span>
+                                    @elseif($att->email_status === 'failed')
+                                        <span class="email-badge email-failed" title="{{ $att->email_error }}">❌ Failed</span>
+                                    @else
+                                        <span class="email-badge email-pending">⏳ Pending</span>
+                                    @endif
+                                    @if($att->email_status !== 'sent')
+                                        <button type="button" class="resend-btn" onclick="resend('/admin/attendances/{{ $att->id }}/resend')">Resend</button>
+                                    @endif
+                                </td>
                             </tr>
                             @empty
                             <tr>
@@ -231,9 +271,9 @@
         <!-- Day 3 Table -->
         <div id="table-day3" class="admin-table-section" style="display:none;">
             <div class="table-header">
-                <h3>Day 1 Attendance</h3>
+                <h3>Day 3 Attendance</h3>
                 <div style="display:flex; gap:10px;">
-                    <a href="/admin/export/1" class="export-btn">Export CSV</a>
+                    <a href="/admin/export/3" class="export-btn">Export CSV</a>
                     <button type="button" onclick="submitDelete('form-delete-day3')" class="delete-btn">Delete Selected</button>
                 </div>
             </div>
@@ -251,6 +291,7 @@
                                 <th>Designation</th>
                                 <th>Agency</th>
                                 <th>Check-in Time</th>
+                                <th>Email Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -263,6 +304,15 @@
                                 <td>{{ $att->registration->designation }}</td>
                                 <td>{{ $att->registration->agency }}</td>
                                 <td>{{ \Carbon\Carbon::parse($att->checked_in_at)->format('d M Y, h:i A') }}</td>
+                                <td>
+                                    @if($att->email_status === 'sent')
+                                        <span class="email-badge email-sent" title="Email sent successfully">✅ Sent</span>
+                                    @elseif($att->email_status === 'failed')
+                                        <span class="email-badge email-failed" title="{{ $att->email_error }}">❌ Failed</span>
+                                    @else
+                                        <span class="email-badge email-pending" title="Email not sent">⏳ Pending</span>
+                                    @endif
+                                </td>
                             </tr>
                             @empty
                             <tr>
@@ -299,6 +349,22 @@
             if (confirm(`Delete ${checked.length} selected record(s)? This cannot be undone.`)) {
                 form.submit();
             }
+        }
+
+        function resend(url) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = url;
+            form.style.display = 'none';
+
+            const token = document.createElement('input');
+            token.type = 'hidden';
+            token.name = '_token';
+            token.value = document.querySelector('meta[name="csrf-token"]')?.content;
+            form.appendChild(token);
+
+            document.body.appendChild(form);
+            form.submit();
         }
     </script>
 

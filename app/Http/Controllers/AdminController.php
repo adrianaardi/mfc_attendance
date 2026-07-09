@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Attendance;
 use App\Models\Registration;
 use Illuminate\Http\Request;
+use App\Services\BrevoMailer;
 
 class AdminController extends Controller
 {
@@ -148,5 +149,51 @@ class AdminController extends Controller
         $setting->update(['value' => !$setting->value]);
 
         return back()->with('admin_success', 'Setting updated!');
+    }
+
+    public function resendRegistrationEmail(Registration $registration)
+    {
+        $result = BrevoMailer::send(
+            $registration->email,
+            $registration->name,
+            'Registration Confirmed — MFC 2026',
+            view('emails.registration-confirmed', compact('registration'))->render()
+        );
+
+        $registration->update([
+            'email_status' => $result['status'],
+            'email_error'  => $result['error'],
+        ]);
+
+        return back()->with(
+            $result['status'] === 'sent' ? 'admin_success' : 'admin_error',
+            $result['status'] === 'sent'
+                ? "Confirmation email resent to {$registration->email}."
+                : "Failed to resend: {$result['error']}"
+        );
+    }
+
+    public function resendAttendanceEmail(Attendance $attendance)
+    {
+        $registration = $attendance->registration;
+
+        $result = BrevoMailer::send(
+            $registration->email,
+            $registration->name,
+            'Attendance Confirmed — MFC 2026',
+            view('emails.attendance-confirmed', compact('registration', 'attendance'))->render()
+        );
+
+        $attendance->update([
+            'email_status' => $result['status'],
+            'email_error'  => $result['error'],
+        ]);
+
+        return back()->with(
+            $result['status'] === 'sent' ? 'admin_success' : 'admin_error',
+            $result['status'] === 'sent'
+                ? "Confirmation email resent to {$registration->email}."
+                : "Failed to resend: {$result['error']}"
+        );
     }
 }

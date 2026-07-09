@@ -5,7 +5,6 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SlideController;
-
 use Illuminate\Support\Facades\Artisan;
 
 Route::get('/storagebengokmenyusahkanorang', function () {
@@ -16,6 +15,7 @@ Route::get('/storagebengokmenyusahkanorang', function () {
         return 'Error: ' . $e->getMessage();
     }
 });
+
 
 // Main event site
 Route::get('/', function () {
@@ -45,6 +45,8 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/admin/registrations', [AdminController::class, 'deleteRegistrations']);
     Route::delete('/admin/attendances', [AdminController::class, 'deleteAttendances']);
     Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
+    Route::post('/admin/registrations/{registration}/resend', [AdminController::class, 'resendRegistrationEmail']);
+    Route::post('/admin/attendances/{attendance}/resend', [AdminController::class, 'resendAttendanceEmail']);
 
     // Slides management
     Route::get('/admin/slides', [SlideController::class, 'index']);
@@ -52,8 +54,6 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/admin/slides/{slide}', [SlideController::class, 'destroy']);
     Route::put('/admin/slides/{slide}', [SlideController::class, 'update']);
 });
-
-Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
 
 Route::get('/', function () {
     $settings = [
