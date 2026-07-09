@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, var(--forest),var(--cream), var(--cream));
+  background: var(--cream);
   color: var(--text);
   font-size: 15px;
   line-height: 1.65;
@@ -38,13 +38,15 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: linear-gradient(to bottom, var(--forest),#1a3a2abd, #1a3a2a6b, #ffffff00);
+  background: linear-gradient(to bottom, var(--cream), #1a3a2ac0, #1a3a2ac0, #1a3a2ac0,#1a3a2ac0, #1a3a2ac0);
+  border-bottom: 1px solid rgba(26,58,42,.08);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   gap: 2px;
   padding: env(safe-area-inset-top, 0px) 10px 0;
+  padding-top: 5px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
@@ -66,7 +68,7 @@ nav > a:first-child img {
 }
 
 nav > a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
@@ -89,7 +91,7 @@ nav > a.nav-active {
   background:
     linear-gradient(170deg, rgba(8, 20, 12, 0.904) 0%, rgba(26, 58, 42, 0.877) 55%, rgba(45, 90, 61, 0.616) 100%),
     url('images/Kelingkang Range.jpeg') center / cover no-repeat;
-  background-color: var(--forest); /* fallback */
+  background-color: var(--forest); 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -232,7 +234,6 @@ section h2 {
 /* ── Agenda ─────────────────────────────────────────────────── */
 #agenda {
   max-width: 100%;
-  background: var(--cream);
   align-items: center;
 }
 
@@ -369,7 +370,6 @@ section h2 {
 
 /* ── Speakers ────────────────────────────────────────────────── */
 #speakers {
-  background: var(--cream);
   max-width: 100%;
   text-align: center;
   align-items: center;
@@ -427,7 +427,6 @@ section h2 {
 
 /* ── Slides ─────────────────────────────────────────────────── */
 #slides {
-  background: var(--cream);
   text-align: center;
   max-width: 100%;
   align-items: center;
@@ -471,7 +470,6 @@ section h2 {
 
 /* ── Footer ─────────────────────────────────────────────────── */
 footer {
-  background: var(--cream);
   padding: 52px 20px 24px;
   margin-top: 0;
   min-height: 100svh;
