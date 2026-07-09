@@ -21,7 +21,7 @@ class BrevoTransport extends AbstractTransport
     {
         $email = MessageConverter::toEmail($message->getOriginalMessage());
 
-        Http::withHeaders([
+        $response = Http::withHeaders([
             'api-key' => $this->apiKey,
             'Content-Type' => 'application/json',
         ])->post('https://api.brevo.com/v3/smtp/email', [
@@ -37,6 +37,10 @@ class BrevoTransport extends AbstractTransport
             'htmlContent' => $email->getHtmlBody(),
             'textContent' => $email->getTextBody(),
         ]);
+
+        if ($response->failed()) {
+            throw new \RuntimeException('Brevo API error ' . $response->status() . ': ' . $response->body());
+        }
     }
 
     public function __toString(): string

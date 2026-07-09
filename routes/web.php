@@ -17,6 +17,17 @@ Route::get('/storagebengokmenyusahkanorang', function () {
     }
 });
 
+Route::get('/run-migrations', function () {
+    try {
+        // The --force flag is required if your environment is set to production
+        Artisan::call('migrate', ['--force' => true]);
+        return 'Migrations executed successfully!';
+    } catch (\Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+});
+
+
 // Main event site
 Route::get('/', function () {
     $settings = [
@@ -54,6 +65,10 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
+Route::post('/admin/registrations/{registration}/resend', [AdminController::class, 'resendRegistrationEmail'])
+    ->name('admin.registrations.resend');
+Route::post('/admin/attendances/{attendance}/resend', [AdminController::class, 'resendAttendanceEmail'])
+    ->name('admin.attendances.resend');
 
 Route::get('/', function () {
     $settings = [
