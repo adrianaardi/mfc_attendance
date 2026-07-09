@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, var(--forest), var(--cream));
+  background: var(--forest);
   color: var(--text);
   font-size: 15px;
   line-height: 1.65;
