@@ -4,15 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Attendance;
 use App\Models\Registration;
-use App\Services\ConfirmationMailer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class AttendanceController extends Controller
 {
-    public function __construct(protected ConfirmationMailer $mailer)
-    {
-    }
-
     public function store(Request $request)
     {
         $request->validate([
@@ -40,16 +36,26 @@ class AttendanceController extends Controller
             'checked_in_at'   => now(),
         ]);
 
-        $result = $this->mailer->sendAttendanceEmail($attendance);
-        $attendance->update([
-            'email_status' => $result['status'],
-            'email_error'  => $result['error'],
-        ]);
+        try {
+            Http::withHeaders([
+                'api-key'      => config('services.brevo.key'),
+                'Content-Type' => 'application/json',
+            ])->post('https://api.brevo.com/v3/smtp/email', [
+                'sender' => [
+                    'name'  => 'Malaysian Forestry Conference 2026',
+                    'email' => 'noreply@mfc2026.com',
+                ],
+                'to' => [[
+                    'email' => $registration->email,
+                    'name'  => $registration->name,
+                ]],
+                'subject'     => 'Attendance Confirmed — MFC 2026',
+                'htmlContent' => view('emails.attendance-confirmed', compact('registration', 'attendance'))->render(),
+            ]);
+        } catch (\Exception $e) {
+            dd('Error: ' . $e->getMessage());
+        }
 
-        $message = $result['status'] === 'sent'
-            ? "Attendance for Day {$request->day} verified! A confirmation email has been sent."
-            : "Attendance for Day {$request->day} verified! However, the confirmation email could not be sent — our team will follow up.";
-
-        return back()->with('attendance_success', $message);
+        return back()->with('attendance_success', "Attendance for Day {$request->day} verified! A confirmation email has been sent.");
     }
 }
