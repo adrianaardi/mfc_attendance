@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  background: var(--forest);
+  background: linear-gradient(to bottom, var(--forest), var(--cream), var(--cream));
   color: var(--text);
   font-size: 15px;
   line-height: 1.65;
@@ -89,7 +89,7 @@ nav > a.nav-active {
   background:
     linear-gradient(170deg, rgba(8, 20, 12, 0.904) 0%, rgba(26, 58, 42, 0.877) 55%, rgba(45, 90, 61, 0.616) 100%),
     url('images/Kelingkang Range.jpeg') center / cover no-repeat;
-  background-color: #0e2018; /* fallback */
+  background-color: var(--forest); /* fallback */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
