@@ -617,7 +617,7 @@
                 <h3 class="group-title">Registration</h3>
                 <div class="footer-contacts">
                     <a href="https://wa.me/60198169159" target="_blank" class="footer-contact-item">
-                        <span class="contact-name">Wilma Anak Mancu</span>
+                        <span class="contact-name">Wilma Anak Manchu</span>
                         <span class="contact-number">019-8169159</span>
                     </a>
                     <a href="https://wa.me/60149927904" target="_blank" class="footer-contact-item">
