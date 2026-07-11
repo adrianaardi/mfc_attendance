@@ -319,11 +319,18 @@
         <span>Main Working Paper 1 Speaker</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Senior Director of the Forest Planning and Economics Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}','Tuan Muhamad bin Abdullah is the Senior Director of the Forest Planning and Economics Division at the Forestry Department of Peninsular Malaysia, bringing nearly two decades of experience to the role since joining the department in July 2006. His extensive expertise bridges forestry and social sciences, focusing on forest planning, policy development, governance, and anti-corruption studies. Throughout his career, he has contributed to key national and international initiatives, including legislative reform, climate change, biodiversity conservation, and the Malaysian Criteria and Indicators for Sustainable Forest Management (MC&I SFM). In recognition of his distinguished public service, he was conferred the Darjah Ahli Mahkota Perak by the Perak Government, and he continues his leadership in the sector as the Chairman of Subtheme 1 (Policy and Governance) for the 21st Malaysian Forestry Conference (MFC-21).')">
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Aldrich Richard','Main Working Paper 2 Speaker','Forestry Department of Peninsular Malaysia','https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=000&size=150','')">
+        <img src="https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=4a5e4f&size=150" alt="Tuan Muhamad Bin Abdullah" />
+        <strong>Dr. Aldrich Richard</strong>
+        <span>Main Working Paper 2 Speaker</span>
+      </div>
+
+      <!--<div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Senior Director of the Forest Planning and Economics Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}','Tuan Muhamad bin Abdullah is the Senior Director of the Forest Planning and Economics Division at the Forestry Department of Peninsular Malaysia, bringing nearly two decades of experience to the role since joining the department in July 2006. His extensive expertise bridges forestry and social sciences, focusing on forest planning, policy development, governance, and anti-corruption studies. Throughout his career, he has contributed to key national and international initiatives, including legislative reform, climate change, biodiversity conservation, and the Malaysian Criteria and Indicators for Sustainable Forest Management (MC&I SFM). In recognition of his distinguished public service, he was conferred the Darjah Ahli Mahkota Perak by the Perak Government, and he continues his leadership in the sector as the Chairman of Subtheme 1 (Policy and Governance) for the 21st Malaysian Forestry Conference (MFC-21).')">
         <img src="{{ asset('images/talker/TUAN ABDULLAH.png') }}" alt="Tuan Muhamad Bin Abdullah" />
         <strong>Tuan Muhamad Bin Abdullah</strong>
         <span>Main Working Paper 2 Speaker</span>
-      </div>
+      </div>-->
+
       <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Hamden Bin Haji Mohammad','Director of Forests Sarawak','Forest Department Sarawak','{{ asset('images/talker/HAJI HAMDEN.png') }}','Datu Haji Hamden bin Haji Mohammad has served as the Director of Forests Sarawak since 2018 and is widely recognised for his leadership in sustainable forest management, biodiversity conservation, climate change mitigation, environmental governance, and natural resource policy. He has led the development and implementation of forestry policies and programmes that strengthen sustainable forest management, enhance forest certification, and promote the adoption of advanced technologies such as LiDAR, remote sensing, drones, and geospatial analytics for forest monitoring and conservation. Among his key achievements are leading the Greening Sarawak Campaign under Malaysia\'s 100 Million Trees Campaign, championing forest carbon initiatives and nature-based climate solutions, and fostering strategic collaborations with international organisations and research institutions. Under his leadership, Sarawak exceeded its tree-planting target ahead of schedule and successfully secured the UNESCO Global Geopark designation for the Sarawak Delta Geopark, reinforcing the state\'s international reputation in sustainable forestry and environmental stewardship.')">
         <img src="{{ asset('images/talker/HAJI HAMDEN.png') }}" alt="Datu Haji Hamden Bin Haji Mohammad" />
         <strong>Datu Haji Hamden Bin Haji Mohammad</strong>
@@ -347,7 +354,7 @@
       </div>
 
       <div class="speaker-card" onclick="showSpeakerModal('Dr. Aldrich Richard','Session Chairman','Forestry Department of Peninsular Malaysia','https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=000&size=150','')">
-        <img src="https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=000&size=150" alt="Tuan Muhamad Bin Abdullah" />
+        <img src="https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=4a5e4f&size=150" alt="Tuan Muhamad Bin Abdullah" />
         <strong>Dr. Aldrich Richard</strong>
         <span>Session 3 Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
