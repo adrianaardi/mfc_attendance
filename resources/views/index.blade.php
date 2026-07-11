@@ -188,7 +188,7 @@
         </ul></td></tr>
         <tr><td>11:30 AM – 12:00 PM</td><td><strong>Main Working Paper 2:</strong> Sustainable Forest Management: Acting Locally for Global Impact
           <ul><li>Tuan Mohamad Bin Abdullah (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
-        <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong> Sarawak Strategic Blueprint for Sustainable Forestry and Climate Action. 
+        <tr><td>12:00 AM – 12:30 PM</td><td><strong>Main Working Paper 3:</strong> Sarawak's Strategic Blueprint for Sustainable Forestry and Green Economy. 
           <ul>
             <li>
               Datu Haji Hamden Bin Haji Mohammad (Forest Department Sarawak)
@@ -224,7 +224,7 @@
         <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>10:00 AM – 10:10 AM</td><td>Question and Answer Session</td></tr>
         <tr><td>10:10 AM – 10:30 AM</td><td>Refreshments</td></tr>
-        <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration<br>Chairman: </strong>Tuan Muhamad Bin Abdullah (Forestry Department of Peninsular Malaysia)</td></tr>
+        <tr><td colspan="2"><strong>Subtheme 3: Partnership and Collaboration<br>Chairman: </strong>Dr. Aldrich Richard (Forestry Department of Peninsular Malaysia)</td></tr>
         <tr><td>10:30 AM – 10:40 AM</td><td>Session Commencement</td></tr>
         <tr><td>10:40 AM – 11:00 AM</td><td><strong>Paper 9:</strong> Sabah Timber Legality Assurance System Plus (TLAS+): Advancing Timber Legality through International Collaboration<ul><li>Mijol R. M et al. (Sabah Forestry Department)</li></ul></td></tr>
         <tr><td>11:00 AM – 11:20 AM</td><td><strong>Paper 10:</strong> Operasi Penguatkuasaan Bersepadu Jabatan Perhutanan Semenanjung Malaysia<ul><li>Gana R.K et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
@@ -322,7 +322,7 @@
       <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Senior Director of the Forest Planning and Economics Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}','Tuan Muhamad bin Abdullah is the Senior Director of the Forest Planning and Economics Division at the Forestry Department of Peninsular Malaysia, bringing nearly two decades of experience to the role since joining the department in July 2006. His extensive expertise bridges forestry and social sciences, focusing on forest planning, policy development, governance, and anti-corruption studies. Throughout his career, he has contributed to key national and international initiatives, including legislative reform, climate change, biodiversity conservation, and the Malaysian Criteria and Indicators for Sustainable Forest Management (MC&I SFM). In recognition of his distinguished public service, he was conferred the Darjah Ahli Mahkota Perak by the Perak Government, and he continues his leadership in the sector as the Chairman of Subtheme 1 (Policy and Governance) for the 21st Malaysian Forestry Conference (MFC-21).')">
         <img src="{{ asset('images/talker/TUAN ABDULLAH.png') }}" alt="Tuan Muhamad Bin Abdullah" />
         <strong>Tuan Muhamad Bin Abdullah</strong>
-        <span>Main Working Paper 3 Speaker</span>
+        <span>Main Working Paper 2 Speaker</span>
       </div>
       <div class="speaker-card" onclick="showSpeakerModal('Datu Haji Hamden Bin Haji Mohammad','Director of Forests Sarawak','Forest Department Sarawak','{{ asset('images/talker/HAJI HAMDEN.png') }}','Datu Haji Hamden bin Haji Mohammad has served as the Director of Forests Sarawak since 2018 and is widely recognised for his leadership in sustainable forest management, biodiversity conservation, climate change mitigation, environmental governance, and natural resource policy. He has led the development and implementation of forestry policies and programmes that strengthen sustainable forest management, enhance forest certification, and promote the adoption of advanced technologies such as LiDAR, remote sensing, drones, and geospatial analytics for forest monitoring and conservation. Among his key achievements are leading the Greening Sarawak Campaign under Malaysia\'s 100 Million Trees Campaign, championing forest carbon initiatives and nature-based climate solutions, and fostering strategic collaborations with international organisations and research institutions. Under his leadership, Sarawak exceeded its tree-planting target ahead of schedule and successfully secured the UNESCO Global Geopark designation for the Sarawak Delta Geopark, reinforcing the state\'s international reputation in sustainable forestry and environmental stewardship.')">
         <img src="{{ asset('images/talker/HAJI HAMDEN.png') }}" alt="Datu Haji Hamden Bin Haji Mohammad" />
@@ -346,15 +346,15 @@
         <span>Session 2 Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Tuan Muhamad Bin Abdullah','Senior Director of the Forest Planning and Economics Division','Forestry Department of Peninsular Malaysia','{{ asset('images/talker/TUAN ABDULLAH.png') }}','Tuan Muhamad bin Abdullah is the Senior Director of the Forest Planning and Economics Division at the Forestry Department of Peninsular Malaysia, bringing nearly two decades of experience to the role since joining the department in July 2006. His extensive expertise bridges forestry and social sciences, focusing on forest planning, policy development, governance, and anti-corruption studies. Throughout his career, he has contributed to key national and international initiatives, including legislative reform, climate change, biodiversity conservation, and the Malaysian Criteria and Indicators for Sustainable Forest Management (MC&I SFM). In recognition of his distinguished public service, he was conferred the Darjah Ahli Mahkota Perak by the Perak Government, and he continues his leadership in the sector as the Chairman of Subtheme 1 (Policy and Governance) for the 21st Malaysian Forestry Conference (MFC-21).')">
-        <img src="{{ asset('images/talker/TUAN ABDULLAH.png') }}" alt="Tuan Muhamad Bin Abdullah" />
-        <strong>Tuan Muhamad Bin Abdullah</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Aldrich Richard','Session Chairman','Forestry Department of Peninsular Malaysia','https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=000&size=150','')">
+        <img src="https://ui-avatars.com/api/?name=Aldrich+Richard&background=e8f0e9&color=000&size=150" alt="Tuan Muhamad Bin Abdullah" />
+        <strong>Dr. Aldrich Richard</strong>
         <span>Session 3 Chairman · Forestry Department of Peninsular Malaysia</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Dr. Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
-        <img src="{{ asset('images/talker/ARTHUR CHUNG.png') }}" alt="Dr. Chung Yaw Chyang" />
-        <strong>Dr. Chung Yaw Chyang</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Dr. Arthur Chung Yaw Chyang','Session Chairman','Sabah Forestry Department','{{ asset('images/talker/ARTHUR CHUNG.png') }}')">
+        <img src="{{ asset('images/talker/ARTHUR CHUNG.png') }}" alt="Dr. Arthur Chung Yaw Chyang" />
+        <strong>Dr. Arthur Chung Yaw Chyang</strong>
         <span>Session 4 Chairman · Sabah Forestry Department</span>
       </div>
 
@@ -366,7 +366,7 @@
 
       <div class="speaker-card" onclick="showSpeakerModal('Indra P. H. Sunjoto','Deputy Chief Conservator of Forests (Planning & Management)','Sabah Forestry Department','{{ asset('images/talker/INDRA PH SUNJOTO.png') }}','Indra Purwandita H. Sunjoto has been working in the Sabah Forestry Department for 30 years. He was assigned as District Forestry Officer and gained experiences in managing Forest Management Unit at several districts. He has experience in implementing sustainable forest management concepts, from planning, management, assessment and operation. He has been actively involved on forest conservation & protection programme, forest rehabilitation, wildlife monitoring and habitat management, forest fire management, timber legality assurance system, forest certification and payment for ecosystem services (PES). He is also responsible on forest protection programme, particularly on anti-poaching programme in Sabah.')">
         <img src="{{ asset('images/talker/INDRA PH SUNJOTO.png') }}" alt="Indra P. H. Sunjoto" />
-        <strong>Indra P. H. Sunjoto</strong>
+        <strong> Tuan Indra P. H. Sunjoto</strong>
         <span>Session 6 Chairman · Sabah Forestry Department</span>
       </div>
 
