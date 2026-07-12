@@ -171,11 +171,12 @@
     <div id="day1" class="agenda-day">
       <table>
         <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
-        <tr><td>8:15 AM – 10:15 AM</td><td><ul><li>Appointment of the Conference's Chairman</li>
+        <tr><td>8:15 AM – 10:15 AM</td><td><ul><li>Appointment of the Conference's Chairman by previous Chairman</li>
         <li>Introduction remarks by respective Heads of Departments</li>
         <li>Appointment of Conference's Officials</li>
         <li>Reporting of the 20th Malaysian Forestry Conference Resolutions</li>
-        <li>Amendment to the Standing Orders of Malaysian Forestry Conference, if any.</li>
+        <li>Amendment to the Standing Orders of Malaysian Forestry Conference</li>
+        <li>Signing of MoU between FDS and SFD</li>
       </ul></td></tr>
         <tr><td>10:15 AM – 10:30 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Plenary Session: Keynote Address & Main Working Paper</strong></td></tr>
@@ -202,6 +203,62 @@
         <tr><td>3:00 PM – 3:20 PM</td><td><strong>Paper 4:</strong> Science-Based Forest Policy in Action: Integrating Dipterocarp Population Assessment into Sarawak's Efforts on CITES and the Sustainable Timber Framework<ul><li>Vilma Bodos et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>3:20 PM – 3:30 PM</td><td>Question and Answer Session</td></tr>
         <tr><td>3:30 PM</td><td>Refreshments &amp; End of Day 1</td></tr>
+        <tr>
+          <td colspan="2">
+            <strong>Opening Ceremony and Welcoming Dinner</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7:00 PM - 7:30 PM 
+          </td>
+          <td>
+            Arrival of Invited Guests
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7:30 PM - 8:00 PM
+          </td>
+          <td>
+            Arrival of Distinguished Guests
+          </td>
+        </tr>
+        <tr>
+          <td>
+            8:00 PM - 10:00 PM
+          </td>
+          <td>
+            <ul>
+              <li>
+                Arrival of the Right Honourable Premier of Sarawak Datuk Patinggi Tan Sri (Dr) Abang Haji Abdul Rahman Zohari Bin Tun Datuk Abang Haji Openg
+              </li>
+              <li>
+                Negaraku and Ibu Pertiwiku
+              </li>
+              <li>
+                Welcoming Performance
+              </li>
+              <li>
+                Doa Recital
+              </li>
+              <li>
+                Welcoming Address by Director of Forests Sarawak YBhg. Datu Haji Hamden Bin Haji Mohammad
+              </li>
+              <li>
+                Video Presentation on MFC
+              </li>
+              <li>Officiating Address by the Right Honourable Premier of Sarawak Datuk Patinggi Tan Sri (Dr) Abang Haji Abdul Rahman Zohari Bin Tun Datuk Abang Haji Openg</li>
+              <li>Official Launch of the 21st Malaysian Forestry Conferencec</li>
+              <li>Exchange of Memorandum of Understanding (MoU)</li>
+              <li>Presentation of Malaysia Book of Records Recognition</li>
+              <li>Presentation of Souvenur</li>
+              <li>Dance Performance</li>
+              <li>Photo Session</li>
+              <li>End</li>
+            </ul>
+          </td>
+        </tr>
       </table>
       <div class="punch-in-container">
         @if($settings['attendance_day1'])
