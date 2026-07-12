@@ -17,7 +17,9 @@ return [
             ['time_start' => '14:40', 'time_end' => '15:00', 'activity' => 'Paper 3: Penetapan Pendengaran Awam (Public Hearing) Bagi Pewartaan Keluar Hutan Simpanan Kekal (HSK) Di Semenanjung Malaysia', 'speaker' => 'Zarin R. (Forestry Department of Peninsular Malaysia)'],
             ['time_start' => '15:00', 'time_end' => '15:20', 'activity' => 'Paper 4: Science-Based Forest Policy in Action: Integrating Dipterocarp Population Assessment into Sarawak\'s Efforts on CITES and the Sustainable Timber Framework', 'speaker' => 'Vilma Bodos (Forest Department Sarawak)'],
             ['time_start' => '15:20', 'time_end' => '15:30', 'activity' => 'Question and Answer Session'],
-            ['time_start' => '15:30', 'time_end' => null, 'activity' => 'Refreshments & End of Day 1'],
+            ['time_start' => '15:30', 'time_end' => '19:00', 'activity' => 'Refreshments & End of Day 1'],
+            ['time_start' => '19:00', 'time_end' => '22:00', 'activity' => 'Opening Ceremony and Welcoming Dinner'],
+
         ],
         2 => [
             ['time_start' => null, 'time_end' => null, 'activity' => 'Subtheme 2: Nature-Based Adaptation and Solution', 'chairman' => 'Tuan Haji Mohd. Ridzuwan Bin Endot (Forestry Department of Peninsular Malaysia)', 'type' => 'header'],
