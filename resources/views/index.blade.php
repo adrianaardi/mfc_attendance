@@ -218,7 +218,7 @@
         <tr><th style="width: 30%;">Time</th><th>Activity</th></tr>
         <tr><td colspan="2"><strong>Subtheme 2: Nature-Based Adaptation and Solution<br>Chairman: </strong>Tuan Haji Mohd. Ridzuwan Bin Endot (Forestry Department of Peninsular Malaysia)</td></tr>
         <tr><td>8:30 AM – 8:40 AM</td><td>Session Commencement</td></tr>
-        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Amsari Bin Mahmud et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
+        <tr><td>8:40 AM – 9:00 AM</td><td><strong>Paper 5:</strong> Pengalaman Dan Cabaran Pengurusan Kebakaran Hutan Paya Gambut Di Selangor<ul><li>Debora Belawan et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>9:00 AM – 9:20 AM</td><td><strong>Paper 6:</strong> Estimating Aboveground Forest Carbon Density through LiDAR and Geospatial Remote Sensing in Sarawak<ul><li>Dr Malcom anak Demies et al. (Forest Department Sarawak)</li></ul></td></tr>
         <tr><td>9:20 AM – 9:40 AM</td><td><strong>Paper 7:</strong> A Review: Ecological Dynamics of Tropical Highland Peat Ecosystems<ul><li>Iqtie Qamar Laila Mohd Gani et al. (Forestry Department of Peninsular Malaysia)</li></ul></td></tr>
         <tr><td>9:40 AM – 10:00 AM</td><td><strong>Paper 8:</strong> Nature, Climate, and Economy: Sabah’s Pathway Through Nature-Based Solutions<ul><li>Rosila Anthony et al. (Sabah Forestry Department)</li></ul></td></tr>
@@ -277,12 +277,20 @@
         <tr><td>10:10 AM – 10:55 AM</td><td>Refreshments</td></tr>
         <tr><td colspan="2"><strong>Closed Sessions (For Members Only)</strong></td></tr>
         <tr><td>10:55 AM – 11:00 AM</td><td>Session Commencement</td></tr>
-        <tr><td>11:00 AM – 12:30 PM</td><td>Conference Resolution Presentation and Adoption</td></tr>
+        <tr><td>11:00 AM – 12:30 PM</td><td>Conference Resolution Presentation and Adoption
+          <ul>
+            <li>Presentation and adoption of 21st MFC Conference resolution draft</li>
+            <li>Remarks by Director of Forests Sarawak and CHief Conservator of Forests, Sabah Forestry Department</li>
+            <li>Handover of gavel from Director of Forests Sarawak to Head of Delegation, Forestry Department of Peninsular Malaysia, witnessed by Chief Conservator of Forests, Sabah Forestry Department</li>
+            <li>Remarks by Head of Delegation, Forestry Department of Peninsular Malaysia</li>
+            <li>Exchange of souvenirs</li>
+          </ul>
+        </td></tr>
         <tr><td colspan="2"><strong>Closing Ceremony</strong></td></tr>
-        <tr><td>12:30 PM – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Arrival of YBhg Datu Haji Abdullah Bin Julaihi, Permanent Secretary, Ministry of Natural Resources and Urban Development</li>
+        <tr><td>12:30 PM – 1:30 PM</td><td><strong>Closing Ceremony</strong><ul><li>Arrival of YBhg Datu Haji Abdullah Bin Julaihi, Permanent Secretary, Ministry of Natural Resources and Urban Development (MUDeNR)</li>
         <li>Negaraku and Ibu Pertiwiku</li>
       <li>Recital of Doa</li>
-    <li>Closing Address by Permanent Secretary</li>
+    <li>Closing Address by Permanent Secretary of MUDeNR</li>
     <li>Presentation of Souvenirs</li>
   <li>Photo Session</li>
 </ul></td></tr>
@@ -405,9 +413,9 @@
         <span>Paper 4 Presenter · Forest Department Sarawak</span>
       </div>
 
-      <div class="speaker-card" onclick="showSpeakerModal('Amsari Bin Mahmud','Deputy Director (Development) Selangor State Forestry Development','Selangor State Forestry Department','{{ asset('images/talker/AMSARI.png') }}','This highly experienced forestry officer brings over 20 years of expertise to his role, specializing in the sustainable management of tropical forests, development programmes, and ecological conservation. He has played a key role in regional environmental connectivity by overseeing the implementation of the Central Forest Spine (CFS) initiative in Selangor. A leader in large-scale ecological restoration, he has been responsible for planning and coordinating the 100 Million Tree-Planting Campaign (2021–2025) at the national level, alongside managing Selangor\'s 26 Million Tree-Planting Programme (2022–2026). Additionally, as the State Project Coordinator for the SMPEM Project, he leads localized project delivery to ensure strict compliance with grant requirements, optimal resource efficiency, and the successful achievement of national sustainability outcomes.')">
-        <img src="{{ asset('images/talker/AMSARI.png') }}" alt="Amsari Bin Mahmud" />
-        <strong>Amsari Bin Mahmud</strong>
+      <div class="speaker-card" onclick="showSpeakerModal('Debora Belawan','Assistant Director (Forest Plantation and Innovation Section)','Selangor State Forestry Department','{{ asset('images/talker/DEBORA.png') }}','She holds a Bachelor of Forestry Science and has extensive experience in forestry management and environmental conservation. She began her career with the Forestry Department Peninsular Malaysia, where she served from 2011 to 2019 in various forestry-related roles. Since 2019, she has been serving with the Selangor State Forestry Department, focusing on forest plantation development, innovation initiatives and sustainable forest management. She also plays an important role in managing forest fire prevention and control efforts in Selangor, including coordination of preparedness programmes, inter-agency collaboration, monitoring activities, and public awareness initiatives to reduce the risk of forest and peatland fires. She is committed to promoting sustainable forestry practices and strengthening environmental protection for future generations.')">
+        <img src="{{ asset('images/talker/DEBORA.png') }}" alt="Debora Belawan" />
+        <strong>Debora Belawan</strong>
         <span>Paper 5 Presenter · Forestry Department of Peninsular Malaysia</span>
       </div>
 
