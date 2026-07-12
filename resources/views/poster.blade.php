@@ -51,8 +51,7 @@
     </a>
 
     <a href="/#agenda">Agenda</a>
-    <a href="/#speakers">Bio's</a>
-    <a href="/#slides">Slides</a>
+<a href="/#speakers">Speakers</a>    <a href="/#slides">Slides</a>
     <a href="/#footer">Contacts</a>
   </nav>
 
