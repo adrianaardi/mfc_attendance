@@ -274,14 +274,13 @@ section h2 {
   overflow: hidden;
   box-shadow: var(--shadow);
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
 }
 
 #agenda th {
   background: #1a3a2ac0;
   color: #fff;
   padding: 11px 14px;
-  text-align: left;
   font-size: 13px;
   font-weight: 600;
   border: none;
