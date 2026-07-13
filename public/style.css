@@ -1081,6 +1081,7 @@ footer {
   border-bottom: 1px solid rgba(26,58,42,0.1);
   vertical-align: top;
   color: var(--text);
+  text-align: justify;
 }
 
 .slides-day table tr:last-child td {
