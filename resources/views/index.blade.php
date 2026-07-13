@@ -634,9 +634,9 @@
                 <tbody>
                     @foreach($items as $slide)
                     <tr>
-                        <td>{{ $slide->speaker }}</td>
-                        <td>{{ $slide->title }}</td>
-                        <td>
+                        <td style="width:30%;">{{ $slide->speaker }}</td>
+                        <td style="width:60%;">{{ $slide->title }}</td>
+                        <td style="width:10%;">
                             @if($slide->pdf_path)
                                 <a href="{{ asset('storage/' . $slide->pdf_path) }}" target="_blank" >↓ PDF</a>
                             @else
