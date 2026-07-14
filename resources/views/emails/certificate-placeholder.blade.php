@@ -218,7 +218,7 @@
 
                 <div class="content">
                     <p class="intro">This is to certify</p>
-                    <h2 class="recipient">Nurul Adriana Binti Ardi</h2>
+                    <h2 class="recipient">{{ $recipientName }}</h2>
                     <p class="description">
                         has attended the<br>
                         <strong>21st Malaysian Forestry Conference (MFC) 2026</strong>
