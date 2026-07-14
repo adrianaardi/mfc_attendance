@@ -71,7 +71,7 @@ class AdminController extends Controller
         foreach ($attendances as $attendance) {
             $registration = $attendance->registration;
 
-            $pdfContent = Pdf::loadView('emails.certificate-placeholder')->output();
+            $pdfContent = Pdf::loadView('emails.certificate-placeholder', compact('registration'))->output();
             $attachments = [[
                 'content' => base64_encode($pdfContent),
                 'name' => 'digital-certificate-test.pdf',

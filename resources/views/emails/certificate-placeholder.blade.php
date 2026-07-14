@@ -247,21 +247,31 @@
     </style>
 </head>
 <body>
+    @php
+        $logoPath = public_path('images/logo_mfc-no-bg.png');
+        $signaturePath = public_path('images/signature.png');
+        $logoSrc = file_exists($logoPath)
+            ? 'data:image/' . pathinfo($logoPath, PATHINFO_EXTENSION) . ';base64,' . base64_encode(file_get_contents($logoPath))
+            : '';
+        $signatureSrc = file_exists($signaturePath)
+            ? 'data:image/' . pathinfo($signaturePath, PATHINFO_EXTENSION) . ';base64,' . base64_encode(file_get_contents($signaturePath))
+            : '';
+        $recipientName = trim((string) data_get($registration ?? null, 'name', 'Participant'));
+        $nameLength = function_exists('mb_strlen') ? mb_strlen($recipientName) : strlen($recipientName);
+        $nameFontSize = max(26, min(52, 52 - max(0, $nameLength - 20) * 1.25));
+    @endphp
     <div class="certificate-wrap">
         <div class="page">
             <div class="header">
-                <img class="logo" src="{{ asset('images/logo_mfc-no-bg.png') }}" alt="MFC Logo">
+                @if ($logoSrc !== '')
+                    <img class="logo" src="{{ $logoSrc }}" alt="MFC Logo">
+                @endif
                 <p class="conference-name">Malaysian Forestry Conference 2026</p>
                 <h1 class="title">Certificate of Attendance</h1>
             </div>
 
             <div class="content">
                 <p class="intro">This is to Certify</p>
-                @php
-                    $recipientName = trim((string) ($registration->name ?? ''));
-                    $nameLength = mb_strlen($recipientName);
-                    $nameFontSize = max(26, min(52, 52 - max(0, $nameLength - 20) * 1.25));
-                @endphp
                 <h2 class="recipient" style="font-size: {{ number_format($nameFontSize, 2, '.', '') }}px;">{{ $recipientName }}</h2>
                 <p class="description">
                     successfully attended the conference
@@ -279,7 +289,9 @@
                     <!--<p class="issue">Issued on {{ now()->format('d F Y') }}</p>-->
                 </div>
                 <div class="footer-cell right">
-                    <img class="signature" src="{{ asset('images/signature.png') }}" alt="Director Signature">
+                    @if ($signatureSrc !== '')
+                        <img class="signature" src="{{ $signatureSrc }}" alt="Director Signature">
+                    @endif
                     <p class="sign-name">Datu Haji Hamden Bin Haji Mohammad</p>
                     <p class="sign-title">Director of Forests Sarawak</p>
                 </div>
