@@ -47,7 +47,7 @@
     </script>
 @endif
 
-  <!-- ── ANNOUNCEMENT MODAL ──────────────────────────────── -->
+  <!-- ── ANNOUNCEMENT MODAL ──────────────────────────────── 
   @if($activeDay && $currentActivity)
   <div id="announcementModal" class="announcement-overlay">
       <div class="announcement-content">
@@ -71,7 +71,7 @@
           </div>
       </div>
   </div>
-  @endif
+  @endif -->
 
   <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>

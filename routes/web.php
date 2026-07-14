@@ -7,6 +7,21 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SlideController;
 use Illuminate\Support\Facades\Artisan;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+Route::get('/create-user', function () {
+    $user = User::create([
+        'name' => 'Quick User',
+        'email' => 'urusetia@email.com',
+        'password' => Hash::make('123456789'), 
+    ]);
+
+    return "User created successfully: " . $user->email;
+});
+
+
+
 Route::get('/storagebengokmenyusahkanorang', function () {
     try {
         Artisan::call('storage:link');
