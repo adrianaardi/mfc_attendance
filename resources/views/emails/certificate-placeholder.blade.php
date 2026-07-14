@@ -225,6 +225,9 @@
     </style>
 </head>
 <body>
+    @php
+        $registeredName = trim((string) data_get($registration ?? null, 'name', ''));
+    @endphp
 
     <div class="certificate-wrap">
         <div class="page">
@@ -239,7 +242,7 @@
 
                 <div class="content">
                     <p class="intro">This is to certify</p>
-                    <h2 class="recipient">{{ $registration->name }}</h2>
+                    <h2 class="recipient">{{ $registeredName }}</h2>
                     <p class="description">
                         has attended the<br>
                         <strong>21st Malaysian Forestry Conference (MFC) 2026</strong>
