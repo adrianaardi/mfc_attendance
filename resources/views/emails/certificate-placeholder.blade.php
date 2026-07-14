@@ -248,12 +248,13 @@
 </head>
 <body>
     @php
+        $canRenderImages = extension_loaded('gd');
         $logoPath = public_path('images/logo_mfc-no-bg.png');
         $signaturePath = public_path('images/signature.png');
-        $logoSrc = file_exists($logoPath)
+        $logoSrc = $canRenderImages && file_exists($logoPath)
             ? 'data:image/' . pathinfo($logoPath, PATHINFO_EXTENSION) . ';base64,' . base64_encode(file_get_contents($logoPath))
             : '';
-        $signatureSrc = file_exists($signaturePath)
+        $signatureSrc = $canRenderImages && file_exists($signaturePath)
             ? 'data:image/' . pathinfo($signaturePath, PATHINFO_EXTENSION) . ';base64,' . base64_encode(file_get_contents($signaturePath))
             : '';
         $recipientName = trim((string) data_get($registration ?? null, 'name', 'Participant'));
@@ -265,6 +266,8 @@
             <div class="header">
                 @if ($logoSrc !== '')
                     <img class="logo" src="{{ $logoSrc }}" alt="MFC Logo">
+                @else
+                    <p class="conference-name">Forest Department Sarawak</p>
                 @endif
                 <p class="conference-name">Malaysian Forestry Conference 2026</p>
                 <h1 class="title">Certificate of Attendance</h1>
@@ -291,6 +294,8 @@
                 <div class="footer-cell right">
                     @if ($signatureSrc !== '')
                         <img class="signature" src="{{ $signatureSrc }}" alt="Director Signature">
+                    @else
+                        <p class="issue">Digitally issued by organizer</p>
                     @endif
                     <p class="sign-name">Datu Haji Hamden Bin Haji Mohammad</p>
                     <p class="sign-title">Director of Forests Sarawak</p>
