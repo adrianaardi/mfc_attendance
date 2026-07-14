@@ -54,9 +54,9 @@ class AdminController extends Controller
             return back()->with('admin_error', 'No records selected.');
         }
 
-        if (! extension_loaded('gd')) {
-            return back()->with('admin_error', 'Unable to generate certificate PDFs: PHP GD extension is not installed on the server. Please enable GD and redeploy, then try again.');
-        }
+        $pdfView = extension_loaded('gd')
+            ? 'emails.certificate-placeholder'
+            : 'emails.certificate-placeholder-basic';
 
         $latestAttendanceIds = Attendance::query()
             ->selectRaw('MAX(id) as latest_attendance_id')
@@ -77,7 +77,7 @@ class AdminController extends Controller
             $registration = $attendance->registration;
 
             try {
-                $pdfContent = Pdf::loadView('emails.certificate-placeholder', compact('registration'))->output();
+                $pdfContent = Pdf::loadView($pdfView, compact('registration'))->output();
                 $attachments = [[
                     'content' => base64_encode($pdfContent),
                     'name' => 'digital-certificate-test.pdf',
