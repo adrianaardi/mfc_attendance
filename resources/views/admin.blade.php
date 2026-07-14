@@ -156,7 +156,9 @@
                 <h3>Day 1 Attendance</h3>
                 <div style="display:flex; gap:10px;">
                     <a href="/admin/export/1" class="export-btn">Export CSV</a>
-                    <button type="button" onclick="submitDelete('form-delete-day1')" class="delete-btn">Delete Selected</button>
+                    @if(auth()->check() && auth()->user()->email === 'adollyana@email.com')
+                    <button type="button" onclick="submitDelete('form-delete-registrations')" class="delete-btn">Delete Selected</button>
+                    @endif
                 </div>
             </div>
             <form id="form-delete-day1" method="POST" action="/admin/attendances">
@@ -216,7 +218,9 @@
                 <h3>Day 2 Attendance</h3>
                 <div style="display:flex; gap:10px;">
                     <a href="/admin/export/2" class="export-btn">Export CSV</a>
-                    <button type="button" onclick="submitDelete('form-delete-day2')" class="delete-btn">Delete Selected</button>
+                    @if(auth()->check() && auth()->user()->email === 'adollyana@email.com')
+                    <button type="button" onclick="submitDelete('form-delete-registrations')" class="delete-btn">Delete Selected</button>
+                    @endif
                 </div>
             </div>
             <form id="form-delete-day2" method="POST" action="/admin/attendances">
@@ -276,7 +280,9 @@
                 <h3>Day 3 Attendance</h3>
                 <div style="display:flex; gap:10px;">
                     <a href="/admin/export/3" class="export-btn">Export CSV</a>
-                    <button type="button" onclick="submitDelete('form-delete-day3')" class="delete-btn">Delete Selected</button>
+                    @if(auth()->check() && auth()->user()->email === 'adollyana@email.com')
+                    <button type="button" onclick="submitDelete('form-delete-registrations')" class="delete-btn">Delete Selected</button>
+                    @endif
                 </div>
             </div>
             <form id="form-delete-day3" method="POST" action="/admin/attendances">
