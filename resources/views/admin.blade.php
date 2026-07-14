@@ -86,7 +86,6 @@
             <button onclick="showTab('day1')" id="tab-day1">Day 1</button>
             <button onclick="showTab('day2')" id="tab-day2">Day 2</button>
             <button onclick="showTab('day3')" id="tab-day3">Day 3</button>
-            <button onclick="showTab('multi-day')" id="tab-multi-day">2+ Days</button>
         </div>
 
         <!-- Registrations Table -->
@@ -334,65 +333,6 @@
             </form>
         </div>
 
-        <!-- 2+ Days Attendance Table -->
-        <div id="table-multi-day" class="admin-table-section" style="display:none;">
-            <div class="table-header">
-                <h3>Attended At Least 2 Days</h3>
-                <div style="display:flex; gap:10px;">
-                    <button type="button" class="resend-btn" onclick="submitSend('form-send-multi-day')">Send Email Trigger</button>
-                </div>
-            </div>
-            <form id="form-send-multi-day" method="POST" action="/admin/multi-day/send">
-                @csrf
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" onclick="toggleAll(this, 'multi-day-check')"></th>
-                                <th>Full Name</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Designation</th>
-                                <th>Agency</th>
-                                <th>Days Attended</th>
-                                <th>Email Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @forelse($multiDayAttendees as $attendee)
-                            <tr>
-                                <td><input type="checkbox" class="multi-day-check" name="ids[]" value="{{ $attendee->registration_id }}"></td>
-                                <td>{{ $attendee->registration->name }}</td>
-                                <td>{{ $attendee->registration->email }}</td>
-                                <td>{{ $attendee->registration->phone }}</td>
-                                <td>{{ $attendee->registration->designation }}</td>
-                                <td>{{ $attendee->registration->agency }}</td>
-                                <td>{{ $attendee->days_attended }}</td>
-                                <td>
-                                    @if($attendee->multi_day_email_status === 'sent')
-                                        <span class="email-badge email-sent">✅ Sent</span>
-                                    @elseif($attendee->multi_day_email_status === 'failed')
-                                        <span class="email-badge email-failed">❌ Failed</span>
-                                    @else
-                                        <span class="email-badge email-pending">⏳ Not Yet Sent</span>
-                                    @endif
-                                </td>
-                                <td>
-                                    <button type="button" class="resend-btn" onclick="submitSingleMultiDay('{{ $attendee->registration_id }}')">Trigger</button>
-                                </td>
-                            </tr>
-                            @empty
-                            <tr>
-                                <td colspan="9" style="text-align:center; color:var(--text-soft);">No users have attended at least 2 days yet.</td>
-                            </tr>
-                            @endforelse
-                        </tbody>
-                    </table>
-                </div>
-            </form>
-        </div>
-
     </section>
 
     <script>
@@ -417,27 +357,6 @@
             if (confirm(`Delete ${checked.length} selected record(s)? This cannot be undone.`)) {
                 form.submit();
             }
-        }
-
-        function submitSend(formId) {
-            const form = document.getElementById(formId);
-            const checked = form.querySelectorAll('.multi-day-check:checked');
-            if (checked.length === 0) {
-                alert('Please select at least one record to send.');
-                return;
-            }
-            if (confirm(`Send email trigger to ${checked.length} selected attendee(s)?`)) {
-                form.submit();
-            }
-        }
-
-        function submitSingleMultiDay(registrationId) {
-            const form = document.getElementById('form-send-multi-day');
-            const checkboxes = form.querySelectorAll('.multi-day-check');
-            checkboxes.forEach(cb => {
-                cb.checked = (cb.value === registrationId);
-            });
-            submitSend('form-send-multi-day');
         }
 
         function resend(url) {
