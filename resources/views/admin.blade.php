@@ -94,7 +94,6 @@
                 <h3>All Registrations</h3>
                 <div style="display:flex; gap:10px;">
                     <a href="/admin/export/registrations" class="export-btn">Export CSV</a>
-                    @auth(email="adollyana@email")
                     <button type="button" onclick="submitDelete('form-delete-registrations')" class="delete-btn">Delete Selected</button>
                 </div>
             </div>
