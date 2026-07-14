@@ -12,15 +12,6 @@ use Illuminate\Support\Facades\Hash;
 
 
 
-Route::get('/create-user', function () {
-    $user = User::create([
-        'name' => 'add',
-        'email' => 'test@email.com',
-        'password' => Hash::make('qweasdzxc'), 
-    ]);
-
-    return "User created successfully: " . $user->email;
-});
 
 Route::get('/storagebengokmenyusahkanorang', function () {
     try {
