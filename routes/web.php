@@ -11,6 +11,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 
+
 Route::get('/create-user', function () {
     $user = User::create([
         'name' => 'add',
