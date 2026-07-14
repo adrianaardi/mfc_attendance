@@ -37,18 +37,7 @@
         .page {
             width: 100%;
             height: 100%;
-            border: 1mm solid #4f6d54;
             padding: 5mm;
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .frame {
-            width: 100%;
-            height: 100%;
-            border: 0.45mm solid #6f866f;
-            padding: 9mm 9mm;
             box-sizing: border-box;
             position: relative;
             overflow: hidden;
@@ -57,37 +46,34 @@
             justify-content: center;
         }
 
+        .frame {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8mm 9mm;
+        }
+
+
+
         .certificate-content {
             width: 100%;
             max-width: 165mm;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 7mm;
         }
 
-        .frame:before,
-        .frame:after {
-            content: "";
-            position: absolute;
-            width: 12mm;
-            height: 12mm;
-            pointer-events: none;
-        }
-
-        .frame:before {
-            top: 6mm;
-            left: 6mm;
-            border-top: 0.5mm solid #8b7249;
-            border-left: 0.5mm solid #8b7249;
-        }
-
-        .frame:after {
-            right: 6mm;
-            bottom: 6mm;
-            border-right: 0.5mm solid #8b7249;
-            border-bottom: 0.5mm solid #8b7249;
-        }
 
         .header {
             text-align: center;
-            margin: 0 0 5mm;
+            margin: 0;
+            width: 100%;
         }
 
         .conference-name {
@@ -128,7 +114,7 @@
             color: #6d5b3a;
             text-transform: uppercase;
             font-weight: 700;
-            padding: 3mm;
+            padding: 15px;
         }
 
         .divider {
@@ -143,6 +129,7 @@
             text-align: center;
             margin: 0 auto;
             max-width: 150mm;
+            width: 100%;
         }
 
         .intro {
@@ -157,7 +144,7 @@
             line-height: 1.15;
             color: #173724;
             font-weight: 700;
-            padding: 2.5mm;
+            padding: 25px;
             display: block;
             width: 100%;
             box-sizing: border-box;
@@ -177,7 +164,7 @@
             color: #204433;
             font-style: italic;
             font-weight: 700;
-            padding: 3mm;
+            padding: 10px;
         }
 
         .venue {
@@ -196,15 +183,14 @@
         }
 
         .footer {
-            margin-top: 8mm;
-            display: table;
+            margin-top: 3mm;
             width: 100%;
             text-align: center;
         }
 
         .issue {
             margin: 0;
-            padding: 3mm;
+            padding: 25px;
             font-size: 12px;
             letter-spacing: 0.3px;
             color: #45634d;
