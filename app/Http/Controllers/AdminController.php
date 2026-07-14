@@ -7,7 +7,6 @@ use App\Models\Registration;
 use Illuminate\Http\Request;
 use App\Services\BrevoMailer;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Throwable;
 
 class AdminController extends Controller
 {
@@ -54,10 +53,6 @@ class AdminController extends Controller
             return back()->with('admin_error', 'No records selected.');
         }
 
-        $pdfView = extension_loaded('gd')
-            ? 'emails.certificate-placeholder'
-            : 'emails.certificate-placeholder-basic';
-
         $latestAttendanceIds = Attendance::query()
             ->selectRaw('MAX(id) as latest_attendance_id')
             ->whereIn('registration_id', $registrationIds)
@@ -76,34 +71,27 @@ class AdminController extends Controller
         foreach ($attendances as $attendance) {
             $registration = $attendance->registration;
 
-            try {
-                $pdfContent = Pdf::loadView($pdfView, compact('registration'))->output();
-                $attachments = [[
-                    'content' => base64_encode($pdfContent),
-                    'name' => 'digital-certificate-test.pdf',
-                ]];
+            $pdfContent = Pdf::loadView('emails.certificate-placeholder')->output();
+            $attachments = [[
+                'content' => base64_encode($pdfContent),
+                'name' => 'digital-certificate-test.pdf',
+            ]];
 
-                $result = BrevoMailer::send(
-                    $registration->email,
-                    $registration->name,
-                    'Digital Certificate (Test) — MFC 2026',
-                    view('emails.certificate-mail', compact('registration'))->render(),
-                    $attachments
-                );
+            $result = BrevoMailer::send(
+                $registration->email,
+                $registration->name,
+                'Digital Certificate (Test) — MFC 2026',
+                view('emails.certificate-mail', compact('registration'))->render(),
+                $attachments
+            );
 
-                $attendance->email_status = $result['status'];
-                $attendance->email_error = $result['error'];
-                $attendance->save();
+            $attendance->email_status = $result['status'];
+            $attendance->email_error = $result['error'];
+            $attendance->save();
 
-                if ($result['status'] === 'sent') {
-                    $sentCount++;
-                } else {
-                    $failedCount++;
-                }
-            } catch (Throwable $e) {
-                $attendance->email_status = 'failed';
-                $attendance->email_error = 'Certificate generation failed: '.$e->getMessage();
-                $attendance->save();
+            if ($result['status'] === 'sent') {
+                $sentCount++;
+            } else {
                 $failedCount++;
             }
         }
