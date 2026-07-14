@@ -6,6 +6,7 @@ use App\Models\Attendance;
 use App\Models\Registration;
 use Illuminate\Http\Request;
 use App\Services\BrevoMailer;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class AdminController extends Controller
 {
@@ -15,6 +16,24 @@ class AdminController extends Controller
         $day1 = Attendance::with('registration')->where('day', 1)->latest()->get();
         $day2 = Attendance::with('registration')->where('day', 2)->latest()->get();
         $day3 = Attendance::with('registration')->where('day', 3)->latest()->get();
+        $multiDayAttendees = Attendance::with('registration')
+            ->select('registration_id')
+            ->selectRaw('COUNT(DISTINCT day) as days_attended')
+            ->selectRaw('MAX(checked_in_at) as last_check_in_at')
+            ->selectRaw('MAX(id) as latest_attendance_id')
+            ->groupBy('registration_id')
+            ->havingRaw('COUNT(DISTINCT day) >= 2')
+            ->orderByDesc('days_attended')
+            ->orderByDesc('last_check_in_at')
+            ->get();
+
+        $latestAttendanceStatuses = Attendance::whereIn('id', $multiDayAttendees->pluck('latest_attendance_id')->filter()->all())
+            ->get(['id', 'email_status'])
+            ->keyBy('id');
+
+        $multiDayAttendees->each(function ($attendee) use ($latestAttendanceStatuses) {
+            $attendee->multi_day_email_status = $latestAttendanceStatuses[$attendee->latest_attendance_id]->email_status ?? 'pending';
+        });
 
         $settings = [
             'registration'    => \App\Models\Setting::isEnabled('registration'),
@@ -23,7 +42,65 @@ class AdminController extends Controller
             'attendance_day3' => \App\Models\Setting::isEnabled('attendance_day3'),
         ];
 
-        return view('admin', compact('registrations', 'day1', 'day2', 'day3', 'settings'));
+        return view('admin', compact('registrations', 'day1', 'day2', 'day3', 'multiDayAttendees', 'settings'));
+    }
+
+    public function sendMultiDayEmails(Request $request)
+    {
+        $registrationIds = $request->input('ids', []);
+
+        if (empty($registrationIds)) {
+            return back()->with('admin_error', 'No records selected.');
+        }
+
+        $latestAttendanceIds = Attendance::query()
+            ->selectRaw('MAX(id) as latest_attendance_id')
+            ->whereIn('registration_id', $registrationIds)
+            ->groupBy('registration_id')
+            ->pluck('latest_attendance_id');
+
+        $attendances = Attendance::with('registration')->whereIn('id', $latestAttendanceIds)->get();
+
+        if ($attendances->isEmpty()) {
+            return back()->with('admin_error', 'No eligible attendance records found.');
+        }
+
+        $sentCount = 0;
+        $failedCount = 0;
+
+        foreach ($attendances as $attendance) {
+            $registration = $attendance->registration;
+
+            $pdfContent = Pdf::loadView('emails.certificate-placeholder')->output();
+            $attachments = [[
+                'content' => base64_encode($pdfContent),
+                'name' => 'digital-certificate-test.pdf',
+            ]];
+
+            $result = BrevoMailer::send(
+                $registration->email,
+                $registration->name,
+                'Digital Certificate (Test) — MFC 2026',
+                view('emails.certificate-mail', compact('registration'))->render(),
+                $attachments
+            );
+
+            $attendance->email_status = $result['status'];
+            $attendance->email_error = $result['error'];
+            $attendance->save();
+
+            if ($result['status'] === 'sent') {
+                $sentCount++;
+            } else {
+                $failedCount++;
+            }
+        }
+
+        if ($failedCount > 0) {
+            return back()->with('admin_error', "{$sentCount} email(s) sent, {$failedCount} failed.");
+        }
+
+        return back()->with('admin_success', "{$sentCount} email trigger(s) sent successfully.");
     }
 
     public function export($day)
