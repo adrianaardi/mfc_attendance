@@ -47,31 +47,25 @@
     </script>
 @endif
 
-  <!-- ── ANNOUNCEMENT MODAL ──────────────────────────────── 
-  @if($activeDay && $currentActivity)
-  <div id="announcementModal" class="announcement-overlay">
-      <div class="announcement-content">
-          <div class="announcement-header">
-            @if($activeDay == 1)
-                <span>Live Now — 13th July 2026</span>
-            @elseif($activeDay == 2)
-                <span>Live Now — 14th July 2026</span>
-            @elseif($activeDay == 3)
-                <span>Live Now — 15th July 2026</span>
-            @endif
-              <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
-          </div>
-          <div class="announcement-body">
-            <h3>Current Agenda:</h3>
-              <h1>{{ $currentActivity['activity'] }}</h1>
-              @if(isset($currentActivity['speaker']))
-                  <p>🎤 <strong>{{ $currentActivity['speaker'] }}</strong></p>
-              @endif
-              <button class="announcement-btn" onclick="closeAnnouncement()">Got it!</button>
-          </div>
-      </div>
-  </div>
-  @endif -->
+<div id="announcementModal" class="announcement-overlay">
+    <div class="announcement-content">
+        <div class="announcement-header">
+            <span>CONGRATULATIONS! 🎉🎉</span>
+            <button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
+        </div>
+        <div class="announcement-body">
+            <h1>Your Digital Certificate is Ready</h1>
+            
+            <p>
+                Attendees who joined us for <strong>at least 2 days</strong> will find their official certificate sent directly to their <strong>registered email address</strong>. 
+                <br><br>
+                Please check your inbox (and spam folder).
+            </p>
+        
+            <button class="announcement-btn" onclick="closeAnnouncement()">Got it!</button>
+        </div>
+    </div>
+</div>
 
   <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>
