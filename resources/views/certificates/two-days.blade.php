@@ -26,12 +26,16 @@
 </head>
 <body>
     <div class="certificate">
-        <div class="content" style="text-align: center; padding: 20mm;gap:0;">
-            <div class="logos" style="display: flex; justify-content: center; margin-top: 35mm;">
-                <img src="{{ public_path('images/fds_logo.png') }}" alt="Logo" style="width: auto; height: 80px; flex:1;">
-                <img src="{{ public_path('images/mfc_logo.png') }}" alt="Logo" style="width: auto; height: 80px; flex:1;">
+        <div class="content" style="text-align: center; padding: 20mm;">
+            <div class="logos" style="justify-content: center; margin-top: 18mm;">
+                <img src="{{ public_path('images/mfc_logo.png') }}" alt="Logo" style="width: auto; height: 80px; margin-bottom: 15px;">
+                <p style="font-weight: bold; letter-spacing: 1px; font-size: 7pt; margin-top: -3mm; margin-bottom: 5mm;">MALAYSIAN FORESTRY CONFERENCE</p>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="{{ public_path('images/sfd_logo.png') }}" alt="Logo" style="width: auto; height: 50px;">    
+                    <img src="{{ public_path('images/fds_logo.png') }}" alt="Logo" style="width: auto; height: 50px;">
+                    <img src="{{ public_path('images/jpsm_logo.png') }}" alt="Logo" style="width: auto; height: 50px;">
+                </div>
             </div>
-            <p style="font-weight: bold; letter-spacing: 1px; font-size: 8pt; margin-top: -2mm;">MALAYSIAN FORESTRY CONFERENCE</p>
             <h1 style="line-height: 0.8; font-size: 30pt; color: #7c5d26;">CERTIFICATE<br><span style="font-size: 22pt;">of Attendance</span></h1>
             <p>This is to certify</p>
             <h1 style="font-size: 22pt;">{{ mb_strtoupper($registration->name) }}</h1>
