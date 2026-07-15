@@ -392,6 +392,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div style="margin-top:12px;">
+                    {{ $atLeastTwoDays->links() }}
+                </div>
             </form>
         </div>
 
