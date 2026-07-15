@@ -31,7 +31,7 @@ class AdminController extends Controller
             $atLeastTwoDaysQuery->where('two_days_email_status', $twoDaysEmailStatus);
         }
 
-        $atLeastTwoDays = $atLeastTwoDaysQuery->paginate(8)->withQueryString();
+        $atLeastTwoDays = $atLeastTwoDaysQuery->paginate(7)->withQueryString();
 
         $settings = [
             'registration'    => \App\Models\Setting::isEnabled('registration'),
