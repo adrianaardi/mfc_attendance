@@ -393,7 +393,7 @@
                     </table>
                 </div>
                 <div style="margin-top:12px;">
-                    {{ $atLeastTwoDays->links() }}
+                    {{ $atLeastTwoDays->links('vendor.pagination.two-days-compact') }}
                 </div>
             </form>
         </div>
