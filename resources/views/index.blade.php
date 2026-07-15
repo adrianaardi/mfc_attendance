@@ -57,7 +57,7 @@
             <h1>Your Digital Certificate is Ready</h1>
             
             <p>
-                Attendees who joined us for <strong>at least 2 days</strong> will find their official certificate sent directly to their <strong>registered email address</strong>. 
+                Attendees who joined us for <strong>at least 2 days</strong> will receive your digital certificate via your <strong>registered email address</strong>. 
                 <br><br>
                 Please check your inbox (and spam folder).
             </p>
