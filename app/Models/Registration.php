@@ -12,6 +12,8 @@ class Registration extends Model
         'phone',
         'designation',
         'agency',
+        'two_days_email_status',
+        'two_days_email_error',
     ];
 
     public function attendances()

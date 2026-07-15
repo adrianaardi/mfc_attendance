@@ -86,6 +86,7 @@
             <button onclick="showTab('day1')" id="tab-day1">Day 1</button>
             <button onclick="showTab('day2')" id="tab-day2">Day 2</button>
             <button onclick="showTab('day3')" id="tab-day3">Day 3</button>
+            <button onclick="showTab('at-least-two-days')" id="tab-at-least-two-days">2+ Days</button>
         </div>
 
         <!-- Registrations Table -->
@@ -333,6 +334,67 @@
             </form>
         </div>
 
+        <!-- At Least 2 Days Table -->
+        <div id="table-at-least-two-days" class="admin-table-section" style="display:none;">
+            <div class="table-header">
+                <h3>Attended At Least 2 Days</h3>
+                <div style="display:flex; gap:10px; align-items:center;">
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <a href="/admin?tab=at-least-two-days" class="export-btn" style="{{ empty($twoDaysEmailStatus) ? 'opacity:1;' : 'opacity:.75;' }}">All</a>
+                        <a href="/admin?tab=at-least-two-days&two_days_email_status=unsent" class="export-btn" style="{{ ($twoDaysEmailStatus ?? '') === 'pending' ? 'opacity:1;' : 'opacity:.75;' }}">Unsent</a>
+                        <a href="/admin?tab=at-least-two-days&two_days_email_status=failed" class="export-btn" style="{{ ($twoDaysEmailStatus ?? '') === 'failed' ? 'opacity:1;' : 'opacity:.75;' }}">Failed</a>
+                        <a href="/admin?tab=at-least-two-days&two_days_email_status=sent" class="export-btn" style="{{ ($twoDaysEmailStatus ?? '') === 'sent' ? 'opacity:1;' : 'opacity:.75;' }}">Sent</a>
+                    </div>
+                    <button type="button" onclick="submitSendTwoDays()" class="export-btn">Send Email</button>
+                </div>
+            </div>
+            <form id="form-send-two-days" method="POST" action="/admin/two-days/send-email">
+                @csrf
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="toggleAll(this, 'two-days-check')"></th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Designation</th>
+                                <th>Agency</th>
+                                <th>Days Attended</th>
+                                <th>Email Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($atLeastTwoDays as $reg)
+                            <tr>
+                                <td><input type="checkbox" class="two-days-check" name="ids[]" value="{{ $reg->id }}"></td>
+                                <td>{{ $reg->name }}</td>
+                                <td>{{ $reg->email }}</td>
+                                <td>{{ $reg->phone }}</td>
+                                <td>{{ $reg->designation }}</td>
+                                <td>{{ $reg->agency }}</td>
+                                <td>{{ $reg->attendances_count }}</td>
+                                <td>
+                                    @if($reg->two_days_email_status === 'sent')
+                                        <span class="email-badge email-sent">✅ Sent</span>
+                                    @elseif($reg->two_days_email_status === 'failed')
+                                        <span class="email-badge email-failed" title="{{ $reg->two_days_email_error }}">❌ Failed</span>
+                                    @else
+                                        <span class="email-badge email-pending">⏳ Not Sent</span>
+                                    @endif
+                                </td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="8" style="text-align:center; color:var(--text-soft);">No attendees with 2 or more days yet.</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+
     </section>
 
     <script>
@@ -374,6 +436,24 @@
             document.body.appendChild(form);
             form.submit();
         }
+
+        function submitSendTwoDays() {
+            const form = document.getElementById('form-send-two-days');
+            const checked = form.querySelectorAll('input.two-days-check:checked');
+
+            if (checked.length === 0) {
+                alert('Please select at least one record to send email.');
+                return;
+            }
+
+            if (confirm(`Send 2+ days email to ${checked.length} selected attendee(s)?`)) {
+                form.submit();
+            }
+        }
+
+        @if(request('tab') === 'at-least-two-days')
+            showTab('at-least-two-days');
+        @endif
     </script>
 
 </body>

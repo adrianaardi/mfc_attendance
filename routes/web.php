@@ -50,6 +50,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/admin/toggle/{key}', [AdminController::class, 'toggle']);
     Route::post('/admin/registrations/{registration}/resend', [AdminController::class, 'resendRegistrationEmail']);
     Route::post('/admin/attendances/{attendance}/resend', [AdminController::class, 'resendAttendanceEmail']);
+    Route::post('/admin/two-days/send-email', [AdminController::class, 'sendTwoDaysEmails']);
 
     // Slides management
     Route::get('/admin/slides', [SlideController::class, 'index']);

@@ -9,13 +9,10 @@ class BrevoMailer
     /**
      * @return array{status: string, error: string|null}
      */
-    public static function send(string $toEmail, string $toName, string $subject, string $html): array
+    public static function send(string $toEmail, string $toName, string $subject, string $html, array $attachments = []): array
     {
         try {
-            $response = Http::withHeaders([
-                'api-key'      => config('services.brevo.key'),
-                'Content-Type' => 'application/json',
-            ])->post('https://api.brevo.com/v3/smtp/email', [
+            $payload = [
                 'sender' => [
                     'name'  => 'Malaysian Forestry Conference 2026',
                     'email' => 'noreply@mfc2026.com',
@@ -26,7 +23,16 @@ class BrevoMailer
                 ]],
                 'subject'     => $subject,
                 'htmlContent' => $html,
-            ]);
+            ];
+
+            if (!empty($attachments)) {
+                $payload['attachment'] = $attachments;
+            }
+
+            $response = Http::withHeaders([
+                'api-key'      => config('services.brevo.key'),
+                'Content-Type' => 'application/json',
+            ])->post('https://api.brevo.com/v3/smtp/email', $payload);
 
             if ($response->failed()) {
                 return ['status' => 'failed', 'error' => 'Brevo ' . $response->status() . ': ' . $response->body()];
