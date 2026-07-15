@@ -345,7 +345,7 @@
                         <a href="/admin?tab=at-least-two-days&two_days_email_status=failed" class="export-btn" style="{{ ($twoDaysEmailStatus ?? '') === 'failed' ? 'opacity:1;' : 'opacity:.75;' }}">Failed</a>
                         <a href="/admin?tab=at-least-two-days&two_days_email_status=sent" class="export-btn" style="{{ ($twoDaysEmailStatus ?? '') === 'sent' ? 'opacity:1;' : 'opacity:.75;' }}">Sent</a>
                     </div>
-                    <button type="button" onclick="submitSendTwoDays()" class="export-btn">Send Email</button>
+                    <button id="send-two-days-btn" type="button" onclick="submitSendTwoDays()" class="export-btn">Send Email</button>
                 </div>
             </div>
             <form id="form-send-two-days" method="POST" action="/admin/two-days/send-email">
@@ -396,6 +396,7 @@
                     {{ $atLeastTwoDays->links('vendor.pagination.two-days-compact') }}
                 </div>
             </form>
+            <div id="two-days-send-progress" class="two-days-send-progress" style="display:none;"></div>
         </div>
 
     </section>
@@ -440,17 +441,65 @@
             form.submit();
         }
 
-        function submitSendTwoDays() {
+        async function submitSendTwoDays() {
             const form = document.getElementById('form-send-two-days');
             const checked = form.querySelectorAll('input.two-days-check:checked');
+            const sendButton = document.getElementById('send-two-days-btn');
+            const progress = document.getElementById('two-days-send-progress');
+            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.content;
 
             if (checked.length === 0) {
                 alert('Please select at least one record to send email.');
                 return;
             }
 
-            if (confirm(`Send 2+ days email to ${checked.length} selected attendee(s)?`)) {
-                form.submit();
+            if (!confirm(`Send 2+ days email to ${checked.length} selected attendee(s)?`)) {
+                return;
+            }
+
+            const ids = Array.from(checked).map((cb) => Number(cb.value)).filter(Boolean);
+            const chunkSize = 3;
+            let sentTotal = 0;
+            let failedTotal = 0;
+            let processedTotal = 0;
+
+            sendButton.disabled = true;
+            sendButton.style.opacity = '0.7';
+            progress.style.display = 'block';
+            progress.textContent = `Starting send process (0/${ids.length})...`;
+
+            try {
+                for (let i = 0; i < ids.length; i += chunkSize) {
+                    const batchIds = ids.slice(i, i + chunkSize);
+                    progress.textContent = `Sending ${Math.min(i + batchIds.length, ids.length)} / ${ids.length}...`;
+
+                    const response = await fetch('/admin/two-days/send-email/batch', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                            'X-CSRF-TOKEN': csrfToken,
+                        },
+                        body: JSON.stringify({ ids: batchIds }),
+                    });
+
+                    const data = await response.json().catch(() => ({}));
+
+                    if (!response.ok || data.ok === false) {
+                        throw new Error(data.message || 'Failed while sending one of the batches.');
+                    }
+
+                    sentTotal += Number(data.sent || 0);
+                    failedTotal += Number(data.failed || 0);
+                    processedTotal += Number(data.processed || 0);
+                }
+
+                progress.textContent = `Completed. Sent: ${sentTotal}, Failed: ${failedTotal}, Processed: ${processedTotal}. Reloading...`;
+                window.setTimeout(() => window.location.reload(), 900);
+            } catch (error) {
+                progress.textContent = `Stopped: ${error.message}`;
+                sendButton.disabled = false;
+                sendButton.style.opacity = '1';
             }
         }
 

@@ -7,6 +7,7 @@ use App\Models\Registration;
 use Illuminate\Http\Request;
 use App\Services\BrevoMailer;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Http\JsonResponse;
 
 class AdminController extends Controller
 {
@@ -92,6 +93,67 @@ class AdminController extends Controller
         }
 
         return back()->with($failedCount > 0 ? 'admin_error' : 'admin_success', $message);
+    }
+
+    public function sendTwoDaysEmailsBatch(Request $request): JsonResponse
+    {
+        $ids = $request->input('ids', []);
+
+        if (empty($ids) || !is_array($ids)) {
+            return response()->json([
+                'ok' => false,
+                'message' => 'No records selected for sending email.',
+            ], 422);
+        }
+
+        $registrations = Registration::withCount('attendances')
+            ->whereIn('id', $ids)
+            ->has('attendances', '>=', 2)
+            ->get();
+
+        if ($registrations->isEmpty()) {
+            return response()->json([
+                'ok' => false,
+                'message' => 'No valid recipients found for 2+ days email.',
+                'processed' => 0,
+                'sent' => 0,
+                'failed' => 0,
+            ], 422);
+        }
+
+        $sentCount = 0;
+        $failedCount = 0;
+
+        foreach ($registrations as $registration) {
+            $attachment = $this->twoDaysCertificateAttachment($registration);
+
+            $result = BrevoMailer::send(
+                $registration->email,
+                $registration->name,
+                'MFC 2026 - Digital Certificate of Attendance',
+                view('emails.two-days-achievement', compact('registration'))->render(),
+                [$attachment]
+            );
+
+            $registration->update([
+                'two_days_email_status' => $result['status'],
+                'two_days_email_error'  => $result['error'],
+            ]);
+
+            if ($result['status'] === 'sent') {
+                $sentCount++;
+            } else {
+                $failedCount++;
+            }
+        }
+
+        return response()->json([
+            'ok' => true,
+            'processed' => $sentCount + $failedCount,
+            'sent' => $sentCount,
+            'failed' => $failedCount,
+            'message' => 'Batch processed.',
+        ]);
     }
 
     private function twoDaysCertificateAttachment(Registration $registration): array

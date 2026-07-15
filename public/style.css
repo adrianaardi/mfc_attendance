@@ -1111,6 +1111,17 @@ footer {
   pointer-events: none;
 }
 
+.two-days-send-progress {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--forest);
+  background: rgba(74,124,89,0.12);
+  border: 1px solid rgba(74,124,89,0.38);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
 @media (max-width: 640px) {
   .two-days-pagination {
     justify-content: center;
