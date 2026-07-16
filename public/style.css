@@ -1054,63 +1054,6 @@ footer {
   min-width: 500px;
 }
 
-.two-days-pagination {
-  margin-top: 6px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.two-days-pagination-summary {
-  font-size: 12px;
-  color: var(--text-soft);
-}
-
-.two-days-pagination-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}
-
-.two-days-pagination .page-btn,
-.two-days-pagination .page-number,
-.two-days-pagination .page-ellipsis {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 30px;
-  height: 30px;
-  padding: 0 9px;
-  border-radius: 7px;
-  border: 1px solid rgba(26, 58, 42, 0.18);
-  background: #fff;
-  color: var(--text-soft);
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.two-days-pagination .page-btn:hover,
-.two-days-pagination .page-number:hover {
-  border-color: var(--forest);
-  color: var(--forest);
-}
-
-.two-days-pagination .page-number.active {
-  background: #1a3a2ac0;
-  border-color: #1a3a2ac0;
-  color: #fff;
-}
-
-.two-days-pagination .page-btn.disabled {
-  opacity: 0.45;
-  pointer-events: none;
-}
-
 .two-days-send-progress {
   margin-top: 10px;
   font-size: 12px;
@@ -1123,14 +1066,6 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .two-days-pagination {
-    justify-content: center;
-  }
-
-  .two-days-pagination-summary {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .slides-day .table-wrapper table {

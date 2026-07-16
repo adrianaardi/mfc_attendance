@@ -392,9 +392,6 @@
                         </tbody>
                     </table>
                 </div>
-                <div style="margin-top:12px;">
-                    {{ $atLeastTwoDays->links('vendor.pagination.two-days-compact') }}
-                </div>
             </form>
             <div id="two-days-send-progress" class="two-days-send-progress" style="display:none;"></div>
         </div>
